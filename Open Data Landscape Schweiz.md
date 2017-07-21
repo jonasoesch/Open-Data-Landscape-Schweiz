@@ -2,9 +2,6 @@
 
 ## Die Philosophie: okfn.org
 
-
-Open Data funktioniert nicht, sagen die einen. Daten, und vor allem viel davon, sind die Infrastruktur der Zukunft, sagen die anderen. Wer hat denn nun Recht? Und wo steht die Schweiz mit ihrer Dateninfrastruktur?
-
 Open Data scheint heute leider schon fast zu einem Buzzword verkommen. Wie «Big data» oder der «Cloud» klingt es irgendwie toll, aber was steckt eigentlich wirklich dahinter? Als erstes Pestizid gegen den «Open»-Wildwuchs dient die [Open Defintion](http://opendefinition.org/od/2.1/en/) der [Open Knowledge Foundation](https://okfn.org) (OKFN). Sie verlangt, dass Daten sowohl frei zugänglich als auch frei verwertbar sein müssen um als «open» zu gelten. Zwar sind auf dem Internet zig Daten frei zugänglich, meistens fehlen aber klare Lizenzbestimmungen. In der Schweiz sind Daten zwar nicht urheberrechtlich geschützt, im EU-Ausland aber zum Beispiel schon[^schlauri]. Das Fehlen einer Lizenz disqualifiziert in extrem vielen Fällen Datensätze davon als «offen» gelten zu können. 
 
 Die obige Definition trifft auf Daten unterschiedlichster Herkunft zu, zum Beispiel solche aus Unternehmen, von NGOs oder durch solche die durch Crowdsourcing gewonnen werden. Ein spezieller Fokus liegt aber auf Daten die mit öffentlichen Geldern erzeugt werden. Die vereinfachte Argumentation geht so: «Wenn die Allgemeinheit für die Erhebung der Daten zahlt, muss die Allgemeinheit auch Zugang zu den Daten haben». Das betrifft Daten aus der Verwaltung und aus der Forschung.
@@ -19,6 +16,8 @@ Trotzdem brauchte es noch einige Jahre, bis der Bund 2014 eine nationale Open Go
 
 Und wo stehen wir nun, drei Jahre später im Bezug auf OGD?
 
+
+<aside>
 ### Timeline
 
 - 2004: Gründung der [Open Knowledge Foundation](https://okfn.org) in Camebridge
@@ -30,21 +29,22 @@ Und wo stehen wir nun, drei Jahre später im Bezug auf OGD?
 - 2017: [Open Access Strategie von swissuniversites](https://www.swissuniversities.ch/de/themen/hochschulpolitik/open-access/)
 - 2017: Obligatorium eines [Data Management Plans](http://www.snf.ch/de/derSnf/forschungspolitische_positionen/open_research_data/Seiten/default.aspx#Grundsatzerkl%E4rung%20des%20SNF%20zu%20Open%20Research%20Data) für Projekte die vom SNF gefördert werden
 
-## Die Community: opendata.ch
+</aside>
 
-Die Idee, dass Daten die Öffentlichkeit freien Zugang zu den Daten haben sollte, die sie selbst finanziert mag einleuchtend klingen. Es passiert aber in der Praxis kaum je von alleine. Das zeigt sich in der Arbeit des Vereins opendata.ch. Als Schweizer Ableger der Open Knowledge Foundation ist er eine Autorität wennn es um das Thema geht. [Quelle] opendata.ch vereint Aktivisten aus verschiedenen Bereichen. Und die Leute als Aktivisten zu bezeichnen ist durchaus nicht verfehlt. So treffe ich zum Beispiel Oleg Lavrovski im Berner Kaffee Effinger. Aus einem Interview wird zu Open Data in der Schweiz wird bald eine Grundsatzdiskussion. Für ihn sind offene Daten Teil der grundlegenden Infrastruktur eines Landes. Ähnlich wichtig wie die Versorgung mit Trinkwasser. Und ähnlich vernachlässigt. «Jeder nutzt Daten, aber kaum jemand macht sich Gedanken darüber». Genau das zu ändern ist die Mission von opendata.ch.
+## Die Community: opendata.ch (Enthusiasmus, Gründerstimmung)
+
+Die Forderunge: «Gebt der Öffentlichkeit Zugang zu ihren Daten», klingt direkt relativ einleuchtend. Das passiert aber in der Praxis kaum je von alleine. Das zeigt sich auch daran, dass sich eine Gruppe von Aktivisten 2011 zum Verein opendata.ch zusammenschloss und seither für die Einführung in Forschung und Verwaltung wirbt, weibelt und lobbyiert. Einer davon ist Oleg Lavrosky, den ich im Kaffee Effinger in Bern treffe. Aus einem Interview zu Open Data in der Schweiz wird bald eine Grundsatzdiskussion. Für ihn sind offene Daten Teil der grundlegenden Infrastruktur eines Landes. Ähnlich wichtig wie die Versorgung mit Trinkwasser. Und ähnnlich vernachlässigt. «Jeder nutzt Daten, aber kaum jemand macht sich Gedanken darüber». Dennoch scheint Oleg ist Oleg nicht ganz auf verlorenem Posten. opendata.ch zählt heute über 200 Mitglieder [[Quelle]] und die jährliche Konferenz ist gut besucht. Auch auf Twitter ist Verein gut vernetzt. Hat er doch zum Beispiel doppelt so viele Follower wie Energie Schweiz oder ICT Schweiz.
+Aber wer sind diese Follower die sich um das Open Data-Thema scharen?
 
 [[Twitter Netwerk]]
 
-Das primäre Kommunikationsmittel scheint dabei Twitter zu sein. Mit doppelt so vielen Followern wie zum Beispiel Energie Schweiz oder ICT Schweiz ist die Vernetzung hier hoch. Mit Hilfe von Twitter finden wir auch heraus mit welchen Interessengruppen der Verein verbunden ist. Im erzeugten Unternetzwerk lassen sich relativ deutlich vier unterscheiden: ICT, Politker, die Presse und die Internationale Open Data-Bewegung. Was erstaunt ist, dass die Datenlieferanten zu einem grossen Teil abwesend sind. Weder aus der Wissenschaft noch aus der Verwaltung finden sich grössere Gruppen von Leuten die mit dem Verein auf Twitter verbunden sind.
-
-In vielen Fällen erkennen Wissenschaftler oder Verwaltungsangestellte gar nicht, dass die Daten die sie für den eigenen Gebrauch erhoben haben, auch für andere interessant und nützlich sein können. Twitter ist ein deutlicher Hinweis darauf, dass die Abnehmer durchaus da und interessiert sind.
+Im Unternetzwerk lassen sich gut vier unterschiedliche Interessengruppen ausmachen: ICT, Politker, die Presse und die Internationale Open Data-Bewegung. Sowohl Software-Entwickler, wie auch Journalisten sind offensichtlich Nutzer/innen von offenen Daten. Auch die beiden anderen Interessengruppen erstaunen kaum, da sie sich politisch mit dem Thema auseinandersetzen. Vielmehr erstaunt die Abwesenheit der Datenanbieter auf Twitter. Weder aus der Wissenschaft noch aus der Verwaltung finden sich grössere Gruppen von Leuten die auf Twitter mitreden.
 
 Es gibt aber auch einige löbliche Ausnahmen. So ist die Open Data-Abteilung der Stadt Zürich ein fast ebenso grosser Hub wie der Verein Open Data. Auch das Geoportal des Bundes ist vertreten und gut vernetzt. Das zeigt sich beim Geoportal auch darin, dass es sogar von einer eigenen, wenn auch etwas kleineren Interessengruppe zum Thema «Geoinformation» umgeben ist.
 
 Juan-Pablo Lovato, der Projektkoordinator des Open Data-Projektes des Bundes ist darüber oft enttäuscht. Er wünscht sich, dass die Datenanbieter präsenter wären und mehr Austausch mit den Nutzern stattfinden würde. Dem entgegen stehen oft strikte Weisungen in den Behörden was die Kommunikation mit der Öffentlichkeit angeht. Das ist einerseits bei offiziellen Stellen nachvollziehbar, im Kontext von offenen Daten aber auch etwas seltsam.
 
-## Die Plattform: opendata.swiss
+## Die Plattform: opendata.swiss (Wachstum, Etablierung)
 
 Um eine zentrale Anlaufstelle zu haben, betreibt das Bundesarchiv im Auftrag des Bundesrates die Plattform «opendata.swiss». In ihrem Verzeichnis finden sich Daten von Behörden aller drei Staatsebenen – Bund, Kantone und Gemeinden. Auch staatsnahe Unternehmen wie die SBB veröffentlichen hier ihre Datensätze. Seit letztem Jahr hat sich die Zahl der Datensätze auf über [2200 fast verdoppelt](https://opendata.ch/wordpress/files/2017/01/ODC2017-PräsentationKellerhals.pdf). Das sieht gut aus, ist aber wohl nicht mehr als die Spitze des Eisberges wie Matthias Stürmer vom Institut für Digitale Nachhaltigkeit an der Universität Bern bemerkt. Zusammen mit seinem Kollegen Oliver Neumann stellt er für die 121 Bundesämter ein Dateninventar zusammen. Darin wurden bisher xxxx Datensätze erfasst. «Natürlich gibt es auch vieles was sich nicht für die Veröffentlichung eignet» bemerkt Neumann. «Zum Beispiel wenn Personendaten im Spiel sind». Diese sind nach dem Datenschutzgesetz sehr streng geschützt und wann immer Daten Rückschlüsse auf einzelne Personen zulassen, dürfen diese nur unter besonderen Umständen veröffentlich werden.
 
@@ -58,13 +58,18 @@ In dieser Übersicht wird auch deutlich, welche der 35 aufgeführten Organisatio
 
 
 
-## Die fast komplette Abwesenheit von Nutzern
+## Die fast komplette Abwesenheit von Nutzern (die grosse Verunsicherung)
 
 Trotz der grossen Zunahmen an Datensätzen auf opendata.swiss gibt es bisher nur sehr wenige Showcases. Ausserordentlich viele Apps wurden für die ÖV-Daten realisiert. Im gesamten werden aber nur 1.6% der Datensätze in einer Applikation genutzt.
+
+* Hackathons
 
 Dieser Mangel an Ergebnissen der bisherigen Bemühungen ist ein grosser Rückschlag für die Aktivisten der Open Data-Bewegung. Es stellt sich die Frage ob die Grundannahmen falsch sind. Ob die Daten aus der Verwaltung doch nicht so interessant sind, wie immer behauptet wurden.
 
 Für Entwickler ist es in den wenigesten Fällen interessant, etwas bestehendes nochmals zu machen. Bei einer geringen Anzahl von Datenlieferanten sind die Möglichkeiten eine Applikation zu entwickeln, die der Datenlieferant selbst nicht schon umgesetzt hat aber sehr beschränkt. Es sind die offensichtlichen Fälle wie  die Anzeige von Tramhaltestellen auf einer Karte. Die Zahl der Nicht-offensichtlichen Anwendungen bleibt beschränkt. Ein Beispiel ist der [Wohnungsrechner](https://www.wohnungsrechner.ch) der Mietinserate mit den lokalen Krankenkassenprämien und Steuern anreichert.
+
+
+## Open Data Maturity (Ausblick)
 
 Das Hauptanliegen von Juan-Pablo Lovato ist darum im Moment, mehr Organisationen auf die Plattform zu bringen, die ihre Daten ebenfalls anbieten.
 
