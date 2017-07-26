@@ -18,7 +18,7 @@ Der freie Zugang zu Forschungsdaten stellt in der Schweiz ein erstaunlich grosse
 
 Die Bundesverwaltung ist seit dem Inkrafttreten des Öffentlichkeitsgesetzes 2006 verpflichtet den Grossteil ihrer Daten auf Anfrage zur Verfügung zu stellen. Ähnliche Gesetzgebungen [existieren in den meisten Kantonen](https://www.oeffentlichkeitsgesetz.ch/deutsch/die-kantone). Einer Veröffentlichung der Verwaltungsdaten steht also in den Fällen wo das Öffentlichkeitsgesetz greift nichts mehr im Weg. Es kommt hinzu, dass sich durch die Öffnung der Daten eine hohe Wertschöpfung von [rund einer Milliarde Franken pro Jahr](https://www.egovernment.ch/de/umsetzung/e-government-schweiz-2008-2015/open-government-data-schweiz/) ergeben würde.
 
-[[*Map mit Kantonen und Bundesämtern. Zeigt welche Kantone ein Öffentlichkeitsgesetz haben und wie ihr Status bezüglich Open Data ist: 0: Nichts, 1: Open Data-Strategie, 2: Erste Datensätze publiziert, 3: Regelmässige Publikation von offenen Daten, 4: Open Data by default*]]
+[*Map mit Kantonen und Bundesämtern. Zeigt welche Kantone ein Öffentlichkeitsgesetz haben und wie ihr Status bezüglich Open Data ist: 0: Nichts, 1: Open Data-Strategie, 2: Erste Datensätze publiziert, 3: Regelmässige Publikation von offenen Daten, 4: Open Data by default*](cantons/dist/index.html)
 
 Darum hat der Bundesrat 2014 eine nationale [Open Governement Data-Strategie](https://www.egovernment.ch/de/umsetzung/e-government-schweiz-2008-2015/open-government-data-schweiz/) verabschiedete. Darin setzt er der Verwaltung das Ziel ihre Prozesse so anzupassen, dass sie ihre Daten ohne Zusatzaufwand standardmässig offen publizieren können. Auch viele Kantone haben mittlerweilen Open Data-Strategien und/oder haben begonnen, ihre Daten offen zu publizieren.
 
