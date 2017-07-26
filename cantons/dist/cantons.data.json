@@ -1,132 +1,157 @@
 {
-  "ZH": {
-    "name": "Zürich",
-    "öffentlichkeitsgesetz": "Ja",
-    "opendata": 3
+  "cantons": {
+    "ZH": {
+      "name": "Zürich",
+      "öffentlichkeitsgesetz": 3,
+      "opendata": 3
+    },
+    "BE": {
+      "name": "Bern",
+      "öffentlichkeitsgesetz": 3,
+      "opendata": 2
+    },
+    "LU": {
+      "name": "Luzern",
+      "öffentlichkeitsgesetz": 1,
+      "opendata": 1
+    },
+    "UR": {
+      "name": "Uri",
+      "öffentlichkeitsgesetz": 3,
+      "opendata": 0
+    },
+    "SZ": {
+      "name": "Schwyz",
+      "öffentlichkeitsgesetz": 3,
+      "opendata": 0
+    },
+    "OW": {
+      "name": "Obwalden",
+      "öffentlichkeitsgesetz": 1,
+      "opendata": 0
+    },
+    "NW": {
+      "name": "Nidwalden",
+      "öffentlichkeitsgesetz": 1,
+      "opendata": 0
+    },
+    "GL": {
+      "name": "Glarus",
+      "öffentlichkeitsgesetz": 1,
+      "opendata": 0
+    },
+    "ZG": {
+      "name": "Zug",
+      "öffentlichkeitsgesetz": 3,
+      "opendata": 1
+    },
+    "FR": {
+      "name": "Freiburg",
+      "öffentlichkeitsgesetz": 3,
+      "opendata": 1
+    },
+    "SO": {
+      "name": "Solothurn",
+      "öffentlichkeitsgesetz": 3,
+      "opendata": 0
+    },
+    "BS": {
+      "name": "Basel-Stadt",
+      "öffentlichkeitsgesetz": 3,
+      "opendata": 3
+    },
+    "BL": {
+      "name": "Basel-Landschaft",
+      "öffentlichkeitsgesetz": 3,
+      "opendata": 0
+    },
+    "SH": {
+      "name": "Schaffhausen",
+      "öffentlichkeitsgesetz": 2,
+      "opendata": 0
+    },
+    "AR": {
+      "name": "Appenzell-Ausserrohden",
+      "öffentlichkeitsgesetz": 2,
+      "opendata": 0
+    },
+    "AI": {
+      "name": "Appenzell-Innerrohden",
+      "öffentlichkeitsgesetz": 1,
+      "opendata": 0
+    },
+    "SG": {
+      "name": "St.Gallen",
+      "öffentlichkeitsgesetz": 3,
+      "opendata": 3
+    },
+    "GR": {
+      "name": "Graubünden",
+      "öffentlichkeitsgesetz": 2,
+      "opendata": 2
+    },
+    "AG": {
+      "name": "Aargau",
+      "öffentlichkeitsgesetz": 3,
+      "opendata": 0
+    },
+    "TG": {
+      "name": "Thurgau",
+      "öffentlichkeitsgesetz": 1,
+      "opendata": 3
+    },
+    "TI": {
+      "name": "Tessin",
+      "öffentlichkeitsgesetz": 3,
+      "opendata": 1
+    },
+    "VD": {
+      "name": "Waadt",
+      "öffentlichkeitsgesetz": 3,
+      "opendata": 0
+    },
+    "VS": {
+      "name": "Wallis",
+      "öffentlichkeitsgesetz": 3,
+      "opendata": 0
+    },
+    "NE": {
+      "name": "Neuenburg",
+      "öffentlichkeitsgesetz": 3,
+      "opendata": 0
+    },
+    "GE": {
+      "name": "Genf",
+      "öffentlichkeitsgesetz": 3,
+      "opendata": 3
+    },
+    "JU": {
+      "name": "Jura",
+      "öffentlichkeitsgesetz": 3,
+      "opendata": 0
+    }
   },
-  "BE": {
-    "name": "Bern",
-    "öffentlichkeitsgesetz": "Ja",
-    "opendata": 2
-  },
-  "LU": {
-    "name": "Luzern",
-    "öffentlichkeitsgesetz": "Nein",
-    "opendata": 1
-  },
-  "UR": {
-    "name": "Uri",
-    "öffentlichkeitsgesetz": "Ja",
-    "opendata": 0
-  },
-  "SZ": {
-    "name": "Schwyz",
-    "öffentlichkeitsgesetz": "Ja",
-    "opendata": 0
-  },
-  "OW": {
-    "name": "Obwalden",
-    "öffentlichkeitsgesetz": "Nein",
-    "opendata": 0
-  },
-  "NW": {
-    "name": "Nidwalden",
-    "öffentlichkeitsgesetz": "Nein",
-    "opendata": 0
-  },
-  "GL": {
-    "name": "Glarus",
-    "öffentlichkeitsgesetz": "Nein",
-    "opendata": 0
-  },
-  "ZG": {
-    "name": "Zug",
-    "öffentlichkeitsgesetz": "Ja",
-    "opendata": 1
-  },
-  "FR": {
-    "name": "Freiburg",
-    "öffentlichkeitsgesetz": "Ja",
-    "opendata": 1
-  },
-  "SO": {
-    "name": "Solothurn",
-    "öffentlichkeitsgesetz": "Ja",
-    "opendata": 0
-  },
-  "BS": {
-    "name": "Basel-Stadt",
-    "öffentlichkeitsgesetz": "Ja",
-    "opendata": 3
-  },
-  "BL": {
-    "name": "Basel-Landschaft",
-    "öffentlichkeitsgesetz": "Ja",
-    "opendata": 0
-  },
-  "SH": {
-    "name": "Schaffhausen",
-    "öffentlichkeitsgesetz": "Teilweise",
-    "opendata": 0
-  },
-  "AR": {
-    "name": "Appenzell-Ausserrohden",
-    "öffentlichkeitsgesetz": "Teilweise",
-    "opendata": 0
-  },
-  "AI": {
-    "name": "Appenzell-Innerrohden",
-    "öffentlichkeitsgesetz": "Nein",
-    "opendata": 0
-  },
-  "SG": {
-    "name": "St.Gallen",
-    "öffentlichkeitsgesetz": "Ja",
-    "opendata": 3
-  },
-  "GR": {
-    "name": "Graubünden",
-    "öffentlichkeitsgesetz": "Teilweise",
-    "opendata": 2
-  },
-  "AG": {
-    "name": "Aargau",
-    "öffentlichkeitsgesetz": "Ja",
-    "opendata": 0
-  },
-  "TG": {
-    "name": "Thurgau",
-    "öffentlichkeitsgesetz": "Nein",
-    "opendata": 3
-  },
-  "TI": {
-    "name": "Tessin",
-    "öffentlichkeitsgesetz": "Ja",
-    "opendata": 1
-  },
-  "VD": {
-    "name": "Waadt",
-    "öffentlichkeitsgesetz": "Ja",
-    "opendata": 0
-  },
-  "VS": {
-    "name": "Wallis",
-    "öffentlichkeitsgesetz": "Ja",
-    "opendata": 0
-  },
-  "NE": {
-    "name": "Neuenburg",
-    "öffentlichkeitsgesetz": "Ja",
-    "opendata": 0
-  },
-  "GE": {
-    "name": "Genf",
-    "öffentlichkeitsgesetz": "Ja",
-    "opendata": 3
-  },
-  "JU": {
-    "name": "Jura",
-    "öffentlichkeitsgesetz": "Ja",
-    "opendata": 0
+  "cities": {
+    "St.-Gallen": {
+      "name": "St. Gallen",
+      "opendata": 2
+    },
+
+    "Bern": {
+      "name": "Bern",
+      "opendata": 3
+    },
+
+    "Zürich": {
+      "name": "Zürich",
+      "opendata": 3
+    },
+
+    "Luzern": {
+      "name": "Luzern",
+      "öffentlichkeitsgesetz": 3,
+      "opendata": 1
+    }
+
   }
 }
