@@ -9,12 +9,9 @@
 <script src="js/sigma.js/src/classes/sigma.classes.graph.js"></script>
 <script src="js/sigma.js/src/classes/sigma.classes.camera.js"></script>
 <script src="js/sigma.js/src/classes/sigma.classes.quad.js"></script>
-<script src="js/sigma.js/src/classes/sigma.classes.edgequad.js"></script>
 <script src="js/sigma.js/src/captors/sigma.captors.mouse.js"></script>
 <script src="js/sigma.js/src/captors/sigma.captors.touch.js"></script>
-<script src="js/sigma.js/src/renderers/sigma.renderers.canvas.js"></script>
 <script src="js/sigma.js/src/renderers/sigma.renderers.webgl.js"></script>
-<script src="js/sigma.js/src/renderers/sigma.renderers.svg.js"></script>
 <script src="js/sigma.js/src/renderers/sigma.renderers.def.js"></script>
 <script src="js/sigma.js/src/renderers/webgl/sigma.webgl.nodes.def.js"></script>
 <script src="js/sigma.js/src/renderers/webgl/sigma.webgl.nodes.fast.js"></script>
@@ -24,30 +21,19 @@
 <script src="js/sigma.js/src/renderers/canvas/sigma.canvas.labels.def.js"></script>
 <script src="js/sigma.js/src/renderers/canvas/sigma.canvas.hovers.def.js"></script>
 <script src="js/sigma.js/src/renderers/canvas/sigma.canvas.nodes.def.js"></script>
-<script src="js/sigma.js/src/renderers/canvas/sigma.canvas.edges.def.js"></script>
-<script src="js/sigma.js/src/renderers/canvas/sigma.canvas.edges.curve.js"></script>
-<script src="js/sigma.js/src/renderers/canvas/sigma.canvas.edges.arrow.js"></script>
-<script src="js/sigma.js/src/renderers/canvas/sigma.canvas.edges.curvedArrow.js"></script>
 <script src="js/sigma.js/src/renderers/canvas/sigma.canvas.extremities.def.js"></script>
-<script src="js/sigma.js/src/renderers/svg/sigma.svg.utils.js"></script>
-<script src="js/sigma.js/src/renderers/svg/sigma.svg.nodes.def.js"></script>
-<script src="js/sigma.js/src/renderers/svg/sigma.svg.edges.def.js"></script>
-<script src="js/sigma.js/src/renderers/svg/sigma.svg.edges.curve.js"></script>
-<script src="js/sigma.js/src/renderers/svg/sigma.svg.labels.def.js"></script>
-<script src="js/sigma.js/src/renderers/svg/sigma.svg.hovers.def.js"></script>
 <script src="js/sigma.js/src/middlewares/sigma.middlewares.rescale.js"></script>
 <script src="js/sigma.js/src/middlewares/sigma.middlewares.copy.js"></script>
 <script src="js/sigma.js/src/misc/sigma.misc.animation.js"></script>
 <script src="js/sigma.js/src/misc/sigma.misc.bindEvents.js"></script>
-<script src="js/sigma.js/src/misc/sigma.misc.bindDOMEvents.js"></script>
 <script src="js/sigma.js/src/misc/sigma.misc.drawHovers.js"></script>
-<!-- END SIGMA IMPORTS -->
 <script src="js/sigma.js/plugins/sigma.parsers.gexf/gexf-parser.js"></script>
 <script src="js/sigma.js/plugins/sigma.parsers.gexf/sigma.parsers.gexf.js"></script>
+<script src="js/underscore-min.js"></script>
 <div id="container">
   <style>
     #graph-container {
-      top: 0;
+      top: 30px;
       bottom: 0;
       left: 0;
       right: 0;
@@ -56,6 +42,8 @@
     }
   </style>
   <div id="graph-container"></div>
+  <button id="twitter-IXT">IXT</button>
+  <button id="twitter-reset">Reset</button>
 </div>
 <script>
 
@@ -70,7 +58,7 @@ sigma.classes.graph.addMethod('neighbors', function(nodeId) {
     return neighbors;
 });
 
-    sigma.settings.labelThreshold = 4;
+    sigma.settings.labelThreshold = 5;
     sigma.settings.minEdgeSize = 0.1;
     sigma.settings.maxEdgeSize = 0.1;
     sigma.settings.maxNodeSize = 20;
@@ -83,9 +71,10 @@ sigma.parsers.gexf('data/opendatach.gexf', {
     },
     function(s) {
 
-        
         var colorscheme =
-            ['#edf8fb','#b3cde3','#8c96c6','#8856a7','#810f7c'];
+            ['#E0D4B2','#3E8C84','#296B73','#194759','#0F2D40'];
+        //    ['#DCFAC0','#B1E1AE','#85C79C','#56AE8B','#00968B'];
+        //    ['#edf8fb','#b3cde3','#8c96c6','#8856a7','#810f7c'];
 
 
         function color(value) {
@@ -103,27 +92,48 @@ sigma.parsers.gexf('data/opendatach.gexf', {
                 return colorscheme[4];
         }
 
-        s.graph.nodes().forEach(function (node) {
+        _(s.graph.nodes()).each(function (node) {
             node.color = color(node.attributes.tweets);
+            if(node.attributes.directfollow === 1 && node.attributes.tweets < 1)
+                node.color = "#ccb";
             node.size = node.attributes.followers / 1000;
         });
         s.refresh();
 
 
         s.bind('clickNode', function(e){
-           var nodeId = e.data.node.id,
+            selectNode(e.data.node)
+        });
+
+        _(['IXT', 'reset']).each(function(name){
+            var label;
+            if(name === 'reset')
+                label = 'OpendataCH';
+            else
+                label = name;
+            
+            document.getElementById('twitter-'+name).addEventListener('click', function(evt) {
+                var el = _(s.graph.nodes()).findWhere({'label': label});
+                selectNode(el);
+            })
+        });
+
+
+        function selectNode(node) {
+           var nodeId = node.id,
             toKeep = s.graph.neighbors(nodeId);
-            toKeep[nodeId] = e.data.node;
+            toKeep[nodeId] = node;
 
-
-            s.graph.nodes().forEach(function(n) {
+            _(s.graph.nodes()).each(function(n) {
               if (toKeep[n.id])
                 n.color = color(n.attributes.tweets);
               else
                 n.color = 'rgba(255,255,255,0.1)';
             });
+            s.refresh();
+        }
 
-        s.refresh();
     });
-    });
+
+
 </script>
