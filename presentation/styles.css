@@ -12,6 +12,17 @@ body > *:first-child {
 body > *:last-child {
   margin-bottom: 0 !important; }
 
+body>* {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+iframe {
+    width: 600px;
+    border: none;
+    overflow: hidden;
+}
+
 a {
   color: #4183C4; }
 a.absent {
@@ -27,7 +38,8 @@ a.anchor {
   bottom: 0; }
 
 h1, h2, h3, h4, h5, h6 {
-  margin: 20px 0 10px;
+  margin: 20px auto 10px;
+
   padding: 0;
   font-weight: bold;
   -webkit-font-smoothing: antialiased;
@@ -79,7 +91,7 @@ h6 {
   font-size: 14px; }
 
 p, blockquote, ul, ol, dl, li, table, pre {
-  margin: 15px 0; }
+  margin: 15px auto; }
 
 hr {
   background: transparent url("../../images/modules/pulls/dirty-shade.png") repeat-x 0 0;
