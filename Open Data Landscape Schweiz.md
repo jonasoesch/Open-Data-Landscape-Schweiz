@@ -99,3 +99,6 @@ Linked Data vereinfacht so Verknüpfung von Datensätzen aus verschiedenen Städ
 In jedem Fall entscheiden vermutlich das Volumen und die Diversität in den vorhandenen Daten, ob sie zu unerwarteten, neuen Anwendungen führen. Ob dies nun durch ein mehr an publizierten Daten oder durch eine bessere Verlinkung erreicht wird. So auf jeden Fall die Hoffnung der Open Data-Aktivisten.
 
 Die Zeit wird zeigen, ob diese Hoffnung begründet ist. Die Mühlen der Verwaltung mögen für viele in der Open Data-Community frustrierend langsam mahlen, aber sie mahlen nur in eine Richtung. So sagt auch Juan-Pablo Lovato: "Die Zeit arbeitet für uns. Irgendwann wird es selbstverständlich sein, dass Behördendaten frei zugänglich und Teil der Infrastruktur unseres Landes sind."
+
+
+<script src="presentation/presentation.js"></script>
