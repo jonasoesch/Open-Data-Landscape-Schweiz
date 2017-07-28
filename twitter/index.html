@@ -33,17 +33,60 @@
 <div id="container">
   <style>
     #graph-container {
-      top: 30px;
+      top: 60px;
       bottom: 0;
       left: 0;
       right: 0;
       position: absolute;
       /*background-color: #222222;*/
     }
+
+            .buttongroup {
+                width: 100%;
+                text-align: center;
+                margin-top: 20px
+            }
+
+
+            .buttongroup button {
+                background: none;
+                border: 1px solid #777;
+                color: inherit;
+                font: inherit;
+                line-height: normal;
+                padding: 5px;
+                margin: 0;
+                box-sizing: border-box;
+                font-family: sans-serif;
+            }
+
+            .buttongroup button:first-child {
+                border-radius: 5px 0 0 5px;
+            }
+
+            .buttongroup button:last-child {
+                border-radius: 0 5px 5px 0;
+            }
+
+            .buttongroup button:not(:first-child) {
+                margin-left: -5px;
+            }
+
+            .buttongroup button:focus {
+                background-color: aliceblue;
+                outline: none;
+            }
+
   </style>
   <div id="graph-container"></div>
-  <button id="twitter-IXT">IXT</button>
-  <button id="twitter-reset">Reset</button>
+  <div class="buttongroup">
+      <button id="twitter-NothingAgency">NothingAgency</button>
+      <button id="twitter-KathyRiklin">KathyRiklin</button>
+      <button id="twitter-OKFNLabs">OKFNLabs</button>
+      <button id="twitter-swiss_geosummit">swiss_geosummit</button>
+      <button id="twitter-OpenDataZurich">OpenDataZurich</button>
+      <button id="twitter-reset">Opendatach</button>
+  </div>
 </div>
 <script>
 
@@ -105,7 +148,7 @@ sigma.parsers.gexf('data/opendatach.gexf', {
             selectNode(e.data.node)
         });
 
-        _(['IXT', 'reset']).each(function(name){
+        _(['NothingAgency', 'KathyRiklin', 'OKFNLabs', 'swiss_geosummit', 'OpenDataZurich', 'reset']).each(function(name){
             var label;
             if(name === 'reset')
                 label = 'OpendataCH';
