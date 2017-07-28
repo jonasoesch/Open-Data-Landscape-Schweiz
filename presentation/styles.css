@@ -17,10 +17,20 @@ body>* {
     margin: 0 auto;
 }
 
+body>.full {
+    max-width: 90%;
+    width 90%;
+}
+
 iframe {
-    width: 600px;
+    width: 100%;
     border: none;
     overflow: hidden;
+    border: 1px solid #f0f0f0;
+}
+
+#twitter {
+    width: 100%;
 }
 
 a {

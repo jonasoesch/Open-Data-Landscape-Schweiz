@@ -5,7 +5,15 @@ css.setAttribute('type', 'text/css')
 css.setAttribute('href', 'presentation/styles.css')
 head.appendChild(css);
 
+document.querySelector("a[href='#twitter-ict']").addEventListener('click', function(evt){
+    console.log('hi')
+});
 
+
+iframes = document.getElementsByTagName('iframe')
+for (var i =0; i<iframes.length; i++) {
+    iframes[i].parentElement.className = 'full';
+}
 /*
 var landscape_script = document.createElement('script');
 landscape_script.setAttribute('src', 'cantons/dist/main.js')
