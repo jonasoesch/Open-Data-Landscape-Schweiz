@@ -11,6 +11,7 @@
 <script src="js/sigmajs/src/classes/sigma.classes.quad.js"></script>
 <script src="js/sigmajs/src/captors/sigma.captors.mouse.js"></script>
 <script src="js/sigmajs/src/captors/sigma.captors.touch.js"></script>
+<script src="js/sigmajs/plugins/sigma.plugins.tooltips.js"></script>
 <script src="js/sigmajs/src/renderers/sigma.renderers.webgl.js"></script>
 <script src="js/sigmajs/src/renderers/sigma.renderers.def.js"></script>
 <script src="js/sigmajs/src/renderers/webgl/sigma.webgl.nodes.def.js"></script>
@@ -77,7 +78,60 @@
                 outline: none;
             }
 
+            #link-twitter {
+                position: relative;
+                background-color: rgba(255,1255,255,1);
+                padding: 10px;
+                border-radius: 3px;
+                font-size: 0.8em;
+                top: -25px;
+                left: 0px;
+                border: 1px solid #7F7F7F;
+            }
+
+      #link-twitter a {
+          text-decoration: none;
+          color: #236B8E;
+          font-family: sans-serif;
+      }
+
+
+
+        #link-twitter:before
+        {
+            content: '';
+            position: absolute;
+            border-style: solid;
+            border-width: 10px 12px 0;
+            border-color: #7F7F7F transparent;
+            display: block;
+            width: 0;
+            z-index: 0;
+            margin-left: -12px;
+            bottom: -11px;
+            left: 45%;
+        }
+
+
+        #link-twitter:after
+        {
+            content: '';
+            position: absolute;
+            border-style: solid;
+            border-width: 10px 12px 0;
+            border-color: rgba(255,255,255,1) transparent;
+            display: block;
+            width: 0;
+            z-index: 1;
+            margin-left: -12px;
+            bottom: -10px;
+            left: 45%;
+        }
+
   </style>
+
+
+
   <div id="graph-container"></div>
   <div class="buttongroup">
       <button id="twitter-NothingAgency">NothingAgency</button>
@@ -88,6 +142,7 @@
       <button id="twitter-reset">Opendatach</button>
   </div>
 </div>
+
 <script>
 
 sigma.classes.graph.addMethod('neighbors', function(nodeId) {
@@ -144,8 +199,26 @@ sigma.parsers.gexf('data/opendatach.gexf', {
         s.refresh();
 
 
+        sigma.plugins.tooltips(s, s.renderers[0], {
+            node: {
+                template: '',
+                renderer: function(node, template) {
+                    node.degree = this.degree(node.id);
+                    return '<div id="link-twitter"><a href="https://twitter.com/'+node.label+'"><strong>'+node.label+'</strong> auf Twitter</a></div>'
+                }
+            }
+        });
+
+
         s.bind('clickNode', function(e){
-            selectNode(e.data.node)
+            selectNode(e.data.node);
+        });
+
+        s.bind('coordinatesUpdated', function(e) {
+            var visibleLink = document.querySelector('#twitter-link.visible');
+            if(visibleLink.length > 0) {
+                visibleLink[0].setAttribute('class', 'hidden')
+            }
         });
 
         _(['NothingAgency', 'KathyRiklin', 'OKFNLabs', 'swiss_geosummit', 'OpenDataZurich', 'reset']).each(function(name){
