@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1519px" height="462px" viewBox="0 0 1519 462" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>Linked Data Schema</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="354" y="211" width="334" height="67" rx="8"></rect>
+        <rect id="path-2" x="695" y="57" width="342" height="67" rx="8"></rect>
+        <rect id="path-3" x="525" y="309" width="179" height="36" rx="8"></rect>
+        <rect id="path-4" x="1086" y="311" width="433" height="36" rx="8"></rect>
+        <rect id="path-5" x="773" y="391" width="452" height="36" rx="8"></rect>
+        <rect id="path-6" x="0" y="307" width="464" height="36" rx="8"></rect>
+        <rect id="path-7" x="267" y="0" width="464" height="36" rx="8"></rect>
+        <rect id="path-8" x="460" y="154" width="464" height="36" rx="8"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M549.5,279.5 L638.5,365.5" id="Line" stroke="#979797" stroke-linecap="square"></path>
+        <path id="Line-decoration-1" d="M638.5,365.5 L632.818121,355.837896 L628.648824,360.152634 L638.5,365.5 Z" stroke="#979797" stroke-linecap="square"></path>
+        <path d="M660.5,330.5 L1083.5,330.5" id="Line-Copy-4" stroke="#979797" stroke-linecap="square"></path>
+        <path id="Line-Copy-4-decoration-1" d="M1083.5,330.5 L1072.7,327.5 L1072.7,333.5 L1083.5,330.5 Z" stroke="#979797" stroke-linecap="square"></path>
+        <path d="M482.5,270.5 L351.5,363.5" id="Line-Copy" stroke="#979797" stroke-linecap="square"></path>
+        <path id="Line-Copy-decoration-1" d="M351.5,363.5 L362.043095,359.694327 L358.569812,354.801853 L351.5,363.5 Z" stroke="#979797" stroke-linecap="square"></path>
+        <path d="M688.5,96.5 L247.5,96.5" id="Line-Copy-3" stroke="#979797" stroke-linecap="square"></path>
+        <path id="Line-Copy-3-decoration-1" d="M247.5,96.5 L258.3,99.5 L258.3,93.5 L247.5,96.5 Z" stroke="#979797" stroke-linecap="square"></path>
+        <path d="M622.5,213.5 L760.5,129.5" id="Line-Copy-2" stroke="#979797" stroke-linecap="square"></path>
+        <path id="Line-Copy-2-decoration-1" d="M760.5,129.5 L749.714815,132.552831 L752.834496,137.678023 L760.5,129.5 Z" stroke="#979797" stroke-linecap="square"></path>
+        <circle id="Oval" stroke="#979797" fill="#D8D8D8" cx="659.5" cy="407.5" r="38.5"></circle>
+        <circle id="Oval-Copy" stroke="#979797" fill="#D8D8D8" cx="317" cy="411" r="50"></circle>
+        <circle id="Oval-Copy-2" stroke="#979797" fill="#D8D8D8" cx="174" cy="98" r="50"></circle>
+        <text id="130’000" font-family="Helvetica" font-size="20" font-weight="normal" fill="#0F323F">
+            <tspan x="623" y="414">130’000</tspan>
+        </text>
+        <text id="Stadt-Bern" font-family="Helvetica" font-size="20" font-weight="normal" fill="#0F323F">
+            <tspan x="270" y="417">Stadt Bern</tspan>
+        </text>
+        <text id="Kanton-Bern" font-family="Helvetica" font-size="20" font-weight="normal" fill="#0F323F">
+            <tspan x="118" y="109">Kanton Bern</tspan>
+        </text>
+        <g id="Rectangle">
+            <use fill="#D8D8D8" fill-rule="evenodd" xlink:href="#path-1"></use>
+            <rect stroke="#979797" stroke-width="1" x="354.5" y="211.5" width="333" height="66" rx="8"></rect>
+        </g>
+        <g id="Rectangle-Copy">
+            <use fill="#D8D8D8" fill-rule="evenodd" xlink:href="#path-2"></use>
+            <rect stroke="#979797" stroke-width="1" x="695.5" y="57.5" width="341" height="66" rx="8"></rect>
+        </g>
+        <text id="sws.geonames.org/728" font-family="Helvetica" font-size="20" font-weight="normal" fill="#0F323F">
+            <tspan x="394" y="255">sws.geonames.org/7285212/</tspan>
+        </text>
+        <text id="http://sws.geonames." font-family="Helvetica" font-size="20" font-weight="normal" fill="#0F323F">
+            <tspan x="714" y="99">http://sws.geonames.org/2661551/</tspan>
+        </text>
+        <path d="M996.5,400.5 L996.5,333.5" id="Line" stroke="#979797" stroke-linecap="square"></path>
+        <path d="M490.5,91.5 L490.5,36.4909098" id="Line-Copy-5" stroke="#979797" stroke-linecap="square"></path>
+        <circle id="Oval-2" stroke="#979797" fill="#FFFFFF" cx="996.5" cy="329.5" r="5.5"></circle>
+        <circle id="Oval-2-Copy" stroke="#979797" fill="#FFFFFF" cx="490.5" cy="95.5" r="5.5"></circle>
+        <g id="Rectangle-Copy-2">
+            <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-3"></use>
+            <rect stroke="#979797" stroke-width="1" x="525.5" y="309.5" width="178" height="35" rx="8"></rect>
+        </g>
+        <g id="Rectangle-Copy-6">
+            <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-4"></use>
+            <rect stroke="#979797" stroke-width="1" x="1086.5" y="311.5" width="432" height="35" rx="8"></rect>
+        </g>
+        <g id="Rectangle-Copy-7">
+            <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-5"></use>
+            <rect stroke="#979797" stroke-width="1" x="773.5" y="391.5" width="451" height="35" rx="8"></rect>
+        </g>
+        <g id="Rectangle-Copy-3">
+            <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-6"></use>
+            <rect stroke="#979797" stroke-width="1" x="0.5" y="307.5" width="463" height="35" rx="8"></rect>
+        </g>
+        <g id="Rectangle-Copy-5">
+            <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-7"></use>
+            <rect stroke="#979797" stroke-width="1" x="267.5" y="0.5" width="463" height="35" rx="8"></rect>
+        </g>
+        <g id="Rectangle-Copy-4">
+            <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-8"></use>
+            <rect stroke="#979797" stroke-width="1" x="460.5" y="154.5" width="463" height="35" rx="8"></rect>
+        </g>
+        <text id="Anzahl-Einwohner" font-family="Helvetica" font-size="20" font-weight="normal" fill="#0F323F">
+            <tspan x="533" y="333">Anzahl Einwohner</tspan>
+        </text>
+        <text id="http://www.geonames." font-family="Helvetica" font-size="20" font-weight="normal" fill="#0F323F">
+            <tspan x="1101" y="336">http://www.geonames.org/ontology#population</tspan>
+        </text>
+        <text id="http://www.geonames." font-family="Helvetica" font-size="20" font-weight="normal" fill="#0F323F">
+            <tspan x="19" y="332">http://www.geonames.org/ontology#officialName</tspan>
+        </text>
+        <text id="http://www.geonames.-copy" font-family="Helvetica" font-size="20" font-weight="normal" fill="#0F323F">
+            <tspan x="286" y="25">http://www.geonames.org/ontology#officialName</tspan>
+        </text>
+        <text id="http://www.geonames." font-family="Helvetica" font-size="20" font-weight="normal" fill="#0F323F">
+            <tspan x="479" y="179">http://www.geonames.org/ontology#parentADM1</tspan>
+        </text>
+        <text id="http://www.w3.org/20" font-family="Helvetica" font-size="20" font-weight="normal" fill="#0F323F">
+            <tspan x="783" y="413">http://www.w3.org/2002/07/owl#equivalentClass</tspan>
+        </text>
+    </g>
+</svg>
