@@ -77,26 +77,36 @@ So gilt der komplette [Fahrplan der Schweizer ÖV](https://opendata.swiss/de/dat
 In dieser Übersicht wird auch deutlich, welche der 35 aufgeführten Organisationen effektiv besonders viele Daten beisteuern. Das [statistische Amt des Kantons Basel Stadt](https://opendata.swiss/de/organization/statistisches-amt-kanton-basel-stadt) bietet zwar 56 Datensätze an, die meisten davon aber stark aggregiert und darum mit weitaus weniger Potential zur Gewinnung neuer Erkenntnisse als zum Beispiel die komplette Liste der [SNF-Projekte](https://opendata.swiss/de/dataset/p3-export-projects-people-and-publications).
 
 
-## Die fast komplette Abwesenheit von Nutzern
+## Wenig sichtbare Nutzung
 
 Trotz der grossen Zunahmen an Datensätzen auf opendata.swiss gibt es bisher nur sehr wenige Showcases. Ausserordentlich viele Apps wurden für die ÖV-Daten realisiert. Im gesamten werden aber nur 1.6% der Datensätze in einer Applikation genutzt.
 
-Dieser Mangel an Ergebnissen der bisherigen Bemühungen ist ein grosser Rückschlag für die Aktivisten der Open Data-Bewegung. Es stellt sich die Frage ob die Grundannahmen falsch sind. Ob die Daten aus der Verwaltung doch nicht so interessant sind, wie immer behauptet wurden.
+Dieser Mangel an sichtbaren Ergebnissen der bisherigen Bemühungen ist ein grosser Rückschlag für die Aktivisten der Open Data-Bewegung. Es stellt sich die Frage ob die Grundannahmen falsch sind. Ob die Daten aus der Verwaltung doch nicht so interessant sind, wie immer behauptet wurden.
+
+Der Open Data-Thematik inherent ist aber auch, dass es sehr schwierig ist, abzuschätzen wo die angebotenen Daten überall eingesetzt werden. Werden die Daten als Dienst angeboten wie zum Beispiel bei den SBB, ist viel klarer, wie [gross die Nutzung ist](https://opentransportdata.swiss/de/showcase-5/). 
 
 Für Entwickler ist es in den wenigsten Fällen interessant, etwas bestehendes nochmals zu machen oder in Konkurrenz mit öffentlich finanzierten Eigenentwicklungen zu treten. Bei einer geringen Anzahl von Datenlieferanten und stark aggregierten Daten sind die Möglichkeiten eine Applikation zu entwickeln, die der Datenlieferant selbst nicht schon umgesetzt hat aber sehr beschränkt. Es bleibt darum meistens bei den offensichtlichen, einfach umsetzbaren Ideen wie die Anzeige von Tramhaltestellen auf einer Karte. Die Zahl der nicht-offensichtlichen Anwendungen bleibt beschränkt. Ein Beispiel ist der [Wohnungsrechner](https://www.wohnungsrechner.ch) der Mietinserate mit den lokalen Krankenkassenprämien und Steuern anreichert.
 
+## Antwort eins: Mehr Daten
 
-## Open Data Maturity
+Das Hauptanliegen von Juan-Pablo Lovato ist darum im Moment, mehr Organisationen auf die Plattform zu bringen, die ihre Daten ebenfalls anbieten. Oftmals sind interne Prozesse das grösste Hindernis zur Publikation von offenen Daten wie auch David Oesch bestätigt. Wenn das Wissen zum Umgang mit Daten in der Verwaltung nicht vorhanden ist, ist auch nicht zu erwarten, dass  die Veröffentlichung ohne einen erheblichen Mehraufwand funktioniert. 
 
-Das Hauptanliegen von Juan-Pablo Lovato ist darum im Moment, mehr Organisationen auf die Plattform zu bringen, die ihre Daten ebenfalls anbieten. Oftmals sind interne Prozesse das grösste Hindernis zur Publikation von offenen Daten wie auch David Oesch bestätigt. Wenn das Wissen zum Umgang mit Daten in der Verwaltung nicht vorhanden ist, ist auch nicht zu erwarten, dass  die Veröffentlichung ohne einen erheblichen Mehraufwand funktioniert. Ein Gegenbeispiel sind die Parlamentsdienste. Sie stellen fast ihre [kompletten Daten als API](https://opendata.swiss/de/dataset/webservices-httpws-old-parlament-ch) zur Verfügung und nutzen diese auch gleich selbst für ihre Webseite. OGD entsteht hier also wirklich ganz automatisch.
+Ein Gegenbeispiel sind die Parlamentsdienste. Sie stellen fast ihre [kompletten Daten als API](https://opendata.swiss/de/dataset/webservices-httpws-old-parlament-ch) zur Verfügung und nutzen diese auch gleich selbst für ihre Webseite. OGD entsteht hier also wirklich ganz automatisch.
 
-### Linked Data
 
-Ein weiterer Hoffnungsträger ist Linked Data. Nach der [5-Sterne-Einteilung](http://5stardata.info/de/) des Web-Erfinders Tim Berners-Lee ist Linked Open Data der Gipfel und das Ziel, das es zu erreichen gilt.
+## Antwort zwei: Qualitativ hochwertigere Daten
 
-Das Prinzip dabei ist, dass jeder Datenpunkt (z. B. "130000") über eine bestimmte Relation (z. B. [Anzahl Einwohner]) mit einer eindeutigen Entität (z. B. "Stadt Bern") verknüpft wird. Jede Entität kann wiederum selbst über Relationen mit anderen Entitäten verknüpft sein ("Stadt Bern" [liegt in] "Kanton Bern"). Die Grundprinzipien dabei sind simpel: Jede Entität muss eindeutig identifizierbar sein (meistens über eine URI wie z. B. "http://sws.geonames.org/7285212/") und Entitäten und Relationen lassen sich frei definieren. Diese Freiheit führt aber dazu, dass es die unterschiedlichen Relationen/Entitäten wiederum [zueinander in ein Verhältnis](http://ceur-ws.org/Vol-1709/BMDID_2016_paper_11.pdf) gesetzt werden müssen. Zum Beispiel würde ich meine Relation [liegt in] mit der fremden Definition [within the boundaries of] gleichsetzen. Ist dies geschehen, sind zwei unterschiedliche Datensätze plötzlich interoperabel.
+Ein weiterer Hoffnungsträger ist Linked Data. Nach der [5-Sterne-Einteilung](http://5stardata.info/de/) des Web-Erfinders Tim Berners-Lee ist Linked Open Data der Gipfel und das Ziel, das es bei der Datenqualität zu erreichen gilt.
 
-Linked Data vereinfacht so Verknüpfung von Datensätzen aus verschiedenen Städten, Kantonen, vor allem aber aus verschiedenen Ländern. Die selbe Verknüpfung ist aber im Prinzip auch möglich, wenn zwischen den Datenlieferanten ein Einverständnis über das Datenformat herrscht. Ein faszinierendes Beispiel dazu ist die Applikation [Rome2Rio](https://www.rome2rio.com) die GTFS-Transportdaten verschiedenster Transportunternehmen kombiniert um weltweit Routenvorschläge für den öffentlichen Verkehr zu machen und damit teilweise qualitativ sogar Google übertrifft.
+<br />
+<img alt="Schema zur Funktionsweise von Linked Data" src="linked data/Linked Data Schema.svg" />
+
+<br />
+
+
+Das Prinzip dabei ist, dass jeder Datenpunkt (z. B. "130000") über eine bestimmte Relation (z. B. [Anzahl Einwohner]) mit einer eindeutigen Entität (z. B. "Stadt Bern") verknüpft wird. Jede Entität kann wiederum selbst über Relationen mit anderen Entitäten verknüpft sein ("Stadt Bern" [liegt in] "Kanton Bern"). Die Grundprinzipien dabei sind simpel: Jede Entität und jede Relation muss eindeutig identifizierbar sein. Darum werden statt Namen in den meisten Fällen URIs wie z. B. "http://sws.geonames.org/7285212/" gebraucht. Die Entitäten und Relationen lassen sich aber im Prinzip frei definieren. Diese Freiheit macht es wiederum nötig, dass die unterschiedlichen Relationen/Entitäten [zueinander in ein Verhältnis](http://ceur-ws.org/Vol-1709/BMDID_2016_paper_11.pdf) gesetzt werden müssen. Zum Beispiel würde ich meine Relation [Anzahl Einwohner] mit der fremden Definition [http://www.geonames.org/ontology#population] gleichsetzen. Darzu verwende ich die Relation [http://www.w3.org/2002/07/owl#equivalentClass]. Ist dies geschehen, sind zwei unterschiedliche Datensätze plötzlich interoperabel.
+
+Linked Data vereinfacht so Verknüpfung von Datensätzen aus verschiedenen Städten, Kantonen, vor allem aber aus verschiedenen Ländern. Eine ähnliche Verknüpfung ist aber im Prinzip auch möglich, wenn zwischen den Datenlieferanten ein Einverständnis über das Datenformat herrscht. Ein faszinierendes Beispiel dazu ist die Applikation [Rome2Rio](https://www.rome2rio.com) die GTFS-Transportdaten verschiedenster Transportunternehmen kombiniert um weltweit Routenvorschläge für den öffentlichen Verkehr zu machen und damit qualitativ teilweise sogar Google übertrifft.
 
 
 ## Fazit
