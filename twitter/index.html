@@ -1,3 +1,6 @@
+<html>
+<head>
+    <meta charset="UTF-8" />
 <!-- START SIGMA IMPORTS -->
 <script src="js/sigmajs/src/sigma.core.js"></script>
 <script src="js/sigmajs/src/conrad.js"></script>
@@ -31,63 +34,60 @@
 <script src="js/sigmajs/plugins/sigma.parsers.gexf/gexf-parser.js"></script>
 <script src="js/sigmajs/plugins/sigma.parsers.gexf/sigma.parsers.gexf.js"></script>
 <script src="js/underscore-min.js"></script>
-<div id="container">
   <style>
-    #graph-container {
-      top: 60px;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      position: absolute;
-      /*background-color: #222222;*/
-    }
+      body {
+          font-family: sans-serif;
+      }
 
-            .buttongroup {
-                width: 100%;
-                text-align: center;
-                margin-top: 20px
-            }
+      #graph-container {
+          top: 60px;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          position: absolute;
+      }
 
 
-            .buttongroup button {
-                background: none;
-                border: 1px solid #777;
-                color: inherit;
-                font: inherit;
-                line-height: normal;
-                padding: 5px;
-                margin: 0;
-                box-sizing: border-box;
-                font-family: sans-serif;
-            }
+      .buttongroup {
+          width: 100%;
+          text-align: center;
+          margin-top: 20px;
+          z-index: 10;
+      }
 
-            .buttongroup button:first-child {
-                border-radius: 5px 0 0 5px;
-            }
+      .buttongroup button {
+          background: #fff;
+          border: 1px solid #777;
+          color: inherit;
+          font: inherit;
+          line-height: normal;
+          padding: 5px;
+          margin: 0;
+          box-sizing: border-box;
+          font-family: sans-serif;
+          font-size: 0.7em;
+          z-index: 10;
+      }
 
-            .buttongroup button:last-child {
-                border-radius: 0 5px 5px 0;
-            }
+      .buttongroup button:not(:first-child) {
+          margin-left: -5px;
+      }
 
-            .buttongroup button:not(:first-child) {
-                margin-left: -5px;
-            }
+      .buttongroup button:focus {
+          background-color: aliceblue;
+          outline: none;
+      }
 
-            .buttongroup button:focus {
-                background-color: aliceblue;
-                outline: none;
-            }
-
-            #link-twitter {
-                position: relative;
-                background-color: rgba(255,1255,255,1);
-                padding: 10px;
-                border-radius: 3px;
-                font-size: 0.8em;
-                top: -25px;
-                left: 0px;
-                border: 1px solid #7F7F7F;
-            }
+      #link-twitter {
+          position: relative;
+          background-color: rgba(255, 1255, 255, 1);
+          padding: 10px;
+          border-radius: 3px;
+          font-size: 0.8em;
+          top: -25px;
+          left: 0px;
+          border: 1px solid #7F7F7F;
+      }
 
       #link-twitter a {
           text-decoration: none;
@@ -95,52 +95,75 @@
           font-family: sans-serif;
       }
 
+      #link-twitter:before {
+          content: '';
+          position: absolute;
+          border-style: solid;
+          border-width: 10px 12px 0;
+          border-color: #7F7F7F transparent;
+          display: block;
+          width: 0;
+          z-index: 0;
+          margin-left: -12px;
+          bottom: -11px;
+          left: 45%;
+      }
 
+      #link-twitter:after {
+          content: '';
+          position: absolute;
+          border-style: solid;
+          border-width: 10px 12px 0;
+          border-color: rgba(255, 255, 255, 1) transparent;
+          display: block;
+          width: 0;
+          z-index: 1;
+          margin-left: -12px;
+          bottom: -10px;
+          left: 45%;
+      }
 
-        #link-twitter:before
-        {
-            content: '';
-            position: absolute;
-            border-style: solid;
-            border-width: 10px 12px 0;
-            border-color: #7F7F7F transparent;
-            display: block;
-            width: 0;
-            z-index: 0;
-            margin-left: -12px;
-            bottom: -11px;
-            left: 45%;
-        }
+      #legende {
+          margin-top: 40px;
+      }
 
+      #legende h1 {
+          font-size: 14px;
+          width: 200px;
+      }
 
-        #link-twitter:after
-        {
-            content: '';
-            position: absolute;
-            border-style: solid;
-            border-width: 10px 12px 0;
-            border-color: rgba(255,255,255,1) transparent;
-            display: block;
-            width: 0;
-            z-index: 1;
-            margin-left: -12px;
-            bottom: -10px;
-            left: 45%;
-        }
+      #legende li {
+          list-style: none;
+          font-size: 14px;
+      }
+
+      .color {
+          display: inline-block;
+          height: 10px;
+          width:10px;
+      }
 
   </style>
-
-
+</head>
+<body>
 
   <div id="graph-container"></div>
   <div class="buttongroup">
-      <button id="twitter-NothingAgency">NothingAgency</button>
-      <button id="twitter-KathyRiklin">KathyRiklin</button>
-      <button id="twitter-OKFNLabs">OKFNLabs</button>
-      <button id="twitter-swiss_geosummit">swiss_geosummit</button>
-      <button id="twitter-OpenDataZurich">OpenDataZurich</button>
-      <button id="twitter-reset">Opendatach</button>
+      <button id="twitter-NothingAgency"><strong>ICT:</strong> Nothing Agency</button>
+      <button id="twitter-KathyRiklin"><strong>Politik:</strong> Kathy Riklin</button>
+      <button id="twitter-OKFNLabs"><strong>Open Data:</strong> OKFN Labs</button>
+      <button id="twitter-swiss_geosummit"><strong>Geoinformation:</strong> Swiss Geosummit</button>
+      <button id="twitter-OpenDataZurich">Open Data Zürich</button>
+      <button id="twitter-reset"><strong>Ganzes Netz:</strong> opendata.ch</button>
   </div>
+  <ul id="legende">
+      <h1>Wie oft hat der Nutzer die Hashtags <em>#opendatach</em> und <em>#makeopendata</em> verwendet</h1>
+      <li><span class="color"></span> Nie</li>
+      <li><span class="color"></span> 1-10 Mal</li>
+      <li><span class="color"></span> 10-30 Mal</li>
+      <li><span class="color"></span> 30-100 Mal</li>
+      <li><span class="color"></span> über 100 Mal</li>
+  </ul>
 </div>
 
 <script>
@@ -175,6 +198,10 @@ sigma.parsers.gexf('data/opendatach.gexf', {
         //    ['#edf8fb','#b3cde3','#8c96c6','#8856a7','#810f7c'];
 
 
+        _(document.querySelectorAll('#legende .color')).each(function(el, i){
+            el.setAttribute('style', 'background-color:'+colorscheme[i]);
+        });
+
         function color(value) {
             value = Number(value);
 
@@ -192,8 +219,8 @@ sigma.parsers.gexf('data/opendatach.gexf', {
 
         _(s.graph.nodes()).each(function (node) {
             node.color = color(node.attributes.tweets);
-            if(node.attributes.directfollow === 1 && node.attributes.tweets < 1)
-                node.color = "#ccb";
+            //if(node.attributes.directfollow === 1 && node.attributes.tweets < 1)
+                // node.color = "#ccb"; // directfollow or not, is not so important
             node.size = node.attributes.followers / 1000;
         });
         s.refresh();
@@ -253,3 +280,5 @@ sigma.parsers.gexf('data/opendatach.gexf', {
 
 
 </script>
+</body>
+</html>
