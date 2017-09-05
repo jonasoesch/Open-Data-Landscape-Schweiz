@@ -1,16 +1,29 @@
 # Des Kaisers offene Daten
 
-**Die Öffnung der Behördendaten wird oft als deren "Befreiung" beschrieben. Doch man mag sie auch mit einer schrittweisen Entkleidung vergleichen. Was tun, wenn die "nackten Zahlen" vor uns haben? Dies ist die Frage, der sich die Open Data-Community in der Schweiz aktuell stellt.**
+**Die Öffnung der Behördendaten wird oft als deren "Befreiung" beschrieben. Doch man mag sie auch mit einer schrittweisen Entkleidung vergleichen. Was tun, wenn wir die "nackten Zahlen" vor uns haben? Wer soll sie neu einkleiden? Und wie? Das ist die Frage, der sich die Open Data-Community in der Schweiz aktuell stellt.**
 
-2006 erliesse der Bund ein Gesetz, das die Bundesbehörden verpflichtet, sämtliche internen Informationen auf Anfrage herauszugeben. Als späte Folge des Fichenskandals in den 90er Jahren wurde das Öffentlichkeitsgesetz eingeführt um den Staatsapparat für die Öffentlichkeit transparenter zu machen. Der Bund gab somit seinen exklusiven Zugang zu diesen Informationen auf. Zur Freude, vor allem, vieler Journalisten deren Aufgabe dadruch erleichtert wurde.
+Das mit der Öfffnung der Behördendaten hat in der Schweiz schon eine längere Geschichte. Als späte Folge des Fichenskandals in den 90er Jahren erliess der Bund 2006 ein Gesetz, das die Bundesbehörden dazu verpflichtet, auf Anfrage sämtliche Informationen herauszugeben. Das Gesetz kennt dabei nur wenige Einschränkungen. Zum Beispiel den Schutz von persönlichen Daten.
+
+Das Öffentlichkeitsgesetz wurde eingeführt um den Staatsapparat für die Öffentlichkeit transparenter zu machen. Viele, bisher  nur interne, Informationen wurden nun von ihrem dicken Amtsmantel befreit. Zur Freude, vor allem, vieler Journalisten, deren Arbeit dadurch ungemein erleichtert wurde. Auch die meisten Kantone folgten dem Beispiel des Bundes und führten ähnliche Gesetze ein.
+
+<p><iframe id="landscape" src="cantons/dist/index.html" height="500px"></iframe></p> 
+
+*Map mit Kantonen und Bundesämtern. Zeigt welche Kantone ein Öffentlichkeitsgesetz haben und wie ihr Status bezüglich Open Data ist.*
 
 Wie durch Zufall prägte im gleichen Jahr die *Open Knowledge Foundation* den Begriff *Open Data*. Nach dem Grundsatz von Open Data, soll der Staat die Daten die er erhebt auch seinen Bürgern zugänglich machen. Eine der Hauptbegründungen war damals wie heute: mehr Transparenz und Demokratie.
 
-Obwohl Open Data und das Öffentlichkeitsgesetz Schwestern im Geiste sind, unterscheiden sie sich doch in wesentlichen Punkten. Das Öffentlichkeitsgesetz verlangt die Herausgabe von Daten. Open Data hingegen zusätzlich deren Freigabe.
+Die [*Open Defintion*](http://opendefinition.org/od/2.0/de/) fordert dazu eine Öffnung der Daten in dreifacher Hinsicht:
 
-Diese explizite Freigabe, ist ein oft übersehenes aber entscheidendes Kriterium von offenen Daten. Damit Daten als offen gelten können, muss der Herausgeber in einer Lizenz auf jegliche Ansprüche verzichten. Er kann also keinen Einfluss auf die spätere Verwendung der Daten mehr nehmen. Aus dem Datenherr wird der Datenlieferant**. Open Data ist ein Selbstbedienungsladen und niemand weiss, wer welche Datensätze wann wie nutzt.
+1. Offene Lizenz
+2. Freier Zugang
+3. Offenes Format
 
-++ Das führt bei den Anbietern oftmals zu Schwierigkeiten
+Obwohl Open Data und das Öffentlichkeitsgesetz Schwestern im Geiste sind, erfüllt das Öffentlichkeitsgesetz maximal Punkt zwei. Das Öffentlichkeitsgesetz verlangt lediglich die Herausgabe von Daten. Open Data hingegen deren komplette Freigabe.
+
+Diese Freigabe ist ein oft übersehenes aber entscheidendes Kriterium von offenen Daten. Sie geschieht nämlich explizit durch eine *offenen Lizenz*. In dieser verzichtet der Herausgeber auf jegliche Ansprüche. [^1] Er kann so rechtlich keinen Einfluss auf die spätere Verwendung der Daten nehmen. Die  Daten entledigen sich damit eines weiteren Stückes Ballasts.
+
++ Selbstbedienungssystem
++ Schwere Nachvollziehbarkeit
 
 2014 verabschiedete der Bundesrat eine Strategie zum Thema Open Data in er Massnahmen definiert um die Behördendaten in der Schweiz schrittweise zu Öffnen. Ähnliche Prozesse laufen parallel auch in vielen Kantonen.
 
@@ -60,6 +73,9 @@ In diesem Sinne würde ich der *Open Defintion* einen vierten Punkt hinzufügen,
 
 Ohne diese Kenntnisse, bleiben Daten, auch wenn sie offen sind, nackte Zahlen ohne Bedeutung für mein Leben.
 
+[^1]: Es ist in der Schweiz umstritten, ob Daten urhebrrechtlich geschützt sind. Vermutlich ist eine Lizenz darum gar nicht nötig. International ist sie aber durchaus von Bedeutung.
 
+
+Amtsmantel: http://www.lebendige-traditionen.ch/traditionen/00180/index.html
 
 <script src="presentation/presentation.js"></script>
