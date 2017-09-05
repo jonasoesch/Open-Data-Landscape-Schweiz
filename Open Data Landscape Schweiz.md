@@ -1,120 +1,65 @@
-# Open Data Landscape Schweiz
+# Des Kaisers offene Daten
 
-## «Open washing»
+**Die Öffnung der Behördendaten wird oft als deren "Befreiung" beschrieben. Doch man mag sie auch mit einer schrittweisen Entkleidung vergleichen. Was tun, wenn die "nackten Zahlen" vor uns haben? Dies ist die Frage, der sich die Open Data-Community in der Schweiz aktuell stellt.**
 
-«Open Data» klingt gut. Es hat den Geruch von Offenheit, Transparenz und Demokratie. Und seit Big Data ist klar, dass in Zukunft ohne Daten gar nichts mehr laufen wird.
+2006 erliesse der Bund ein Gesetz, das die Bundesbehörden verpflichtet, sämtliche internen Informationen auf Anfrage herauszugeben. Als späte Folge des Fichenskandals in den 90er Jahren wurde das Öffentlichkeitsgesetz eingeführt um den Staatsapparat für die Öffentlichkeit transparenter zu machen. Der Bund gab somit seinen exklusiven Zugang zu diesen Informationen auf. Zur Freude, vor allem, vieler Journalisten deren Aufgabe dadruch erleichtert wurde.
 
-Wie immer bei solchen Begriffen, sind Trittbrettfahrer nicht weit und es besteht die Gefahr von «Open Washing». Als erstes Pestizid gegen den «Open»-Wildwuchs dient die [Open Defintion](http://opendefinition.org/od/2.1/en/) der [Open Knowledge Foundation](https://okfn.org) (OKFN). Seit 2004 ist sie die Speerspitze der Open Data-Bewegung und ist dadurch zur zentralen Autorität geworden.
- 
-Die Open Definition verlangt, dass Daten sowohl frei zugänglich als auch frei verwertbar sein müssen um als «open» zu gelten. Zwar sind auf dem Internet zig Daten frei zugänglich, meistens fehlen aber klare Lizenzbestimmungen. Das ist in der Schweiz zwar nicht allzu dramatisch, weil Daten nicht urheberrechtlich geschützt sind, was hingegen im [EU-Ausland anders ist.](http://www.digitale-nachhaltigkeit.unibe.ch/unibe/portal/fak_wiso/a_bwl/inst_wi/abt_digital/content/e90958/e490158/e500681/e500852/rightcol550749/OpenDataVorlesung2017_Termin05_GastreferatSchlauri_ger.pdf). Eine Lizenz die die freie Verwertung von Daten explizit erlaubt und damit Rechtssicherheit schafft, ist deshalb oft das entscheidende Merkmal offener Daten. 
+Wie durch Zufall prägte im gleichen Jahr die *Open Knowledge Foundation* den Begriff *Open Data*. Nach dem Grundsatz von Open Data, soll der Staat die Daten die er erhebt auch seinen Bürgern zugänglich machen. Eine der Hauptbegründungen war damals wie heute: mehr Transparenz und Demokratie.
 
-## Open Science und Open Government Data
+Obwohl Open Data und das Öffentlichkeitsgesetz Schwestern im Geiste sind, unterscheiden sie sich doch in wesentlichen Punkten. Das Öffentlichkeitsgesetz verlangt die Herausgabe von Daten. Open Data hingegen zusätzlich deren Freigabe.
 
-Obwohl mit dieser Definition viele Daten disqualifiziert werden, sagt sie nichts zum Urheber der Daten. Ganz egal ob die Daten aus der Verwaltung, der Wissenschaft, von einem Unternehmen oder einer NGO stammen. Oder ob eine Privatperson ihr Haushaltsbudget mit einer offenen Lizenz publiziert. Alles geht als «Open Data» durch.
+Diese explizite Freigabe, ist ein oft übersehenes aber entscheidendes Kriterium von offenen Daten. Damit Daten als offen gelten können, muss der Herausgeber in einer Lizenz auf jegliche Ansprüche verzichten. Er kann also keinen Einfluss auf die spätere Verwendung der Daten mehr nehmen. Aus dem Datenherr wird der Datenlieferant**. Open Data ist ein Selbstbedienungsladen und niemand weiss, wer welche Datensätze wann wie nutzt.
 
-Die grosse Mehrheit der Diskussionen um «Open Data» drehen sich aber um Daten, die mit öffentlichen Geldern erzeugt wurden. Das heisst «Open Government Data» (OGD) und «Open Science». Die Argumentation dabei: «Wenn die Allgemeinheit für die Erhebung von Daten zahlt, muss sie auch Zugang zu diesen Daten haben.»
+++ Das führt bei den Anbietern oftmals zu Schwierigkeiten
 
-Der freie Zugang zu Forschungsdaten stellt in der Schweiz ein erstaunlich grosses Problem dar. Die grossen Hochschulen haben zwar bereits 2006 ihre Absicht erklärt, Publikationen und Daten *offen* zu publizieren. In der Praxis, ist das bisher aber nur [in wenigen Fällen](http://www.htwchur.ch/uploads/media/CSI_70_Huber.pdf) geschehen. Besonders mit der Publikation ihrer Rohdaten tun sich Forschende schwer. Auch aus Angst vor Fehlinterpretationen. «Mit Daten kann oft nur umgehen, wer sie erhoben hat» sagt zum Beispiel die Nationalrätin Jacqueline Badran. Trotzdem spricht sich der Schweizerische Nationalfonds klar für offene Forschungsdaten aus und verlangt ab Ende 2017 für alle Projekteingaben einen [expliziten Plan](http://www.snf.ch/de/derSnf/forschungspolitische_positionen/open_research_data/Seiten/default.aspx) zum Datenmanagement.
+2014 verabschiedete der Bundesrat eine Strategie zum Thema Open Data in er Massnahmen definiert um die Behördendaten in der Schweiz schrittweise zu Öffnen. Ähnliche Prozesse laufen parallel auch in vielen Kantonen.
 
-Die Bundesverwaltung ist seit Inkrafttreten des Öffentlichkeitsgesetzes 2006 verpflichtet, den Grossteil ihrer Daten auf Anfrage herauszugeben. Ähnliche Gesetzgebungen [existieren in den meisten Kantonen](https://www.oeffentlichkeitsgesetz.ch/deutsch/die-kantone). OGD geht noch einen Schritt weiter und zielt auf ein [Selbstbedienungssystem](https://www.admin.ch/opc/de/federal-gazette/2014/3493.pdf). Auch in der Hoffnung auf das Wertschöpfungspotential der Daten das auf [rund einer Milliarde Franken pro Jahr](https://www.egovernment.ch/de/umsetzung/e-government-schweiz-2008-2015/open-government-data-schweiz/) geschätzt wird.
+Diese Entwicklung wurde nicht zuletzt durch die Gründung des Vereins opendata.ch 2014 eingeleitet. Die Aktivisten des Vereins sind gut vernetzt in Politik, Medien und der IT-Branche. Obwohl der Verein auch immer wieder den wirtschaftlichen Nutzen von offenen Daten betont, sind die Mitglieder doch vor allem Idealisten.
 
+Diesen Eindruck habe ich jedenfalls, als ich Oleg Lavrovsky, den Community Manager des Vereins im Kaffee Effing in Bern treffe. Aus dem geplanten Interview wird bald eine Grundatzdiskussion. Lavrovsky sieht offene Daten in Zukunft als unverzichtbarer Teil unserer Infrastruktur. Wie Wasser oder Strom. 
 
-<iframe id="landscape" src="cantons/dist/index.html" height="500px"></iframe>
+Damit eine solche Infrastruktur aber Realität werden kann, braucht es wie bei Wasser und Strom aber Standards. In der Sprache der *Open Defintion* bedeutet das offene und maschinenlesbare Formate. Es ist durchaus nicht immer eindeutig, was ein offenes oder maschinenlesbares Format ist. ES hat sich jedoch ein Konses über eine handvoll Formate wie CSV, JSON oder TIFF gebildet.
 
-[*Map mit Kantonen und Bundesämtern. Zeigt welche Kantone ein Öffentlichkeitsgesetz haben und wie ihr Status bezüglich Open Data ist: 0: Keine Information, 1: In Evaluation, 2: In Vorbereitung, 3: Publikation](cantons/dist/index.html)
+Aus ihrem ursprünglichen Interpretationskontext herausgehoben, sind die Daten nun maschinenlesbar und einheitlich. Der letzte Schritt der Entkleidung ist die zentralisierung der Datensätze auf einer Plattform: opendata.swiss.
 
-Darum hat der Bundesrat 2014 eine nationale [Open Governement Data-Strategie](https://www.egovernment.ch/de/umsetzung/e-government-schweiz-2008-2015/open-government-data-schweiz/) verabschiedet. Eine der Vorgaben an die Verwaltung ist, Prozessanpassungen vorzunehmen, um ihre Daten ohne Zusatzaufwand publizieren zu können. Ein weiterer Teil ist die Einführung einer zentralen Stelle für offene Behördendaten:[opendata.swiss](http://opendata.swiss). Auch viele Kantone haben mittlerweilen Open Data-Strategien und/oder haben begonnen, ihre Daten offen zu publizieren.
+Die Plattform ist eine der zentralen Massnahmen der OGD-Strategie des Bundes. Sie sammelt seit 2015 alle offenen Datensätze aus Bundesämtern, Kantonen, Gemeinden und bundesnahen Betrieben. Das Resultat davon ist, was sonst, eine Zahl: 2048 Datensätze.
 
+Hier nimmt der Prozess des Entkleidens sein vorläufiges Ende. Die Datensätze die sich ursprünglich in ein Gewirr von Anbietern, Bestimmungen und Formaten hüllten sind nun entkleidet vor uns.
 
-<aside>
-### Timeline
+Als Besucher der Plattform merke ich schnell, wie wenig mir diese Zahl sagt. Ich möchte wissen was dahiner steckt. Was sind das für Daten? Was kann ich damit machen? Ist das viel?
 
-- 2004: Gründung der [Open Knowledge Foundation](https://okfn.org) in Camebridge
-- 2006: Inkrafttreten des [Öffentlichkeitsgesetzes](https://www.admin.ch/opc/de/classified-compilation/20022540/index.html) auf Bundesebene in der Schweiz
-- 2006: Unterzeichung der [Berliner Erklärung](https://openaccess.mpg.de/Berliner-Erklaerung) zu Open Access durch die Rektorenkonferenz der Schweizer Universitäten und der Fachhochschulen
-- 2011: Gründung des Vereins [opendata.ch](https://opendata.ch)
-- 2013: [Open Knowledge Conference](https://okcon.org) in Genf
-- 2014: [OGD-Strategie des Bundes](https://www.egovernment.ch/de/umsetzung/e-government-schweiz-2008-2015/open-government-data-schweiz/)
-- 2015: Launch opendata.swiss
-- 2017: [Open Access Strategie von swissuniversites](https://www.swissuniversities.ch/de/themen/hochschulpolitik/open-access/)
-- 2017: Obligatorium eines [Data Management Plans](http://www.snf.ch/de/derSnf/forschungspolitische_positionen/open_research_data/Seiten/default.aspx#Grundsatzerkl%E4rung%20des%20SNF%20zu%20Open%20Research%20Data) für Projekte die vom SNF gefördert werden
+Ich mache mich an die Beantwortung der letzten Frage. Der Prozess des Wiedereinkleidens beginnt.
 
-</aside>
+Die Gesamtheit der Datensätze auf der Plattform schlägt mit 60 GB zu buche. Aber nicht jeder Datensatz ist gleich geartet. Während Bildarchive schnell auf mehrere GB anwachsen, begnügen sich statistische Datensätze mit ein paar MB. Ich versuche es also mit der Anzahl Felder. Wieder ergibt sich ein anderes Bild. Und ein bisschen erwachen die Zahlen für mich zum Leben.
 
-## Die Open Data-Community
+++ Ob die grösse eines Datensatzes aber dessen wichtigstes Merkmal ist, lässt sich stark bezweifeln. Die Besucherzahlen auf jeden Fall zeigen nochmals ein anderes Bild.
 
-Obwohl die Forderung: «Gebt der Öffentlichkeit Zugang zu den Daten die sie finanziert hat», schnell einleuchtet, ist Open Data wohl bis heute nicht auf dem Radar der meisten Politiker und Behörden. Der Verein *opendata.ch* setzt sich deshalb seit 2011 als Ableger der OKFN für die Einführung von Open Data in Wissenschaft und Verwaltung ein. Seine Mitglieder/innen weibeln, lobbyieren und werben an den verschiedensten Stellen für die Öffnung von Daten. 
+Oftmals werden Informationsvisualisierungen als wichtiger Faktor beschrieben um offene Daten für Laien zugänglicher zu machen. So präsentieren zum Beispiel der Staat Singapur oder auch die USA ihre Datensätze visuell aufbereitet auf der Startseite.
 
-So auch Oleg Lavrovsky, den ich im Kaffee Effinger in Bern treffe. Er hilft bei der Organisation mehrerer [Hackathons](https://make.opendata.ch/) zum Thema, führt eine «[School of Data](https://schoolofdata-ch.github.io/)» durch und verarbeitet auch mal die Daten zum ewigen Gotthardstau zu einem [Datenkunstwerk](https://twitter.com/sodacamper/status/887316690161332224). Aus dem Interview wird bald eine Grundsatzdiskussion. Für Lavrovsky sind offene Daten Teil der grundlegenden Infrastruktur jedes Landes. Ähnlich wichtig wie die Versorgung mit Trinkwasser.  «Jeder nutzt Daten, aber kaum jemand macht sich Gedanken darüber». 
+Visualisierungen zeichnen sich auch für die ersten erfolgreichen Open Data Projekte verantwortlich. Seien es die Standorte der Zürcher Freibäder oder die Pünktlichkeit der VBZ Tramlinien.
 
-Dennoch scheint Lavrovsky nicht ganz auf verlorenem Posten. opendata.ch zählt heute über 200 Mitglieder [[Quelle]] und die [jährliche Konferenz](https://opendata.ch/projects/conference-2017) ist gut besucht. Auch auf Twitter ist Verein gut vernetzt, mit [doppelt so viele Follower](https://twitter.com/opendatach) wie etwa [Energie Schweiz](https://twitter.com/energieschweiz) oder [ICT Schweiz](https://twitter.com/swissict).
+Aufregend wird es aber vor allem da, wo die Nutzung über die blosse Darstellung der vorhanden Daten hinausgeht. So zum Beispiel die App "foodly", die Datensätze kombiniert um dem Konsumenten Kontext zu seinen Einkäufen zu geben. Zum Beispiel, wie lokal er gerade eingekauft hat und ob es alternative Produkte gibt, die weniger weit gereist sind.
 
-<iframe id="twitter" src="twitter/index.html" height="1000px"></iframe>
+Ein solches, neues Einkleider der Daten, geschieht oft in Kontexten, die vielen Datennutzern vertraut sind. So hat zum Beispiel die Veröffentlichung der ÖV-Fahrplandaten dieses Jahr, viele Pendler inspiriert, den Fahrplan für sich neu zu interpretieren.
 
-[[*Twitter-Netzwerk des Vereins opendata.ch. Zeigt die Follower des Vereins-Accounts und ihre Unternetzwerke. Grosse Accounts (>10'000 Follower) wurden gefiltert. Um die Grafik übersichtlicher zu gestalten, wurden die Accounts die innerhalb des Netwerks weniger als 25 Verbindungen haben ebenfalls gefiltert*]]
+Das Erklärt auch, warum Geodaten in der Open Data-Bewegung immer eine führende Rolle gespielt haben. Sie bringen ihren Kontext gleich mit und sind so in der Lebensrealität der Leute veranktert.
 
-Unter den Followern von [opendata.ch](https://twitter.com/opendatach) und seinem Umfeld lassen sich schnell vier Interessengruppen ausmachen: ICT, Politiker, die Presse und die Internationale Open Data-Bewegung. Sowohl aus der Software-Entwicklung, wie aus der Presse kommen die Nutzer/innen von offenen Daten. So nutzt der Tagesanzeiger in seinem [Artikel zur Pünktlichkeit der Tramlinien](http://interaktiv.tagesanzeiger.ch/2016/so-puenktlich-ist-ihre-vbz-linie) offene Daten der Stadt Zürich. Auch die beiden anderen Interessengruppen erstaunen wenig, setzen sie sich doch politisch mit dem Thema auseinander. Vielmehr überrascht die Abwesenheit der Datenanbieter auf Twitter; weder aus der Wissenschaft, noch aus der Verwaltung finden sich grössere Gruppen von Leuten die auf Twitter mitreden.
+Den Datensätzen einen Kontext zu geben ist auch das Anliegen der Hackathons, die die Open Data-Aktivisten regelmässig organisieren. Sie sind immer themenbezogen und geben den versuchen den grösseren Kontext der Daten zu vermitteln.
 
-JuanPablo Lovato, der Projektkoordinator des Projekts „Open Government Data Schweiz“  wünschst sich eine stärkere Präsenz, weil der Austausch mit den Nutzern zentral für die Weiterentwicklung des Open Data-Angebots ist. Die Datenanbieter gehen oftmals davon aus, dass es mit der Publikation getan sei. Damit fehlen aber oftmals wichtige Kontextinformationen wie Wissen zur Erhebung oder Anwendungszweck. Nicht zuletzt profitieren die Stellen auch nicht vom Feedback anderer Datennutzer. 
+Auch Tim Berners-Lee, sieht das Ziel von Open Data schliesslich in der Kontextualisierung. Seine 5-Sterne Open Data-Skala weist *Linked Open Data* als die letzte Stufe aus. Das bedeutet, dass Datensätze miteinander in Relation gesetzt werden können.
 
-Es gibt aber auch gut sichtbare Ausnahmen, wie die [Open Data-Abteilung der Stadt Zürich](https://twitter.com/opendatazurich). Selbst ein fast ebenso grosser Hub wie der Verein opendata.ch. Oder auch das [Geoportal des Bundes](https://www.geo.admin.ch). Überhaupt scheint der Bereich «Geoinformation» ein Vorreiter in Sachen Publikation von Verwaltungsdaten zu sein. So schart sich auch um das [swiss_geoportal](https://twitter.com/swiss_geoportal) eine  eigene kleine Community.
+Die Aufgabe ist gross und die Gefahren sind vielfältig. Daten zu nutzen, die man selbst nicht erhoben hat, birgt immer das Risiko, sie falsch zu interpretieren.
 
-Das bestätigt auch David Oesch von Swisstopo. Seit den 90er Jahren beschäftige man sich in Geoinformationskreisen mit dem Austausch der Daten zwischen verschiedenen Stellen. Es bestehe darum bereits viel Erfahrung, auf die man zurückgreifen könne. Das zeigt sich deutlich auf opendata.swiss: ein grosser Teil der vorhandenen Daten sind Geodaten. Oesch meint dazu «[Achtzig Prozent der Daten haben Raumbezug](https://povesham.wordpress.com/2010/02/22/the-source-of-the-assertion-that-80-of-all-organisational-information-is-geographic/). Swisstopo verwaltet darum die Geo-Daten der [meisten Bundesämter](https://www.geocat.admin.ch/de/information/partner.html)».[[naja]]
+Jacqueline Badran warnt darum in einer Botschaft an die Open Data-Hacker 2013 auch vor einer "Scheinobjektivität". Sie entsteht, wenn Aussagen zwar mit Zahlen belegt werden, diese aber falsch interpretiert wurden.
 
-## Die Plattform: opendata.swiss
+Die Kehrseite ist aber auch, dass die Sekundärnutzung der Daten Fehler, Lücken und Fehlinterpretationen aufhebt. Eine Feedback-Kultur die dazu führt, dass Glaubwürdigkeit der Daten am Ende höher ist und nicht tiefer.
 
-Um eine zentrale Anlaufstelle zu haben, betreibt das Bundesarchiv im Auftrag des Bundesrates die Plattform «opendata.swiss». In diesem Verzeichnis finden sich Daten von Behörden aller drei Staatsebenen; Bund, Kantone und Gemeinden. Auch staatsnahe Unternehmen wie die SBB veröffentlichen hier ihre Datensätze. Im letzten Jahr hat sich die Zahl der Datensätze auf über [2200 fast verdoppelt](https://opendata.ch/wordpress/files/2017/01/ODC2017-PräsentationKellerhals.pdf). Das sieht eindrücklich aus, ist aber wohl nicht mehr als die Spitze des Eisberges wie Matthias Stürmer vom Institut für Digitale Nachhaltigkeit an der Universität Bern bemerkt. Zusammen mit seinem Kollegen Oliver Neumann stellt er für die 121 Bundesämter ein Dateninventar zusammen. «Natürlich gibt es vieles was sich nicht für die Veröffentlichung eignet» bemerkt Neumann. «Zum Beispiel wenn Personendaten im Spiel sind». Diese sind nach dem [Datenschutzgesetz](https://www.admin.ch/opc/de/classified-compilation/19920153/201401010000/235.1.pdf) sehr streng geschützt und wann immer Daten Rückschlüsse auf einzelne Personen zulassen, dürfen diese nur unter besonderen Umständen veröffentlich werden.
+++ Data Literacy
 
-Auch dürften nicht alle Datensätze auf das gleiche Interesse stossen. Oder wann wollten Sie das letzte Mal wissen wo in Ihrer Nähe sich ein [Amphibienlaichgebiet nationaler Bedeutung](bundesinventar-der-amphibienlaichgebiete-von-nationaler-bedeutung-wanderobjekte) befindet?
+In diesem Sinne würde ich der *Open Defintion* einen vierten Punkt hinzufügen, der dazu führt, dass Daten wirklich als offen bezeichnet werden können: der Kontext um die Daten muss für die Sekundärnutzer offen sein.
 
-Die Zahl von 2200 Datensätzen ist insofern unfair, als dass es unter den Einträgen auf opendata.swiss wahre Perlen gibt, die in dieser Statistik kaum zu Buche schlagen.
+Ohne diese Kenntnisse, bleiben Daten, auch wenn sie offen sind, nackte Zahlen ohne Bedeutung für mein Leben.
 
-So zählt der komplette [Fahrplan der Schweizer ÖV](https://opendata.swiss/de/dataset/fahrplan-2017-gtfs) mit einem Eintrag genau gleich viel, wie die [Liste der 50 Hauptsprachen](https://opendata.swiss/de/dataset/haufigste-hauptsprachen) in der Stadt Zürich.
-
-[[*Übersicht über die Datensätze auf opendata.swiss nach Anzahl der Einträge im Datensatz und geordnet nach Organisation*]]
-
-In dieser Übersicht wird auch deutlich, welche der 35 aufgeführten Organisationen besonders viele Daten beisteuern. Das [statistische Amt des Kantons Basel Stadt](https://opendata.swiss/de/organization/statistisches-amt-kanton-basel-stadt) bietet zwar 56 Datensätze an, die meisten davon aber stark aggregiert und darum mit weitaus weniger Potential zur Gewinnung neuer Erkenntnisse, als zum Beispiel die komplette Liste der [SNF-Projekte](https://opendata.swiss/de/dataset/p3-export-projects-people-and-publications).
-
-
-## Wenig sichtbare Nutzung
-
-Trotz der Zunahme an Datensätzen auf opendata.swiss gibt es bisher nur sehr wenige Showcases. Ausserordentlich viele Apps wurden für die ÖV-Daten realisiert. In den aufgeführten Showcases werden gerade mal 1.6% der Datensätze genutzt.
-
-Dieser Mangel an sichtbaren Ergebnissen der bisherigen Bemühungen ist ein vernichtender Rückschlag für die Aktivisten und Aktivistinnen der Open Data-Bewegung. Es stellt sich die Frage ob die Grundannahmen falsch sind. Ob die Daten aus der Verwaltung doch nicht so interessant sind, wie immer behauptet wurden.
-
-Der Open Data-Thematik inherent ist aber auch, die Schwierigkeit abzuschätzen wo die angebotenen Daten eingesetzt werden. Werden die Daten als Dienst angeboten wie bei den SBB, ist viel klarer, wie [gross die Nutzung ist](https://opentransportdata.swiss/de/showcase-5/).
-
-Für Entwickler ist es in den wenigsten Fällen interessant, etwas bestehendes nochmals zu programmieren oder in Konkurrenz mit öffentlich finanzierten Eigenentwicklungen zu treten. Bei einer geringen Anzahl von Datenlieferanten und stark aggregierten Daten sind die Möglichkeiten eine Applikation zu entwickeln, die der Datenlieferant nicht bereits selbst umgesetzt hat jedoch beschränkt. Es bleibt darum meist bei den offensichtlichen, einfach umsetzbaren Ideen, wie die Anzeige von Tramhaltestellen auf einer Karte. Die Zahl der nicht-offensichtlichen Anwendungen bleibt beschränkt. Ein Beispiel ist der [Wohnungsrechner](https://www.wohnungsrechner.ch) der Mietinserate mit den lokalen Krankenkassenprämien und Steuern ergänzt.
-
-## Antwort eins: Mehr Daten
-
-Das Hauptanliegen von JuanPablo Lovato ist deshalb im Moment, mehr Organisationen auf die Plattform zu bringen, die ihre Daten anbieten. Oft sind interne Prozesse das grösste Hindernis zur Publikation von offenen Daten, wie auch David Oesch bestätigt. Wenn das Wissen zum Umgang mit Daten in der Verwaltung nicht vorhanden ist, ist auch nicht zu erwarten, dass  die Veröffentlichung ohne einen erheblichen Mehraufwand funktioniert. 
-
-Ein Gegenbeispiel sind die Parlamentsdienste. Sie stellen fast ihre [kompletten Daten als API](https://opendata.swiss/de/dataset/webservices-httpws-old-parlament-ch) zur Verfügung und nutzen diese auch gleich selbst für ihre Webseite. OGD entsteht hier ganz automatisch.
-
-
-## Antwort zwei: Qualitativ hochwertigere Daten
-
-Ein weiterer Hoffnungsträger ist Linked Data. Nach der [5-Sterne-Einteilung](http://5stardata.info/de/) des Web-Erfinders Tim Berners-Lee ist Linked Open Data das Ziel, das es bei der Datenqualität zu erreichen gilt.
-
-<br />
-<img alt="Schema zur Funktionsweise von Linked Data" src="linked data/Linked Data Schema.svg" />
-
-<br />
-
- 
-Das Prinzip dabei ist, dass jeder Datenpunkt (`130'000`) über eine eindeutige Relation (`Anzahl Einwohner`) mit einer eindeutigen Entität (`Stadt Bern`) verknüpft wird. Jede Entität kann wiederum selbst über Relationen mit anderen Entitäten verknüpft sein (z. B. `Stadt Bern - liegt in - Kanton Bern`). Damit die Entitäten und Relationen sicher eindeutig sind, werden an Stelle von Namen meistens URIs verwendet. So zum Beispiel `sws.geonames.org/7285212` für die Stadt Bern und `http://www.geonames.org/ontology#population` für die Anzahl der Einwohner.
-
-Entitäten und Relationen lassen sich aber frei definieren. Diese Freiheit macht wiederum nötig, dass die unterschiedlichen Relationen/Entitäten [in ein Verhältnis](http://ceur-ws.org/Vol-1709/BMDID_2016_paper_11.pdf) gesetzt werden. Zum Beispiel würde die selbst definierte Relation `Anzahl Einwohner` mit der fremden Definition `http://www.geonames.org/ontology#population` gleichgesetzt. Dazu wird die die Relation `http://www.w3.org/2002/07/owl#equivalentClass` verwendet. Danach sind unterschiedliche Datensätze plötzlich interoperabel.
-
-Linked Data vereinfacht so Verknüpfung von Datensätzen aus verschiedenen Städten, Kantonen, vor allem aber aus verschiedenen Ländern. Eine ähnliche Verknüpfung ist auch möglich, wenn zwischen den Datenlieferanten ein Einverständnis über das Datenformat herrscht. Ein faszinierendes Beispiel dazu ist die Applikation [Rome2Rio](https://www.rome2rio.com) die GTFS-Transportdaten verschiedenster Transportunternehmen kombiniert, um weltweit Routenvorschläge für den öffentlichen Verkehr zu machen und damit qualitativ teilweise sogar Google übertrifft.
-
-
-## Fazit
-
-In jedem Fall entscheiden vermutlich das Volumen und die Diversität der vorhandenen Daten, ob sie zu neuen Anwendungen führen. Ob dies nun durch ein Mehr an publizierten Daten oder durch eine bessere Verlinkung erreicht wird. So auf jeden Fall die Annahme der Open Data-Aktivisten und Aktivistinnen.
-
-Die Zeit wird zeigen, ob diese Hoffnung begründet ist. Die Mühlen der Verwaltung mögen für viele in der Open Data-Community frustrierend langsam mahlen, aber sie mahlen nur in eine Richtung. So sagt auch Lovato: "Die Zeit arbeitet für uns. Irgendwann wird es selbstverständlich sein, dass Behördendaten frei zugänglich und Teil der Infrastruktur der Schweiz sind."
 
 
 <script src="presentation/presentation.js"></script>
