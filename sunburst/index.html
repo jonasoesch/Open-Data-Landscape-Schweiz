@@ -2,8 +2,9 @@
 <meta charset="utf-8">
 <style>
 
-path {
-}
+    #chart {
+        margin: 5% 10%;
+    }
 
     text {
         z-index: 10;
@@ -85,7 +86,6 @@ path {
 
 <div id="chart">
     <div id="chart-info"></div>
-    <div id="chart-datasets"></div>
 </div>
 <ul id="chart-perspectives" class="buttongroup">
     <li id="perspective-count" active="true" class="perspective"><button>Anzahl Datensätze</button></li>
@@ -103,7 +103,7 @@ path {
     
 
     // Dimensions of sunburst.
-    var width = document.body.clientWidth * 0.75;
+    var width = document.body.clientWidth * 0.8;
     var height = width;
     var radius = Math.min(width, height) / 2;
 
@@ -146,8 +146,6 @@ path {
     d3.select('#chart-info')
         .attr('style', "left: "+ (width / 4) +"px; top: "+ (height / 2 - height/15) +"px; width: "+width/2+"px;");
 
-    d3.select('#chart-datasets')
-        .attr('style', "left: "+(width)+"px; width: "+(width*0.333)+"px;")
 
 
     // Center to coordinate syste -> 0/0 is in the middle
@@ -311,7 +309,7 @@ path {
                 .style("opacity", 1);
 
             info(d);
-            highlighDatasetInList(d);
+            //highlighDatasetInList(d);
     }
 
 
