@@ -1,9 +1,15 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0;">
 <style>
 
+    body {
+        background-color: #D9D9D6;
+    }
+
     #chart {
-        margin: 5% 10%;
+        position: relative;
+        padding: 5%
     }
 
     text {
@@ -47,6 +53,7 @@
 .buttongroup {
     width: 100%;
     text-align: center;
+    -webkit-padding-start: 0;
 }
 
 .buttongroup button {
@@ -59,6 +66,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: sans-serif;
+    font-size: 0.7em;
 }
 
 .buttongroup li {
@@ -82,11 +90,235 @@
     outline: none;
 }
 
+    .legend {
+        position: absolute;
+        right: 3%;
+        top: 0;
+    }
+
+    .legend:nth-child(3) {
+        top: 70%;
+    }
+
+
+
+    .legend li {
+        list-style: none;
+        font-family: sans-serif;
+        font-size: 0.7em;
+    }
+
+    .legend svg {
+        position: relative;
+        top: 7px;
+        margin-right: 3px;
+    }
+
+
+
+    @media all and (max-width: 600px) {
+
+        body {
+            font-size: 0.8em;
+        }
+
+        .legend {
+            position:static;
+        }
+
+        .legend li {
+            display: inline-block;
+            margin-right: 5px;
+        }
+
+        .legend svg {
+            width: 12px;
+        }
+    }
+
+
 </style>
 
 <div id="chart">
+
+
     <div id="chart-info"></div>
+    <ul class="legend" id="legend-inner">
+        <li><strong>Innen: Datenerzeuger</strong></li>
+        <li>
+            <svg width="21px" height="21px" viewBox="0 0 21 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g id="Group-5" fill="#0A3073">
+                        <rect id="Rectangle-6-Copy-11" x="0" y="0" width="21" height="21"></rect>
+                    </g>
+                </g>
+            </svg>
+            Bund </li>
+        <li>
+
+            <svg width="21px" height="21px" viewBox="0 0 21 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+                <desc>Created with Sketch.</desc>
+                <defs></defs>
+                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g id="Group-5" transform="translate(0.000000, -27.000000)" fill="#3D315C">
+                        <rect id="Rectangle-6-Copy-8" x="0" y="27" width="21" height="21"></rect>
+                    </g>
+                </g>
+            </svg>
+            Kanton
+        </li>
+        <li>
+
+            <svg width="21px" height="21px" viewBox="0 0 21 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+                <desc>Created with Sketch.</desc>
+                <defs></defs>
+                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g id="Group-5" transform="translate(0.000000, -54.000000)" fill="#673342">
+                        <rect id="Rectangle-6-Copy-9" x="0" y="54" width="21" height="21"></rect>
+                    </g>
+                </g>
+            </svg>
+            Gemeinde
+        </li>
+        <li>
+
+            <svg width="21px" height="21px" viewBox="0 0 21 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+                <desc>Created with Sketch.</desc>
+                <defs></defs>
+                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g id="Group-5" transform="translate(0.000000, -82.000000)" fill="#5C5C66">
+                        <rect id="Rectangle-6-Copy-10" x="0" y="82" width="21" height="21"></rect>
+                    </g>
+                </g>
+            </svg>
+            Organisation
+        </li>
+    </ul>
+    <ul class="legend" id="legend-outer">
+        <li><strong>Aussen: Datenformat</strong></li>
+        <li>
+            <svg width="21px" height="21px" viewBox="0 0 21 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+                <desc>Created with Sketch.</desc>
+                <defs></defs>
+                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g id="Group-4">
+                        <g id="Group-6">
+                            <rect id="Rectangle-6-Copy-3" fill="#A93955" x="0" y="0" width="21" height="21"></rect>
+                            <rect id="Rectangle-6-Copy-3" fill="#931A38" x="0" y="0" width="10.5" height="21"></rect>
+                        </g>
+                    </g>
+                </g>
+            </svg>
+            TSV
+        </li>
+        <li>
+
+            <svg width="21px" height="21px" viewBox="0 0 21 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+                <desc>Created with Sketch.</desc>
+                <defs></defs>
+                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g id="Group-4" transform="translate(0.000000, -28.000000)">
+                        <g id="Group-7" transform="translate(0.000000, 28.000000)">
+                            <rect id="Rectangle-6" fill="#FF9B81" x="0" y="0" width="21" height="21"></rect>
+                            <rect id="Rectangle-6-Copy-7" fill="#F17562" x="0" y="0" width="10.5" height="21"></rect>
+                        </g>
+                    </g>
+                </g>
+            </svg>
+            Multiformat
+        </li>
+        <li>
+
+            <svg width="21px" height="21px" viewBox="0 0 21 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+                <desc>Created with Sketch.</desc>
+                <defs></defs>
+                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g id="Group-4" transform="translate(0.000000, -56.000000)">
+                        <g id="Group-8" transform="translate(0.000000, 56.000000)">
+                            <rect id="Rectangle-6-Copy" fill="#FFAF43" x="0" y="0" width="21" height="21"></rect>
+                            <rect id="Rectangle-6-Copy-12" fill="#EF9733" x="0" y="0" width="10.5" height="21"></rect>
+                        </g>
+                    </g>
+                </g>
+            </svg>
+            ZIP
+        </li>
+        <li>
+
+            <svg width="21px" height="21px" viewBox="0 0 21 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+                <desc>Created with Sketch.</desc>
+                <defs></defs>
+                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g id="Group-4" transform="translate(0.000000, -85.000000)">
+                        <g id="Group-9" transform="translate(0.000000, 85.000000)">
+                            <rect id="Rectangle-6-Copy-2" fill="#EFCF47" x="0" y="0" width="21" height="21"></rect>
+                            <rect id="Rectangle-6-Copy-13" fill="#EFC047" x="0" y="0" width="10.5" height="21"></rect>
+                        </g>
+                    </g>
+                </g>
+            </svg>
+            PC-AXIS
+        </li>
+        <li>
+
+            <svg width="21px" height="21px" viewBox="0 0 21 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+                <desc>Created with Sketch.</desc>
+                <defs></defs>
+                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g id="Group-4" transform="translate(0.000000, -113.000000)">
+                        <g id="Group-10" transform="translate(0.000000, 113.000000)">
+                            <rect id="Rectangle-6-Copy-4" fill="#4B8AA6" x="0" y="0" width="21" height="21"></rect>
+                            <rect id="Rectangle-6-Copy-14" fill="#3C7A96" x="0" y="0" width="10.5" height="21"></rect>
+                        </g>
+                    </g>
+                </g>
+            </svg>
+            CSV
+        </li>
+        <li>
+
+            <svg width="21px" height="21px" viewBox="0 0 21 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+                <desc>Created with Sketch.</desc>
+                <defs></defs>
+                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g id="Group-4" transform="translate(0.000000, -141.000000)">
+                        <g id="Group-11" transform="translate(0.000000, 141.000000)">
+                            <rect id="Rectangle-6-Copy-5" fill="#5FA7A1" x="0" y="0" width="21" height="21"></rect>
+                            <rect id="Rectangle-6-Copy-15" fill="#4C9992" x="0" y="0" width="10.5" height="21"></rect>
+                        </g>
+                    </g>
+                </g>
+            </svg>
+            XLS
+        </li>
+        <li>
+            <svg width="21px" height="21px" viewBox="0 0 21 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+                <desc>Created with Sketch.</desc>
+                <defs></defs>
+                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g id="Group-4" transform="translate(0.000000, -169.000000)">
+                        <g id="Group-12" transform="translate(0.000000, 169.000000)">
+                            <rect id="Rectangle-6-Copy-6" fill="#CCC2AA" x="0" y="0" width="21" height="21"></rect>
+                            <rect id="Rectangle-6-Copy-16" fill="#B7AA8A" x="0" y="0" width="10.5" height="21"></rect>
+                        </g>
+                    </g>
+                </g>
+            </svg>
+            Andere
+        </li>
+    </ul>
 </div>
+
 <ul id="chart-perspectives" class="buttongroup">
     <li id="perspective-count" active="true" class="perspective"><button>Anzahl Datensätze</button></li>
     <li id="perspective-size" class="perspective"><button>Dateigrösse</button></li>
@@ -112,13 +344,13 @@
     function color(dataset) {
 
         var ebene = {
-            "confederation": "#0F2D40",
-            "canton": "#194759",
-            "commune": "#296B73",
-            "other": "#CCC0A1"
+            "confederation": "#0A3073",//"#0F2D40",
+            "canton": "#3D315C",//"#194759",
+            "commune": "#673342",//"#296B73",
+            "other": "#5C5C66"//"#CCC0A1"
         };
 
-        if (dataset.depth === 0) return "#fff";
+        if (dataset.depth === 0) return "transparent";
         if (dataset.depth === 1) return ebene[dataset.data.values[0].organization['political_level']];
 
 
@@ -130,21 +362,21 @@
 
 
         // Modification of the Vitamin-C colorscheme
-        if (formats.indexOf('CSV') != -1) return "#28708F";
-        if (formats.indexOf('PC-AXIS') != -1) return "#1F8A70";
-        if ((formats.indexOf('ZIP') != -1) && (dataset.value > 0)) return "#BEDB39"; // Shapefile
-        if (formats.indexOf('XLS') != -1) return "#FD7400";
-        if (formats.indexOf('MULTIFORMAT') != -1) return "#66B9D9";
-        if (formats.indexOf('tab-separated-values') != -1) return "#D98086";
+        if (formats.indexOf('CSV') != -1) return "#4B8AA6"; //"#28708F";
+        if (formats.indexOf('PC-AXIS') != -1) return  "#EFCF47"//"#1F8A70";
+        if ((formats.indexOf('ZIP') != -1)) return "#FFAF43"// "#BEDB39"; // Shapefile
+        if (formats.indexOf('XLS') != -1) return "#5FA7A1" //"#FD7400";
+        if (formats.indexOf('MULTIFORMAT') != -1) return "#FF9B81" //"#66B9D9";
+        if (formats.indexOf('tab-separated-values') != -1) return "#A93955" // "#D98086";
 
-        return "#268bd2";
+        return "#CCC2AA"//"#268bd2";
 
     }
 
 
     // Center the info-display
     d3.select('#chart-info')
-        .attr('style', "left: "+ (width / 4) +"px; top: "+ (height / 2 - height/15) +"px; width: "+width/2+"px;");
+        .attr('style', "left: "+ (width / 2.5) +"px; top: "+ (height / 2 - height/15) +"px; width: "+width/2+"px;");
 
 
 
@@ -201,7 +433,7 @@
             .enter().append('path')
             .attr("d", arc)
             //.style("stroke", function(d){ l(d.x1-d.x0); return (d.x1-d.x0 > 0.001) ?  "#fff" : ""})
-            .style("fill", function(d, i){ return i%2 === 0 ? color(d) : d3.rgb(color(d)).darker(1)})
+            .style("fill", function(d, i){ return i%2 === 0 ? color(d) : d3.rgb(color(d)).darker(0.5)})
             .on('mouseover', mouseover)
             .on('click', onclick)
 
