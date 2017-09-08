@@ -94,6 +94,7 @@
         position: absolute;
         right: 3%;
         top: 0;
+
     }
 
     .legend:nth-child(3) {
@@ -124,6 +125,7 @@
 
         .legend {
             position:static;
+            height: 30px;
         }
 
         .legend li {
@@ -133,6 +135,18 @@
 
         .legend svg {
             width: 12px;
+        }
+
+        .legend:nth-child(3) {
+            position: absolute;
+            top: auto;
+            bottom: -30px;
+            right: auto;
+            left: 0;
+        }
+
+        #chart {
+            margin-bottom: 50px;
         }
     }
 
