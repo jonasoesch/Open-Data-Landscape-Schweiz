@@ -42,14 +42,53 @@ path {
         list-style: none;
     }
 
+
+.buttongroup {
+    width: 100%;
+    text-align: center;
+}
+
+.buttongroup button {
+    background: none;
+    border: 1px solid #777;
+    color: inherit;
+    font: inherit;
+    line-height: normal;
+    padding: 5px;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.buttongroup li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    margin-left: -5px;
+}
+
+.buttongroup li:first-child button{
+    border-radius: 5px 0 0 5px;
+}
+
+.buttongroup li:last-child button {
+    border-radius: 0 5px 5px 0;
+    margin-left: 0;
+}
+
+.buttongroup li[active=true] button {
+    background-color: aliceblue;
+    outline: none;
+}
+
 </style>
 
 <div id="chart">
     <div id="chart-info"></div>
     <div id="chart-datasets"></div>
 </div>
-<ul id="chart-perspectives">
-    <li id="perspective-count" class="perspective"><button>Anzahl Datensätze</button></li>
+<ul id="chart-perspectives" class="buttongroup">
+    <li id="perspective-count" active="true" class="perspective"><button>Anzahl Datensätze</button></li>
     <li id="perspective-size" class="perspective"><button>Dateigrösse</button></li>
     <li id="perspective-fields" class="perspective"><button>Anzahl Felder</button></li>
     <li id="perspective-visits" class="perspective"><button>Anzahl Besucher</button></li>
@@ -71,9 +110,6 @@ path {
 
 
     function color(dataset) {
-
-        var node;
-
 
         var ebene = {
             "confederation": "#0F2D40",
@@ -176,6 +212,10 @@ path {
         d3.selectAll('.perspective')
             .on('click', function() {
                 var perspective = this.getAttribute('id');
+
+                d3.selectAll('.perspective[active=true]').attr('active', 'false');
+                d3.select(this).attr('active', true);
+
                 transformData(perspective);
                 transformData(perspective);
             });
