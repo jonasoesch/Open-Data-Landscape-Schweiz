@@ -54,6 +54,7 @@
     width: 100%;
     text-align: center;
     -webkit-padding-start: 0;
+    padding: 0;
 }
 
 .buttongroup button {
@@ -92,16 +93,19 @@
 
     .legend {
         position: absolute;
+    }
+
+    #legend-inner {
         right: 3%;
-        top: 0;
-
+        bottom: -50px;
     }
 
-    .legend:nth-child(3) {
-        top: 70%;
+    #legend-outer {
+        right: auto;
+        left: 3%;
+        bottom: -120px;
+        padding: 0;
     }
-
-
 
     .legend li {
         list-style: none;
@@ -116,41 +120,6 @@
     }
 
 
-
-    @media all and (max-width: 600px) {
-
-        body {
-            font-size: 0.8em;
-        }
-
-        .legend {
-            position:static;
-            height: 30px;
-        }
-
-        .legend li {
-            display: inline-block;
-            margin-right: 5px;
-        }
-
-        .legend svg {
-            width: 12px;
-        }
-
-        .legend:nth-child(3) {
-            position: absolute;
-            top: auto;
-            bottom: -30px;
-            right: auto;
-            left: 0;
-        }
-
-        #chart {
-            margin-bottom: 50px;
-        }
-    }
-
-
 </style>
 
 <div id="chart">
@@ -158,7 +127,7 @@
 
     <div id="chart-info"></div>
     <ul class="legend" id="legend-inner">
-        <li><strong>Innen: Datenerzeuger</strong></li>
+        <li><strong>Innen: <br />Datenerzeuger</strong></li>
         <li>
             <svg width="21px" height="21px" viewBox="0 0 21 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -212,7 +181,7 @@
         </li>
     </ul>
     <ul class="legend" id="legend-outer">
-        <li><strong>Aussen: Datenformat</strong></li>
+        <li><strong>Aussen: <br /> Datenformat</strong></li>
         <li>
             <svg width="21px" height="21px" viewBox="0 0 21 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
@@ -349,7 +318,7 @@
     
 
     // Dimensions of sunburst.
-    var width = document.body.clientWidth * 0.8;
+    var width = document.body.clientWidth * 0.9;
     var height = width;
     var radius = Math.min(width, height) / 2;
 
