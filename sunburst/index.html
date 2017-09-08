@@ -72,7 +72,7 @@ path {
 
     function color(dataset) {
 
-        var topLevel;
+        var node;
 
 
         var ebene = {
@@ -159,7 +159,7 @@ path {
 
         partition(root);
 
-        topLevel = root;
+        node = root;
 
 
         var path = vis.selectAll('path')
@@ -170,7 +170,6 @@ path {
             .style("fill", function(d, i){ return i%2 === 0 ? color(d) : d3.rgb(color(d)).darker(1)})
             .on('mouseover', mouseover)
             .on('click', onclick)
-            .each(stash);
 
 
 
@@ -192,20 +191,17 @@ path {
             }
 
 
-            vis.selectAll('path')
-                .data(partition(topLevel).sum(function(d){return getValueFrom(d)}).descendants())
+            d3.selectAll('path')
+                .data(partition(root).sum(function(d){return getValueFrom(d)}).descendants())
                 .transition()
                 .duration(500)
                 .attrTween("d", arcTweenData)
         }
 
-        function stash(d) {
-            d._x0 = d.x0;
-            d._x1 = d.x1;
-        }
 
         function arcTweenData(a, i) {
-            var oi = d3.interpolate({x0: a._x0, x1: a._x1}, a);
+            var oi = d3.interpolate({ x0: (a._x0 ? a._x0 : 0), x1: (a._x1 ? a._x1 : 0) }, a);
+            //var oi = d3.interpolate({x0: a._x0, x1: a._x1}, a);
             function tween(t) {
                 var b = oi(t);
                 a._x0 = b.x0;
@@ -217,10 +213,9 @@ path {
             if (i == 0) {
                 // If we are on the first arc, adjust the x domain to match the root node
                 // at the current zoom level. (We only need to do this once.)
-                var xd = d3.interpolate(x.domain(), [root.x0, root.x0 + root.x1]);
+                var xd = d3.interpolate(x.domain(), [node.x0, node.x0 + node.x1]);
                 return function (t) {
                     x.domain(xd(t));
-                    console.log(topLevel)
                     return tween(t);
                 };
             } else {
@@ -241,9 +236,9 @@ path {
 
         listDatasets(d);
 
-        topLevel = d;
+        node = d;
 
-        svg.selectAll('path').transition()
+        vis.selectAll('path').transition()
             .duration(300)
             .tween("scale", function() {
                 var xd = d3.interpolate(x.domain(), [d.x0, d.x1]),
@@ -251,9 +246,7 @@ path {
                     yr = d3.interpolate(y.range(), [d.y0 ? 20 : 0, radius]);
                 return function(t) { x.domain(xd(t)); y.domain(yd(t)).range(yr(t)); };
             })
-            .selectAll("path")
             .attrTween("d", function(d) { return function() { return arc(d); }; })
-            .each(stash)
     }
 
     // Fade all but the current sequence, and show it in the breadcrumb trail.
