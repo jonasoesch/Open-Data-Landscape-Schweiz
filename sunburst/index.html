@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+
+path {
+}
+
+    text {
+        z-index: 10;
+        position: absolute;
+    }
+
+    #chart-info {
+        position: absolute;
+        width: 400px;
+        height: 0;
+        overflow: visible;
+        pointer-events: none;
+        text-align: center;
+        vert-align: middle;
+        font-family: sans-serif;
+        font-size: 0.6em;
+    }
+
+
+    #chart-datasets {
+        position: absolute;
+        overflow:scroll;
+    }
+
+    .highlight {
+        color: red
+    }
+
+    #chart-datasets {
+        font-family: sans-serif;
+        font-size: 0.7em;
+    }
+
+    .perspective {
+        display: inline-block;
+        list-style: none;
+    }
+
+</style>
+
+<div id="chart">
+    <div id="chart-info"></div>
+    <div id="chart-datasets"></div>
+</div>
+<ul id="chart-perspectives">
+    <li id="perspective-count" class="perspective"><button>Anzahl Datensätze</button></li>
+    <li id="perspective-size" class="perspective"><button>Dateigrösse</button></li>
+    <li id="perspective-fields" class="perspective"><button>Anzahl Felder</button></li>
+    <li id="perspective-visits" class="perspective"><button>Anzahl Besucher</button></li>
+</ul>
+
+<body>
+<script src="d3.v4.min.js"></script>
+<script>
+
+    var l = console.log;
+
+    
+
+    // Dimensions of sunburst.
+    var width = document.body.clientWidth * 0.75;
+    var height = width;
+    var radius = Math.min(width, height) / 2;
+
+
+
+    function color(dataset) {
+
+        var topLevel;
+
+
+        var ebene = {
+            "confederation": "#0F2D40",
+            "canton": "#194759",
+            "commune": "#296B73",
+            "other": "#CCC0A1"
+        };
+
+        if (dataset.depth === 0) return "#fff";
+        if (dataset.depth === 1) return ebene[dataset.data.values[0].organization['political_level']];
+
+
+        var bestType = "Andere";
+        formats = dataset.data.downloads.map(function(dl) {return dl.format});
+
+        //totals =  dataset.data.downloads.map(function(dl) {return dl.total})
+        //totals = totals.filter(function(d){ return typeof d === 'number'});
+
+
+        // Modification of the Vitamin-C colorscheme
+        if (formats.indexOf('CSV') != -1) return "#28708F";
+        if (formats.indexOf('PC-AXIS') != -1) return "#1F8A70";
+        if ((formats.indexOf('ZIP') != -1) && (dataset.value > 0)) return "#BEDB39"; // Shapefile
+        if (formats.indexOf('XLS') != -1) return "#FD7400";
+        if (formats.indexOf('MULTIFORMAT') != -1) return "#66B9D9";
+        if (formats.indexOf('tab-separated-values') != -1) return "#D98086";
+
+        return "#268bd2";
+
+    }
+
+
+    // Center the info-display
+    d3.select('#chart-info')
+        .attr('style', "left: "+ (width / 4) +"px; top: "+ (height / 2 - height/15) +"px; width: "+width/2+"px;");
+
+    d3.select('#chart-datasets')
+        .attr('style', "left: "+(width)+"px; width: "+(width*0.333)+"px;")
+
+
+    // Center to coordinate syste -> 0/0 is in the middle
+    var vis = d3.select("#chart").append("svg")
+        .attr("width", width)
+        .attr("height", height)
+        .append("g")
+        .attr("id", "container")
+        .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")"); // center the container
+
+
+    var partition = d3.partition();
+
+    var x = d3.scaleLinear()
+        .range([0, 2 * Math.PI]);
+
+    var y = d3.scaleSqrt()
+        .range([0, radius]);
+
+    var arc = d3.arc()
+        .startAngle(function(d) { return Math.max(0, Math.min(2 * Math.PI, x(d.x0))); })
+        .endAngle(function(d) { return Math.max(0, Math.min(2 * Math.PI, x(d.x1))); })
+        .innerRadius(function(d) { return Math.max(0, y(d.y0)); })
+        .outerRadius(function(d) { return Math.max(0, y(d.y1)); });
+
+    var node;
+
+
+    d3.json('opendata.swiss.datasets.visits.json', function(json) {
+
+        var top = {"name": "opendata.swiss"},
+        root;
+
+
+        top.values = d3.nest()
+            .key(function(d){return d.organization.name})
+            .entries(json);
+
+
+        root = d3.hierarchy(top, function(d) {return d.values})
+            .sum(function(d) {
+                return 1;//getValueFromDownloads(d);
+            })
+            .sort(function(a, b) { return b.value - a.value});
+
+        partition(root);
+
+        topLevel = root;
+
+
+        var path = vis.selectAll('path')
+            .data(partition(root).sum(function(d){return getValueFromDownloads(d);}).descendants())
+            .enter().append('path')
+            .attr("d", arc)
+            //.style("stroke", function(d){ l(d.x1-d.x0); return (d.x1-d.x0 > 0.001) ?  "#fff" : ""})
+            .style("fill", function(d, i){ return i%2 === 0 ? color(d) : d3.rgb(color(d)).darker(1)})
+            .on('mouseover', mouseover)
+            .on('click', onclick)
+            .each(stash);
+
+
+
+        d3.selectAll('.perspective')
+            .on('click', function() {
+                var perspective = this.getAttribute('id');
+                transformData(perspective);
+                transformData(perspective);
+            });
+
+
+        function transformData(perspective) {
+
+            function getValueFrom(d) {
+                if(perspective === "perspective-visits") return getValueFromVisits(d);
+                if(perspective === "perspective-count") return getValueFromCount(d);
+                if(perspective === "perspective-size") return getValueFromSize(d);
+                if(perspective === "perspective-fields") return getValueFromDownloads(d);
+            }
+
+
+            vis.selectAll('path')
+                .data(partition(topLevel).sum(function(d){return getValueFrom(d)}).descendants())
+                .transition()
+                .duration(500)
+                .attrTween("d", arcTweenData)
+        }
+
+        function stash(d) {
+            d._x0 = d.x0;
+            d._x1 = d.x1;
+        }
+
+        function arcTweenData(a, i) {
+            var oi = d3.interpolate({x0: a._x0, x1: a._x1}, a);
+            function tween(t) {
+                var b = oi(t);
+                a._x0 = b.x0;
+                a._x1 = b.x1;
+                return arc(b);
+            }
+
+
+            if (i == 0) {
+                // If we are on the first arc, adjust the x domain to match the root node
+                // at the current zoom level. (We only need to do this once.)
+                var xd = d3.interpolate(x.domain(), [root.x0, root.x0 + root.x1]);
+                return function (t) {
+                    x.domain(xd(t));
+                    console.log(topLevel)
+                    return tween(t);
+                };
+            } else {
+                return tween;
+            }
+        }
+
+    });
+
+
+    d3.select("#container").on("mouseleave", mouseleave);
+
+
+
+
+
+    function onclick(d) {
+
+        listDatasets(d);
+
+        topLevel = d;
+
+        svg.selectAll('path').transition()
+            .duration(300)
+            .tween("scale", function() {
+                var xd = d3.interpolate(x.domain(), [d.x0, d.x1]),
+                    yd = d3.interpolate(y.domain(), [d.y0, 1]),
+                    yr = d3.interpolate(y.range(), [d.y0 ? 20 : 0, radius]);
+                return function(t) { x.domain(xd(t)); y.domain(yd(t)).range(yr(t)); };
+            })
+            .selectAll("path")
+            .attrTween("d", function(d) { return function() { return arc(d); }; })
+            .each(stash)
+    }
+
+    // Fade all but the current sequence, and show it in the breadcrumb trail.
+    function mouseover(d) {
+            // Fade all the segments.
+            d3.selectAll("path")
+                .style("opacity", 0.3);
+
+
+            var sequenceArray = d.ancestors().reverse();
+            // Then highlight only those that are an ancestor of the current segment.
+            vis.selectAll("path")
+                .filter(function (node) {
+                    return (sequenceArray.indexOf(node) >= 0);
+                })
+                .style("opacity", 1);
+
+            info(d);
+            highlighDatasetInList(d);
+    }
+
+
+
+    // Restore everything to full opacity when moving off the visualization.
+    function mouseleave(d) {
+            // Deactivate all segments during transition.
+            d3.selectAll("path").on("mouseover", null);
+
+            // Transition each segment to full opacity and then reactivate it.
+            d3.selectAll("path")
+                .transition()
+                .duration(200)
+                .style("opacity", 1)
+                .on("end", function () {
+                    d3.select(this).on("mouseover", mouseover);
+                });
+
+            d3.select('#chart-info')
+                .html('')
+    }
+
+
+
+
+
+
+    // Getting the highest total value of the downloads in a dataset
+    // ATTENTION: Mind the risk of cases, where different data is combined as multiple downloads in one dataset
+    function getValueFromDownloads(dataset) {
+        if('downloads' in dataset) {
+            total = d3.max(dataset.downloads, function(dl) { return dl.total});
+            if(total>0) {
+                return total
+            } else {
+                return 0
+            }
+        } else {
+            return 0
+        }
+    }
+
+    function getValueFromVisits(d) {
+        return d.visits > 0 ? d.visits : 0;
+    }
+
+    function getValueFromCount(dataset) {
+        return 1;
+    }
+
+    function getValueFromSize (dataset) {
+        if('downloads' in dataset) {
+            var total = 0;
+            dataset.downloads.forEach(function(dl) {
+                total = total + dl['file_size'];
+            });
+            return total;
+        } else {
+            return 0;
+        }
+    }
+
+    function info(dataset) {
+        var info = d3.select('#chart-info').html('');
+
+        var name = dataset.data.name;
+        name = name ? name : dataset.data.key;
+
+        info
+            .append('h2')
+            .html(name)
+    }
+
+    function listDatasets(d) {
+        if(('children' in d) && (d.depth > 0)) {
+
+            d3.select('#chart-datasets')
+                .append('ul')
+                .selectAll('li')
+                .data(d.children)
+                .enter().append('li')
+                .html(function (d) {
+                    return d.data.name
+                })
+        } else {
+            d3.select('#chart-datasets').html('')
+        }
+    }
+
+    function highlighDatasetInList(dataset) {
+        var list = d3.select('#chart-datasets');
+
+        d3.selectAll('.highlight')
+            .attr('class', '');
+
+        if(list && list.html().length > 0)
+            d3.selectAll('#chart-datasets li')
+                .filter(function(){
+                    return d3.select(this).html() === dataset.data.name
+                })
+                .attr('class', 'highlight')
+    }
+
+
+</script>
+
