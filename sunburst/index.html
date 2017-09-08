@@ -231,8 +231,14 @@ path {
             }
 
 
+
             d3.selectAll('path')
-                .data(partition(root).sum(function(d){return getValueFrom(d)}).descendants())
+                .data(
+                    partition(root)
+                        .sum(function(d){return getValueFrom(d)})
+                        .sort(function(a, b) { return b.value - a.value})
+                        .descendants()
+                )
                 .transition()
                 .duration(500)
                 .attrTween("d", arcTweenData)
@@ -274,7 +280,7 @@ path {
 
     function onclick(d) {
 
-        listDatasets(d);
+        //listDatasets(d); Maybe if there is more time
 
         node = d;
 
