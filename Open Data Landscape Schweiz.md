@@ -20,7 +20,7 @@ Solche Daten dürfen beliebig vervielfältigt, weitergegeben und kopiert werden.
 
 Dass die Sache überhaupt auf den Radar des Bundesrates kam, ist nicht zuletzt dem [Verein opendata.ch](https://opendata.ch/) geschuldet. Als Schweizer Arm der Open Knowledge Foundation weibelt der Verein seit 2011 für offene Daten in der Schweiz. Die Aktivisten sind dazu gut vernetzt in Politik, Medien und der IT-Branche. Das Vereinsprofil auf Twitter zählt fast [5000 Follower](https://twitter.com/opendatach). Das ist weit mehr als ähnliche Lobbyorganisationen wie [swissICT](https://twitter.com/swissict) oder [Energie Schweiz](https://twitter.com/energieschweiz). In der Open Data-Blase auf Twitter bekomme ich auch einen guten Einblick in die Denkweise der Bewegung:
 
-Obwohl offiziell immer wieder auch der potenzielle wirtschaftliche Nutzen von offenen Behördendaten betont wird (geschätzt auf [eine Milliarde Franken pro Jahr](https://www.egovernment.ch/index.php/download_file/force/347/3337/)); sind die Leute die ich treffe vor allem eins: Idealisten.
+Obwohl offiziell immer wieder auch der potenzielle wirtschaftliche Nutzen von offenen Behördendaten betont wird (geschätzt auf [eine Milliarde Franken pro Jahr](https://www.egovernment.ch/index.php/download_file/force/347/3337/)); sind die Leute die ich antreffe vor allem eins: Idealisten.
 
 Dieser Eindruck bestätigt sich als ich Oleg Lavrovsky, den "Crowdsourcing Champion" des Vereins, im [Kaffee Effinger](https://www.effinger.ch/) in Bern treffe. Aus dem geplanten Interview wird bald eine Grundsatzdiskussion. Lavrovsky sieht offene Daten in Zukunft als unverzichtbaren Teil unserer Infrastruktur. Wie Wasser oder Strom.
 
@@ -31,45 +31,41 @@ Damit diese Infrastruktur Wirklichkeit wird, definiert der Bundesrat in seinem M
 
 <p><iframe id="landscape" src="cantons/dist/index.html" height="500px"></iframe></p> 
 
-*Map mit Kantonen und Bundesämtern. Zeigt welche Kantone ein Öffentlichkeitsgesetz haben und wie ihr Status bezüglich Open Data ist.*
+*Karte mit Kantonen und Bundesämtern. Zeigt welche Kantone ein Öffentlichkeitsgesetz haben und wie ihr Status bezüglich Open Data ist. Die Grösse der Kantone und Städte ist im Verhältnis zur Einwohnerzahl dargestellt*
 
-Nach Möglichkeit geschieht dies automatisch mittels sogenannter "Harvester". Die Stadt Zürich hat bereits 2012 damit begonnen, eine eigene OGD-Plattform aufzubauen. Diese ist nun auch mit der nationalen Plattform verknüpft und liefert täglich neue und aktualisierte Datensätze aus.
+Nach Möglichkeit geschieht dies automatisch mittels sogenannter "Harvester". Die Stadt Zürich hat zum Beispiel bereits 2012 damit begonnen, eine eigene OGD-Plattform aufzubauen. Diese ist so nun auch mit der nationalen Plattform verknüpft und liefert täglich neue und aktualisierte Datensätze aus.
 
-"Das ist genau der Charme von Open Data", bestätigen mir Marco Sieber und Reto Wick, die OGD-Beauftragten der Stadt Zürich, "dass wir die Daten schon haben. Wir brauchen sie nur noch in geeigneter Form zu publizieren. Das kann man auch automatisieren". Auch der Bundesrat erwähnt diese Sekundärnutzung als eine der Stärken von Open Data. 
+"Das ist genau der Charme von Open Data", bestätigen mir Marco Sieber und Reto Wick, die OGD-Beauftragten der Stadt Zürich, "dass wir die Daten schon haben. Wir brauchen sie nur noch in geeigneter Form zu publizieren. Das kann man auch automatisieren". Auch der Bundesrat erwähnt diese Sekundärnutzung als eine der Stärken von Open Governement Data. Diese sollen ganz ohne Mehraufwand entstehen, einfach als Nebenprodukt der Amtstätigkeit.
 
-Dass das nicht immer so einfach ist, wissen die beiden selbst am besten. Seit Jahren werben sie an den verschiedenen Stellen dafür, dass sie ihre Daten "per default" offenlegen. Oft steht oder fällt es damit, ob sich die richtige Person an der entsprechenden Stelle [für das Thema interessiert](https://www.stadt-zuerich.ch/content/dam/stzh/portal/Deutsch/OGD/Dokumente/Hinderungsgr%c3%bcnde%20f%c3%bcr%20Open%20Government%20Data.pdf). 
+Dass das nicht immer so einfach ist, wissen die Sieber und Wick selbst am besten. Seit Jahren werben sie an den verschiedenen Stellen dafür, dass sie ihre Daten "per default" offenlegen. Oft steht oder fällt es damit, ob sich die richtige Person an der entsprechenden Stelle [für das Thema interessiert](https://www.stadt-zuerich.ch/content/dam/stzh/portal/Deutsch/OGD/Dokumente/Hinderungsgr%c3%bcnde%20f%c3%bcr%20Open%20Government%20Data.pdf) und bereit ist die internen Prozesse anzupassen. 
 
-### "Rohe Daten"
+Jemand der sich eindeutig für das Thema interessiert, ist Daniel Schweizer von den Parlamentsdiensten. Die Parlamentsdienste publizieren seit Jahren Informationen über Parlamentarier, Vorlagen und Abstimmungsresultate auf [parlament.ch](https://www.parlament.ch/de). Schon vor einiger Zeit wurde entschieden, die Webseite mit Hilfe einer Daten-API zu befüttern. Diese API zu öffnen war da nur noch ein kleiner Schritt. Miot der Publikation der Schnittstelle produzierten die Parlamentsdienste über Nacht, ohne Mehraufwand, offene Daten. Auch diese sind natürlich bei opendata.swiss eingetragen.
 
-Jemand der sich eindeutig für das Thema interessiert, ist Daniel Schweizer von den Parlamentsdiensten. Die Parlamentsdienste publizieren seit Jahren Informationen über Parlamentarier, Vorlagen und Abstimmungsresultate auf [parlament.ch](https://www.parlament.ch/de). Schon vor einiger Zeit wurde entschieden, die Webseite mit Hilfe einer Daten-API zu befüttern. Diese API auch der Öffentlichkeit zur Verfügung zu stellen, war da nur noch ein kleiner Schritt. Neben dem gedruckten Amtlichen Bulletin und der Webseite hat die Öffentlichkeit nun auch Zugriff auf die rohen Daten.
+## 2420 Antworten ohne die passenden Fragen
+fd
+Angekommen auf der Plattform präsentiert sich mir als erstes, was sonst, eine Zahl: "2420 Datensätze" steht da in gross und weiss auf neutral-grünblauem Hintergrund. Und irgendwie kommt mir die [skurrile Geschichte von Douglas Adams](http://www.progressiveruin.com/2011/03/13/42/) in den Sinn. Gefragt nach der Antwort auf die Frage "nach dem Leben, dem Universum und dem ganzen Rest“, spuckt der Supercomputer nach 7.5 Millionen Jahren Rechenzeit die endlich die Antwort aus: "42". Die passende Frage dazu kennt aber auch er nicht.
 
-Die Definition, was denn Rohdaten seien, ist dabei oftmals nicht ganz klar. In der Praxis bedeutet es aber oft, dass Daten leicht in einen neuen Kontext übernommen werden können. Und das bedeutet im Kehrschluss auch den Verlust des ursprünglichen Kontexts.
+So präsentiert sich mir hier ein Haufen Antworten ohne die passenden Fragen. Keine Geschichten, keine Interpretationen oder Meinungen. Einfach nur die nackten Zahlen. So liegt es nun wohl an mir, selbst meine eigenen Fragen an die Daten zu formulieren.  Und als erstes Frage ich: "Wie viel Daten sind denn überhaupt 2420 Datensätze?"
 
-## 2048 Antworten ohne die passenden Fragen
-
-Angekommen auf opendata.swiss präsentiert sich mir, was sonst, eine Zahl: "2408 Datensätze" steht da. Und irgendwie kommt mir die skurrile Geschichte von Douglas Adams in den Sinn. Gefragt nach der Antwort die Frage "nach dem Leben, dem Universum und dem ganzen Rest“, spuckt der Supercomputer nach 7.5 Millionen Jahren Rechenzeit die Zahl 42 aus. Die passende Frage dazu kennt aber auch er nicht.
-
-So präsentiert sich mir hier ein Haufen Antworten ohne die zugehörigen Fragen. Es liegt nun wohl an mir, meine eigene Frage an die Daten zu stellen. Ich fange damit an: "Wie viel Daten sind denn überhaupt 2408 Datensätze?"
-
-Der Download (fast) aller Datensätze wiegt rund 60 GB. Die Visualisierung zeigt aber, dass durchaus nicht alle Datensätze gleich geartet sind. Es gibt GB-schwere Bildarchive aber auch statistische Datensätze die es kaum auf ein MB bringen.
+Der Download (fast) aller Datensätze wiegt rund 135 GB. Die Visualisierung zeigt aber, dass durchaus nicht alle Datensätze gleich geartet sind. Es gibt GB-schwere Bildarchive aber auch statistische Datensätze die es kaum auf ein MB bringen.
 
 <p><iframe id="plattform" src="sunburst/index.html" height="800px"></iframe></p> 
 
-"Sind solchen Daten dadurch aber weniger wert?" Ich versuche es damit, die Einträge in jedem Datensatz zu zählen. Und es ergibt sich ein komplett anderes Bild. Nun finden sich statistische Daten mit Millionen von Einträgen. "Sind denn die Datensätze mit den meisten Einträgen auch die beliebtesten?", frage ich mich. "Nicht wirklich" antworten mir die Besucherzahlen der einzelnen Datensätze.
+"Aber sind denn solchen Daten dadurch weniger wert?" Während jedes Bildarchiv vielleicht Hundert Bilder enthält, haben manche Tabellen oder APIs Millionen von Einträgen. Ich versuche es also damit, die Einträge in jedem Datensatz zu zählen. Und so ergibt sich ein komplett anderes Bild. Die grössten Datensätze bringen es auf 50 Millionen Datenpunkte, die kleinsten gerade Mal auf drei. "Sind denn die Datensätze mit den meisten Einträgen auch die beliebtesten?", frage ich mich. "Nicht wirklich" antworten mir die Besucherzahlen der einzelnen Datensätze. Die Statistik zu den mittleren Betrieben im Kanton Zürich ist äusserst beliebt, obwohl sie "nur" 9408 Einträge hat.
 
 ## Data Literacy
 
 Einen solchen Dialog mit den Daten zu führen bezeichnet man in der Szene als "Data Literacy". Und möglichst jeder soll in Zukunft "data literate" werden. Lavrovsky hat dazu eigens eine *School of Data* gegründet. Dort bringt er Interessierten bei, mit Daten umzugehen, sie darzustellen und zu interpretieren.
 
-Regelmässig veranstaltet der Verein opendata.ch auch sogenannte Hackathons zu verschiedenen Themen wie "Finanzen", "Energie" oder "Tourismus". Dort treffen sich interessierte Parteien, tauschen Fragestellungen aus und schlagen kreative Lösungen vor.
+Regelmässig veranstaltet die Community auch sogenannte [Hackathons](https://make.opendata.ch/) zu verschiedenen Themen wie "Finanzen", "Energie" oder "Tourismus". Dort kommen Hacker, Journalisten, Unternehmer und Staatsangestellte zusammen, tauschen Fragestellungen aus und schlagen kreative Lösungen vor.
 
-Manchmal stellt die Community auch fest, dass Daten fehlen oder fehlerhaft sind. Geschehen so mit Nährwertdaten der Lebensmittel  der Schweizer Detailhändler. Weil diese sich sträubten, die Daten öffentlich zu machen, begann ein Team an der ETH Lausanne kurzerhand selbst die Daten zusammen zu tragen. Seither hat die Community schon über 18000 Produkte in den Katalog aufgenommen. Lavrovsky ist von solchen Initiativen begeistert. "Wenn die Organisationen ihre Daten nicht selbst offenlegen, dann macht die Community das eben selbst".
+Manchmal stellt die Community auch fest, dass Daten fehlen oder fehlerhaft sind. Geschehen so mit den Nährwertdaten aus dem Schweizer Detailhandel. Weil sich die Detailhändler sträubten, die Daten öffentlich zu machen, begann ein [Team an der ETH](https://www.openfood.ch/) Lausanne kurzerhand selbst Produkte zu fotografieren und die Daten zusammen zu tragen. Seither hat die Community schon über 18000 Produkte in den Katalog aufgenommen. Lavrovsky ist von solchen Initiativen begeistert. "Wenn die Organisationen ihre Daten nicht selbst offenlegen, dann macht die Community das eben selbst".
 
 ## Daten im neuen Gewand
 
-Wichtig, so scheint es, ist nicht nur der Zugang zu den Daten, sondern vor allem auch zu deren Nutzungskontext. In der Öffentlichkeit stossen so auch die Datensätze auf das grösste Echo, die direkt mit dem Lebenskontext vieler Leute zu tun haben.
+Wichtig, so scheint es, ist nicht nur der Zugang zu den Daten, sondern vor allem auch zu deren Kontext. Die Daten selbst enthalten nicht die Fragen, die sie beantworten. Interessante Fragestellungen kommen immer aus dem Alltag der Menschen. In der Öffentlichkeit stossen so auch die Datensätze auf das grösste Echo, die direkt mit dem Alltag vieler Leute zu tun haben.
 
-Die Öffnung der Transportdaten der SBB hat zum Beispiel viele Pendler dazu inspiriert, ihren Fahrplan [kreativ neu zu interpretieren](https://opentransportdata.swiss/de/fallblatt). Aber auch Unternehmen machen dem [SBB-Fahrplan Konkurrenz](http://www.viadi-app.ch). Das innovative Interface von viadi findet schliesslich sogar Einzug in die neuen SBB-App.
+Die Öffnung der Transportdaten der SBB hat zum Beispiel viele Pendler dazu inspiriert, ihren Fahrplan [kreativ neu zu interpretieren](https://opentransportdata.swiss/de/fallblatt). Aber auch Unternehmen machen dem [SBB-Fahrplan Konkurrenz](http://www.viadi-app.ch). Das innovative Interface von Viadi fand schliesslich sogar Einzug in die neuen SBB-App.
 
 Doch während viele Leute in Bahnhof, Migros oder Coop fast täglich ein und ausgehen, trifft das bei der Verwaltung nicht zu.
 

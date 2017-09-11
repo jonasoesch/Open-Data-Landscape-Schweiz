@@ -18,6 +18,7 @@
     }
 
     #chart-info {
+        padding-top: 2%;
         position: absolute;
         width: 400px;
         height: 0;
@@ -27,6 +28,10 @@
         vert-align: middle;
         font-family: sans-serif;
         font-size: 0.6em;
+    }
+
+    #chart-info p{
+        margin-top: 30%;
     }
 
 
@@ -125,7 +130,9 @@
 <div id="chart">
 
 
-    <div id="chart-info"></div>
+    <div id="chart-info">
+        <h2>Datensätze auf opendata.swiss </h2>
+    </div>
     <ul class="legend" id="legend-inner">
         <li><strong>Innen: <br />Datenerzeuger</strong></li>
         <li>
@@ -303,10 +310,10 @@
 </div>
 
 <ul id="chart-perspectives" class="buttongroup">
-    <li id="perspective-count" active="true" class="perspective"><button>Anzahl Datensätze</button></li>
+    <li id="perspective-count" active="true" class="perspective"><button>Datensätze</button></li>
     <li id="perspective-size" class="perspective"><button>Dateigrösse</button></li>
-    <li id="perspective-fields" class="perspective"><button>Anzahl Felder</button></li>
-    <li id="perspective-visits" class="perspective"><button>Anzahl Besucher</button></li>
+    <li id="perspective-fields" class="perspective"><button>Einträge</button></li>
+    <li id="perspective-visits" class="perspective"><button>Häufig besucht</button></li>
 </ul>
 
 <body>
@@ -359,7 +366,7 @@
 
     // Center the info-display
     d3.select('#chart-info')
-        .attr('style', "left: "+ (width / 2.5) +"px; top: "+ (height / 2 - height/15) +"px; width: "+width/2+"px;");
+        .attr('style', "left: "+ (width / 3.3) +"px; top: "+ (height / 2 - height/10) +"px; width: "+width/2+"px;");
 
 
 
@@ -386,7 +393,7 @@
         .innerRadius(function(d) { return Math.max(0, y(d.y0)); })
         .outerRadius(function(d) { return Math.max(0, y(d.y1)); });
 
-    var node;
+    var node, currPerspective;
 
 
     d3.json('opendata.swiss.datasets.visits.json', function(json) {
@@ -429,6 +436,11 @@
                 d3.selectAll('.perspective[active=true]').attr('active', 'false');
                 d3.select(this).attr('active', true);
 
+                if(perspective === "perspective-visits") { currPerspective = 'visits'};
+                if(perspective === "perspective-count") { currPerspective = undefined };
+                if(perspective === "perspective-size") { currPerspective = 'size'};
+                if(perspective === "perspective-fields") { currPerspective = 'fields'};
+
                 transformData(perspective);
                 transformData(perspective);
             });
@@ -437,10 +449,10 @@
         function transformData(perspective) {
 
             function getValueFrom(d) {
-                if(perspective === "perspective-visits") return getValueFromVisits(d);
-                if(perspective === "perspective-count") return getValueFromCount(d);
-                if(perspective === "perspective-size") return getValueFromSize(d);
-                if(perspective === "perspective-fields") return getValueFromDownloads(d);
+                if(perspective === "perspective-visits") { return getValueFromVisits(d)};
+                if(perspective === "perspective-count") { return getValueFromCount(d)};
+                if(perspective === "perspective-size") { return getValueFromSize(d)};
+                if(perspective === "perspective-fields") { return getValueFromDownloads(d) };
             }
 
 
@@ -497,6 +509,15 @@
 
         node = d;
 
+
+
+
+       if (d.depth === 2) {
+            return 0;
+            //window.location = "https://opendata.swiss/de/dataset/" + d.data.id
+        }
+
+
         vis.selectAll('path').transition()
             .duration(300)
             .tween("scale", function() {
@@ -506,13 +527,15 @@
                 return function(t) { x.domain(xd(t)); y.domain(yd(t)).range(yr(t)); };
             })
             .attrTween("d", function(d) { return function() { return arc(d); }; })
+
+
     }
 
     // Fade all but the current sequence, and show it in the breadcrumb trail.
     function mouseover(d) {
             // Fade all the segments.
             d3.selectAll("path")
-                .style("opacity", 0.3);
+                .style("opacity", 0.5);
 
 
             var sequenceArray = d.ancestors().reverse();
@@ -593,9 +616,40 @@
         var name = dataset.data.name;
         name = name ? name : dataset.data.key;
 
+        var color = (node.depth === 1) ? "rgba(255,255,255,0.9)" : "#000";
+
         info
             .append('h2')
-            .html(name)
+            .attr('style', "color: "+color)
+            .html(name);
+
+
+        function getTotal(dataset) {
+            while(dataset.parent) {
+                dataset = dataset.parent;
+            }
+            return dataset.value
+        }
+
+        var text = "";
+        if(currPerspective === 'size') {
+            text = parseInt(dataset.value / 1000000).toString().replace(/\B(?=(\d{3})+(?!\d))/g, "'") + " MBs"
+        }
+        else if (currPerspective === 'fields') {
+            text = parseInt(dataset.value).toString().replace(/\B(?=(\d{3})+(?!\d))/g, "'") + " Einträge"
+        } else if (currPerspective === 'visits') {
+            text = (dataset.value / getTotal(dataset) * 100).toString().replace(/\.(\d\d)\d+/g, ".$1") + "% der Besuche"
+        } else {
+            text = dataset.value + (dataset.value === 1 ? " Datensatz" : " Datensätze");
+        }
+
+
+
+
+        info
+            .append('p')
+            .attr('style', 'color: '+color)
+            .html(text)
     }
 
     function listDatasets(d) {
