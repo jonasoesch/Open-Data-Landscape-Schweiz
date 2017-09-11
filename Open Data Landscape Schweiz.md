@@ -4,7 +4,7 @@
 
 ## Die Forderung nach mehr Transparenz und Demokratie
 
-Das mit der Öffnung der Behördendaten hat in der Schweiz schon eine längere Geschichte. Als späte Folge des Fichenskandals in den 90er Jahren erliess der Bund 2006 ein [Gesetz](https://www.admin.ch/opc/de/classified-compilation/20022540/index.html), das die Bundesbehörden dazu verpflichtet, auf Anfrage sämtliche ihrer Informationen herauszugeben. Das Gesetz kennt dabei nur wenige Einschränkungen. Zum Beispiel zum Schutz der Persönlichkeit oder der internen Sicherheit.
+Das mit der Öffnung der Behördendaten hat in der Schweiz schon eine längere Geschichte. Als späte Folge des Fichenskandals in den 90er Jahren erliess der Bund 2006 ein [Gesetz](https://www.admin.ch/opc/de/classified-compilation/20022540/index.html), das die Bundesbehörden dazu verpflichtet, auf Anfrage fast alle ihrer Informationen herauszugeben.
 
 Das Öffentlichkeitsgesetz wurde eingeführt um den Staatsapparat für die Öffentlichkeit transparenter zu machen. Viele, bisher  nur interne, Informationen wurden nun [von ihrem dicken Amtsmantel befreit](https://www.oeffentlichkeitsgesetz.ch/deutsch/befreite-dokumente/). Zur Freude vieler Journalisten, deren Arbeit dadurch ungemein erleichtert wurde. 
 
@@ -12,15 +12,15 @@ Das Öffentlichkeitsgesetz wurde eingeführt um den Staatsapparat für die Öffe
 
 Wie durch Zufall veröffentlichte im [gleichen Jahr](https://blog.okfn.org/2006/09/06/version-10-of-the-open-knowledge-definition-released/) die [Open Knowledge Foundation](https://okfn.org/) ihre [Open Definition](http://opendefinition.org/). Nach deren Grundsätzen, soll der Staat die Daten die er erhebt auch seinen Bürgern zugänglich machen. Dafür hat sich der Begriff [Open Governement Data](https://opengovernmentdata.org/) kurz *OGD* durchgesetzt. Eine der Hauptbegründungen für OGD war damals wie heute: mehr Transparenz und Demokratie.
 
-Obwohl Open Governement Data und das Öffentlichkeitsgesetz dadurch Schwestern im Geiste sind, geht OGD doch viel weiter. Das Öffentlichkeitsgesetz verlangt lediglich die Herausgabe von Daten auf Anfrage. OGD hingegen deren komplette Freigabe. Als der Bundesrat 2014 eine [Open Governement Data-Strategie](https://www.admin.ch/opc/de/federal-gazette/2014/3493.pdf) erliess, bezeichnete er dies als "Selbstbedienungssystem".
+Obwohl Open Governement Data und das Öffentlichkeitsgesetz dadurch Schwestern im Geiste sind, geht OGD doch viel weiter. Das Öffentlichkeitsgesetz verlangt lediglich die *Herausgabe* von Daten auf Anfrage. OGD hingegen deren komplette *Freigabe*. Als der Bundesrat 2014 eine [Open Governement Data-Strategie](https://www.admin.ch/opc/de/federal-gazette/2014/3493.pdf) erliess, bezeichnete er dies als "Selbstbedienungssystem".
 
-Solche Daten dürfen beliebig vervielfältigt, weitergegeben und kopiert werden. "Es ist oftmals kaum mehr nachvollziehbar, wer, welche Datensätze nutzt.", sagt JuanPablo Lovato, Projektleiter Open Government Data Schweiz. "Aber das liegt in der Natur des Sache".
+Solche Daten dürfen beliebig vervielfältigt, weitergegeben und kopiert werden. "Es ist oftmals kaum mehr nachvollziehbar, wer, welche Datensätze nutzt.", sagt JuanPablo Lovato, Projektleiter Open Government Data Schweiz. "Aber das liegt ja auch in der Natur *freier Daten*".
 
 ### Der Verein opendata.ch
 
-Dass die Sache überhaupt auf den Radar des Bundesrates kam, dafür ist nicht zuletzt der 2011 gegründete [Verein opendata.ch](https://opendata.ch/) verantwortlich. Seitdem macht er sich  stark für die Sache mit den offenen Daten in der Schweiz. Die Aktivisten des Vereins sind dazu gut vernetzt in Politik, Medien und der IT-Branche. Das zeigt sich schnell auf Twitter. Dort tweetet der Vereinsaccount zu fast [5000 Followern](https://twitter.com/opendatach). Weit mehr als ähnliche Lobbyorganisationen wie [swissICT](https://twitter.com/swissict) oder [Energie Schweiz](https://twitter.com/energieschweiz). 
+Dass die Sache überhaupt auf den Radar des Bundesrates kam, ist nicht zuletzt dem [Verein opendata.ch](https://opendata.ch/) geschuldet. Als Schweizer Arm der Open Knowledge Foundation weibelt der Verein seit 2011 für offene Daten in der Schweiz. Die Aktivisten sind dazu gut vernetzt in Politik, Medien und der IT-Branche. Das Vereinsprofil auf Twitter zählt fast [5000 Follower](https://twitter.com/opendatach). Das ist weit mehr als ähnliche Lobbyorganisationen wie [swissICT](https://twitter.com/swissict) oder [Energie Schweiz](https://twitter.com/energieschweiz). In der Open Data-Blase auf Twitter bekomme ich auch einen guten Einblick in die Denkweise der Bewegung:
 
-Zwar wird immer wieder auch der mögliche wirtschaftliche Nutzen von offenen Behördendaten betont (geschätzt auf [eine Milliarde Franken pro Jahr](https://www.egovernment.ch/index.php/download_file/force/347/3337/)); trotzdem sind die Mitglieder aber vor allem Idealisten.
+Obwohl offiziell immer wieder auch der potenzielle wirtschaftliche Nutzen von offenen Behördendaten betont wird (geschätzt auf [eine Milliarde Franken pro Jahr](https://www.egovernment.ch/index.php/download_file/force/347/3337/)); sind die Leute die ich treffe vor allem eins: Idealisten.
 
 Dieser Eindruck bestätigt sich als ich Oleg Lavrovsky, den "Crowdsourcing Champion" des Vereins, im [Kaffee Effinger](https://www.effinger.ch/) in Bern treffe. Aus dem geplanten Interview wird bald eine Grundsatzdiskussion. Lavrovsky sieht offene Daten in Zukunft als unverzichtbaren Teil unserer Infrastruktur. Wie Wasser oder Strom.
 
