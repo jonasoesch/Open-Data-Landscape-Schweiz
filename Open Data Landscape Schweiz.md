@@ -42,7 +42,7 @@ Dass das nicht immer so einfach ist, wissen die Sieber und Wick selbst am besten
 Jemand der sich eindeutig für das Thema interessiert, ist Daniel Schweizer von den Parlamentsdiensten. Die Parlamentsdienste publizieren seit Jahren Informationen über Parlamentarier, Vorlagen und Abstimmungsresultate auf [parlament.ch](https://www.parlament.ch/de). Schon vor einiger Zeit wurde entschieden, die Webseite mit Hilfe einer Daten-API zu befüttern. Diese API zu öffnen war da nur noch ein kleiner Schritt. Miot der Publikation der Schnittstelle produzierten die Parlamentsdienste über Nacht, ohne Mehraufwand, offene Daten. Auch diese sind natürlich bei opendata.swiss eingetragen.
 
 ## 2420 Antworten ohne die passenden Fragen
-fd
+
 Angekommen auf der Plattform präsentiert sich mir als erstes, was sonst, eine Zahl: "2420 Datensätze" steht da in gross und weiss auf neutral-grünblauem Hintergrund. Und irgendwie kommt mir die [skurrile Geschichte von Douglas Adams](http://www.progressiveruin.com/2011/03/13/42/) in den Sinn. Gefragt nach der Antwort auf die Frage "nach dem Leben, dem Universum und dem ganzen Rest“, spuckt der Supercomputer nach 7.5 Millionen Jahren Rechenzeit die endlich die Antwort aus: "42". Die passende Frage dazu kennt aber auch er nicht.
 
 So präsentiert sich mir hier ein Haufen Antworten ohne die passenden Fragen. Keine Geschichten, keine Interpretationen oder Meinungen. Einfach nur die nackten Zahlen. So liegt es nun wohl an mir, selbst meine eigenen Fragen an die Daten zu formulieren.  Und als erstes Frage ich: "Wie viel Daten sind denn überhaupt 2420 Datensätze?"
