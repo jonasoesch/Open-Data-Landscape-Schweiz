@@ -10,7 +10,7 @@ Das Öffentlichkeitsgesetz wurde eingeführt um den Staatsapparat für die Öffe
 
 ### Open Governement Data
 
-Wie durch Zufall veröffentlichte im [gleichen Jahr](https://blog.okfn.org/2006/09/06/version-10-of-the-open-knowledge-definition-released/) die [Open Knowledge Foundation](https://okfn.org/) ihre [Open Definition](http://opendefinition.org/). Nach deren Grundsätzen, soll der Staat die Daten die er erhebt auch seinen Bürgern zugänglich machen. Dafür hat sich der Begriff [Open Governement Data](https://opengovernmentdata.org/) kurz *OGD* durchgesetzt. Eine der Hauptbegründungen für OGD war damals wie heute: mehr Transparenz und Demokratie.
+Wie durch Zufall veröffentlichte im [gleichen Jahr](https://blog.okfn.org/2006/09/06/version-10-of-the-open-knowledge-definition-released/) die [Open Knowledge Foundation](https://okfn.org/) ihre [Open Definition](http://opendefinition.org/). Nach deren Grundsätzen, soll der Staat die Daten die er erhebt auch seinen Bürgern zugänglich machen. Dafür hat sich der Begriff [Open Governement Data](https://opengovernmentdata.org/)  kurz *OGD* durchgesetzt. [^openscience] Eine der Hauptbegründungen für OGD war damals wie heute: mehr Transparenz und Demokratie.
 
 Obwohl Open Governement Data und das Öffentlichkeitsgesetz dadurch Schwestern im Geiste sind, geht OGD doch viel weiter. Das Öffentlichkeitsgesetz verlangt lediglich die *Herausgabe* von Daten auf Anfrage. OGD hingegen deren komplette *Freigabe*. Als der Bundesrat 2014 eine [Open Governement Data-Strategie](https://www.admin.ch/opc/de/federal-gazette/2014/3493.pdf) erliess, bezeichnete er dies als "Selbstbedienungssystem".
 
@@ -75,6 +75,7 @@ Lovato wünscht sich deshalb auch dort mehr Offenheit. Die Verwaltung kennt ihre
 
 
 
+[^openscience]: Neben der Verwaltung gibt es auch in anderen Bereichen Bestrebungen, Daten zu öffnen. Allen voran in der Wissenschaft. Das Thema *Open Science Data* steht in der Schweiz noch [ziemlich am Anfang]((https://www.swissuniversities.ch/de/themen/hochschulpolitik/open-access/)) und wird in diesem Artikel nicht weiter behandelt.  
 [^Huijboom]: Huijboom, N., & Van den Broek, T. (2011). Open data: an international comparison of strategies. European Journal of ePractice, 7-8.
 [^Janssen]: Janssen, M., Charalabidis, Y., & Zuiderwijk, A. (2012). Benefits, Adoption Barriers and Myths of Open Data and Open Government. Information Systems Management, 29(4), 258–268.  http://doi.org/10.1080/10580530.2012.716740
 
