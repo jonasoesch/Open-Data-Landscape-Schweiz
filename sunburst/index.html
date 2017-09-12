@@ -344,17 +344,16 @@
         if (dataset.depth === 1) return ebene[dataset.data.values[0].organization['political_level']];
 
 
-        var bestType = "Andere";
-        formats = dataset.data.downloads.map(function(dl) {return dl.format});
+        // Deciding on the file format based on the largest download. Best likelihood to be correct for larger datasets.
+        var downloads = dataset.data.downloads.sort(function(a, b) {return a.file_size < b.file_size});
+        var formats = downloads.length > 0 ? downloads[0].format : "None";
 
-        //totals =  dataset.data.downloads.map(function(dl) {return dl.total})
-        //totals = totals.filter(function(d){ return typeof d === 'number'});
 
 
         // Modification of the Vitamin-C colorscheme
+        if ((formats.indexOf('ZIP') != -1)) return "#FFAF43"// "#BEDB39"; // Shapefile
         if (formats.indexOf('CSV') != -1) return "#4B8AA6"; //"#28708F";
         if (formats.indexOf('PC-AXIS') != -1) return  "#EFCF47"//"#1F8A70";
-        if ((formats.indexOf('ZIP') != -1)) return "#FFAF43"// "#BEDB39"; // Shapefile
         if (formats.indexOf('XLS') != -1) return "#5FA7A1" //"#FD7400";
         if (formats.indexOf('MULTIFORMAT') != -1) return "#FF9B81" //"#66B9D9";
         if (formats.indexOf('tab-separated-values') != -1) return "#A93955" // "#D98086";
@@ -396,10 +395,48 @@
     var node, currPerspective;
 
 
+    function draw(root, firstTime, perspective) {
+        if (firstTime) {
+            partition(root)
+                .sum(function(d){return getValueFromCount(d)})
+                .sort(function(a, b) { return b.value - a.value})
+                .descendants();
+
+            path = vis.selectAll('path')
+                .data(partition(root).descendants())
+                .enter().append('path')
+                //.style("stroke", function(d){ l(d.x1-d.x0); return (d.x1-d.x0 > 0.001) ?  "#fff" : ""})
+                .style("fill", function(d, i){ return i%2 === 0 ? color(d) : d3.rgb(color(d)).darker(0.5)})
+                .on('mouseover', mouseover)
+                .on('click', onclick);
+        } else {
+            partition(root)
+                .sum(function(d){return getValueFrom(d, perspective)})
+                .sort(function(a, b) { return b.value - a.value});
+
+
+            if(node.value === 0) {
+                partition(root)
+                    .sum(function(d){return getValueFromCount(d)})
+            }
+
+            path = d3.selectAll('path')
+                .data(partition(root)
+                    .descendants())
+
+        }
+        path
+            //.filter(function(d) {l(d.x1 -d.x0); return (d.x1 - d.x0) > 0.0004})
+            .transition().duration(1000).attrTween("d", arcTweenData)
+            .style("fill", function(d, i){ return i%2 === 0 ? color(d) : d3.rgb(color(d)).darker(0.5)})
+
+        info(node)
+    }
+
     d3.json('opendata.swiss.datasets.visits.json', function(json) {
 
         var top = {"name": "opendata.swiss"},
-        root;
+        root, path;
 
 
         top.values = d3.nest()
@@ -407,27 +444,11 @@
             .entries(json);
 
 
-        root = d3.hierarchy(top, function(d) {return d.values})
-            .sum(function(d) {
-                return 1;//getValueFromDownloads(d);
-            })
-            .sort(function(a, b) { return b.value - a.value});
-
-        partition(root);
+        root = d3.hierarchy(top, function(d) {return d.values});
 
         node = root;
 
-
-        var path = vis.selectAll('path')
-            .data(partition(root).sum(function(d){return getValueFromDownloads(d);}).descendants())
-            .enter().append('path')
-            .attr("d", arc)
-            //.style("stroke", function(d){ l(d.x1-d.x0); return (d.x1-d.x0 > 0.001) ?  "#fff" : ""})
-            .style("fill", function(d, i){ return i%2 === 0 ? color(d) : d3.rgb(color(d)).darker(0.5)})
-            .on('mouseover', mouseover)
-            .on('click', onclick)
-
-
+        draw(node, true);
 
         d3.selectAll('.perspective')
             .on('click', function() {
@@ -436,63 +457,17 @@
                 d3.selectAll('.perspective[active=true]').attr('active', 'false');
                 d3.select(this).attr('active', true);
 
-                if(perspective === "perspective-visits") { currPerspective = 'visits'};
-                if(perspective === "perspective-count") { currPerspective = undefined };
-                if(perspective === "perspective-size") { currPerspective = 'size'};
-                if(perspective === "perspective-fields") { currPerspective = 'fields'};
+                if(perspective === "perspective-visits") { currPerspective = 'visits'}
+                if(perspective === "perspective-count") { currPerspective = undefined }
+                if(perspective === "perspective-size") { currPerspective = 'size'}
+                if(perspective === "perspective-fields") { currPerspective = 'fields'}
 
-                transformData(perspective);
-                transformData(perspective);
+               draw(root, false, currPerspective);
+
             });
 
 
-        function transformData(perspective) {
 
-            function getValueFrom(d) {
-                if(perspective === "perspective-visits") { return getValueFromVisits(d)};
-                if(perspective === "perspective-count") { return getValueFromCount(d)};
-                if(perspective === "perspective-size") { return getValueFromSize(d)};
-                if(perspective === "perspective-fields") { return getValueFromDownloads(d) };
-            }
-
-
-
-            d3.selectAll('path')
-                .data(
-                    partition(root)
-                        .sum(function(d){return getValueFrom(d)})
-                        .sort(function(a, b) { return b.value - a.value})
-                        .descendants()
-                )
-                .transition()
-                .duration(500)
-                .attrTween("d", arcTweenData)
-        }
-
-
-        function arcTweenData(a, i) {
-            var oi = d3.interpolate({ x0: (a._x0 ? a._x0 : 0), x1: (a._x1 ? a._x1 : 0) }, a);
-            //var oi = d3.interpolate({x0: a._x0, x1: a._x1}, a);
-            function tween(t) {
-                var b = oi(t);
-                a._x0 = b.x0;
-                a._x1 = b.x1;
-                return arc(b);
-            }
-
-
-            if (i == 0) {
-                // If we are on the first arc, adjust the x domain to match the root node
-                // at the current zoom level. (We only need to do this once.)
-                var xd = d3.interpolate(x.domain(), [node.x0, node.x0 + node.x1]);
-                return function (t) {
-                    x.domain(xd(t));
-                    return tween(t);
-                };
-            } else {
-                return tween;
-            }
-        }
 
     });
 
@@ -503,31 +478,60 @@
 
 
 
-    function onclick(d) {
+    function getValueFrom(d, perspective) {
+        if(perspective === "visits") { return getValueFromVisits(d)};
+        if(perspective === "size") { return getValueFromSize(d)};
+        if(perspective === "fields") { return getValueFromDownloads(d) };
+        return getValueFromCount(d);
+    }
 
-        //listDatasets(d); Maybe if there is more time
 
-        node = d;
-
-
-
-
-       if (d.depth === 2) {
-            return 0;
-            //window.location = "https://opendata.swiss/de/dataset/" + d.data.id
+    function arcTweenData(a, i) {
+        var oi = d3.interpolate({ x0: (a._x0 ? a._x0 : 0), x1: (a._x1 ? a._x1 : 0) }, a);
+        function tween(t) {
+            var b = oi(t);
+            a._x0 = b.x0;
+            a._x1 = b.x1;
+            return arc(b);
         }
 
 
-        vis.selectAll('path').transition()
-            .duration(300)
-            .tween("scale", function() {
-                var xd = d3.interpolate(x.domain(), [d.x0, d.x1]),
-                    yd = d3.interpolate(y.domain(), [d.y0, 1]),
-                    yr = d3.interpolate(y.range(), [d.y0 ? 20 : 0, radius]);
-                return function(t) { x.domain(xd(t)); y.domain(yd(t)).range(yr(t)); };
-            })
-            .attrTween("d", function(d) { return function() { return arc(d); }; })
+        if (i == 0) {
+            // If we are on the first arc, adjust the x domain to match the root node
+            // at the current zoom level. (We only need to do this once.)
+            var xd = d3.interpolate(x.domain(), [node.x0, node.x1]);
+            return function (t) {
+                x.domain(xd(t));
+                return tween(t);
+            };
+        } else {
+            return tween;
+        }
+    }
 
+    function arcTweenZoom(d) {
+        var xd = d3.interpolate(x.domain(), [d.x0, d.x1]),
+            yd = d3.interpolate(y.domain(), [d.y0, 1]), // [d.y0, 1]
+            yr = d3.interpolate(y.range(), [d.y0 ? 40 : 0, radius]);
+        return function (d, i) {
+            return i
+                ? function (t) { return arc(d); }
+                : function (t) { x.domain(xd(t)); y.domain(yd(t)).range(yr(t)); return arc(d); };
+        };
+    }
+
+
+    function onclick(d) {
+
+
+       if (d.depth === 2) {
+            window.open("https://opendata.swiss/de/dataset/" + d.data.id);
+           return 0;
+        }
+
+        node = d;
+
+        vis.selectAll('path').transition().duration(1000).attrTween("d", arcTweenZoom(d));
 
     }
 
@@ -551,7 +555,6 @@
     }
 
 
-
     // Restore everything to full opacity when moving off the visualization.
     function mouseleave(d) {
             // Deactivate all segments during transition.
@@ -566,13 +569,8 @@
                     d3.select(this).on("mouseover", mouseover);
                 });
 
-            d3.select('#chart-info')
-                .html('')
+            info(node)
     }
-
-
-
-
 
 
     // Getting the highest total value of the downloads in a dataset
@@ -634,11 +632,17 @@
         var text = "";
         if(currPerspective === 'size') {
             text = parseInt(dataset.value / 1000000).toString().replace(/\B(?=(\d{3})+(?!\d))/g, "'") + " MBs"
+            if (parseInt(dataset.value) === 1) text = "0 MB";
         }
         else if (currPerspective === 'fields') {
             text = parseInt(dataset.value).toString().replace(/\B(?=(\d{3})+(?!\d))/g, "'") + " Einträge"
+            if(parseInt(dataset.value) === 1) text = "0 Einträge" // We set it to one in the data so it doesn't disappear
+
+
         } else if (currPerspective === 'visits') {
             text = (dataset.value / getTotal(dataset) * 100).toString().replace(/\.(\d\d)\d+/g, ".$1") + "% der Besuche"
+            if(parseInt(dataset.value) === 1) text = "Keine Besuche"
+
         } else {
             text = dataset.value + (dataset.value === 1 ? " Datensatz" : " Datensätze");
         }
