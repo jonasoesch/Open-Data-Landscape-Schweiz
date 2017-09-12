@@ -16958,9 +16958,11 @@ d3.json('cantons.data.json', function (err, cantons) {
     document.getElementById('og').addEventListener('click', function () { oeffentlichkeitsgesetz(); });
     function oeffentlichkeitsgesetz() {
         svg.selectAll('#cantons polygon, #cantons path') //.call((function(g) {console.log(g)} as any));
-            .attr('fill', function (canton) { console.log(this.id); return colorscheme[cantons['cantons'][this.id]['öffentlichkeitsgesetz']]; });
+            .attr('fill', function (canton) { return colorscheme[cantons['cantons'][this.id]['öffentlichkeitsgesetz']]; });
         svg.selectAll('#cities, #city-labels').attr('class', 'hidden');
         legend(colorscheme, ['Keine Information', 'Nein', 'Teilweise', 'Ja']);
+        d3.selectAll('.active').attr('class', '');
+        d3.select('#og').attr('class', 'active');
     }
     function opendata() {
         svg.selectAll("#cantons polygon, #cantons path")
@@ -16969,6 +16971,8 @@ d3.json('cantons.data.json', function (err, cantons) {
             .attr('fill', function () { return colorscheme[cantons['cities'][this.id]['opendata']]; });
         svg.selectAll('#cities, #city-labels').attr('class', '');
         legend(colorscheme, ['Keine Information', 'In Evaluation', 'In Vorbereitung', 'Publikation']);
+        d3.selectAll('.active').attr('class', '');
+        d3.select('#opendata').attr('class', 'active');
     }
 });
 function legend(colors, texts) {
