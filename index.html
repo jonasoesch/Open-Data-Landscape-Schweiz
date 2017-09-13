@@ -27,7 +27,7 @@
 <iframe id="landscape" src="cantons/dist/index.html" height="500px">
 </iframe>
 </p>
-<p><em>Karte mit Kantonen und Bundesämtern. Zeigt welche Kantone ein Öffentlichkeitsgesetz haben und wie ihr Status bezüglich Open Data ist. Die Grösse der Kantone und Städte ist im Verhältnis zur Einwohnerzahl dargestellt</em></p>
+<p><em>Karte mit Kantonen und Bundesämtern. Zeigt welche Kantone ein Öffentlichkeitsgesetz haben und wie ihr Status bezüglich Open Data ist. Die Grösse der Kantone und Städte ist im Verhältnis zur Einwohnerzahl dargestellt. Stand 12.9.2017</em></p>
 <p>Nach Möglichkeit geschieht dies automatisch mittels sogenannter &quot;Harvester&quot;. Die Stadt Zürich hat zum Beispiel bereits 2012 damit begonnen, eine eigene OGD-Plattform aufzubauen. Diese ist so nun auch mit der nationalen Plattform verknüpft und liefert täglich neue und aktualisierte Datensätze aus.</p>
 <p>&quot;Das ist genau der Charme von Open Data&quot;, bestätigen mir Marco Sieber und Reto Wick, die OGD-Beauftragten der Stadt Zürich, &quot;dass wir die Daten schon haben. Wir brauchen sie nur noch in geeigneter Form zu publizieren. Das kann man auch automatisieren&quot;. Auch der Bundesrat erwähnt diese Sekundärnutzung als eine der Stärken von Open Government Data. Diese sollen ganz ohne Mehraufwand entstehen, einfach als Nebenprodukt der Amtstätigkeit.</p>
 <p>Dass das nicht immer so einfach ist, wissen Sieber und Wick selbst am besten. Seit Jahren werben sie an den verschiedenen Stellen dafür, dass sie ihre Daten &quot;per default&quot; offenlegen. Oft steht oder fällt es damit, ob sich die richtige Person an der entsprechenden Stelle <a href="https://www.stadt-zuerich.ch/content/dam/stzh/portal/Deutsch/OGD/Dokumente/Hinderungsgr%c3%bcnde%20f%c3%bcr%20Open%20Government%20Data.pdf">für das Thema interessiert</a> und bereit ist, die internen Prozesse anzupassen.</p>
@@ -41,6 +41,7 @@
 <iframe id="plattform" src="sunburst/index.html" height="800px">
 </iframe>
 </p>
+<p><em>Übersicht über die Datensätze auf opendata.swiss. Stand 12.9.2017.</em> <a href="#methodik">Details zur Methodik</a></p>
 <p>&quot;Aber sind denn solchen Daten dadurch weniger wert?&quot; Während jedes Bildarchiv vielleicht hundert Bilder enthält, haben manche Tabellen oder APIs Millionen von Einträgen. Versucht man die Einträge in jedem Datensatz zu zählen, ergibt sich ein komplett neues Bild. Die grössten Datensätze bringen es auf 50 Millionen Datenpunkte, die kleinsten gerade Mal auf drei. &quot;Sind denn die Datensätze mit den meisten Einträgen auch die beliebtesten?&quot;, fragt man sich. &quot;Nicht wirklich&quot; antworten die Besucherzahlen der einzelnen Datensätze. Die Echtzeit-Messdaten von SwissMetNet sind äusserst beliebt, obwohl der Datensatz nicht riesig ist.</p>
 <h2 id="data-literacy">Data Literacy</h2>
 <p>Einen solchen Dialog mit Daten zu führen bezeichnet man in der Szene als &quot;Data Literacy&quot;. Und möglichst jeder soll in Zukunft &quot;data literate&quot; werden. Lavrovsky hat dazu eigens eine <em>School of Data</em> gegründet. Dort bringt er Interessierten bei, mit Daten umzugehen, sie darzustellen und zu interpretieren.</p>
@@ -51,6 +52,16 @@
 <p>Die Öffnung der Transportdaten der SBB hat zum Beispiel viele Pendler dazu inspiriert, ihren Fahrplan <a href="https://opentransportdata.swiss/de/fallblatt">kreativ neu zu interpretieren</a>. Aber auch Unternehmen machen dem <a href="http://www.viadi-app.ch">SBB-Fahrplan Konkurrenz</a>. Das innovative Interface von Viadi fand schliesslich sogar Einzug in die neue SBB-App.</p>
 <p>Doch während viele Leute in Bahnhof, Migros oder Coop fast täglich ein und ausgehen, trifft das bei der Verwaltung nicht zu.</p>
 <p>Lovato wünscht sich deshalb auch dort mehr Offenheit. Die Verwaltungen kennen ihre Fragestellungen und oftmals gleichen sie sich untereinander. Offene Daten können ein Anlass sein, darüber zu diskutieren, ob man die Herausforderungen nicht gemeinsam angehen will, anstatt jeder für sich in seiner Ecke<a href="#fn2" class="footnoteRef" id="fnref2"><sup>2</sup></a> <a href="#fn3" class="footnoteRef" id="fnref3"><sup>3</sup></a>. Bis sich eine solche Kultur des &quot;Open Government&quot; etabliert hat, wird es <a href="https://www.egovernment.ch/index.php/download_file/force/1135/3337/">wohl noch einige Jahre dauern</a>. Aber, so Lovato: &quot;die Zeit ist auf unserer Seite. Irgendwann wird der Zugang zu Daten so selbstverständlich sein wie der zu Wasser oder zu Strom.&quot;</p>
+<h3 id="methodik">Methodik</h3>
+<p>Informationen zu den einzelnen Datensätzen wurden über die <a href="https://opendata.swiss/api/3/action/package_list">opendata.swiss-API</a> abgefragt.</p>
+<p>Um die Dateigrösse und die Anzahl der Einträge zu ermitteln wurden alle Daten heruntergeladen. Davon ausgenommen sind Datensätze die als API zur Verfügung stehen oder nicht direkt verlinkt sind. Zur Ermittlung der Dateigrösse wurden die Grössen aller Downloads addiert.</p>
+<p>Die Anzahl Einträge wurde aus Zeitgründen nicht für alle Datensätze ermittelt. Sie funktioniert für die verschiedenen Datentypen folgerndermassen:</p>
+<ul>
+<li>Tabellarische Daten (TSV, CSV, PC-AXIS, XLS): Anzahl Felder in der Tabelle.</li>
+<li>Geodaten (Shapefiles): Anzahl Einträge (Punkte, Flächen) × Anzahl Attribute pro Eintrag.</li>
+</ul>
+<p>Die Besucherzahlen wurden freundlicherweise vom Bundesarchiv zur Verfügung gestellt. Besuche auf der Seite des Datensatzes und auf allen Unterseiten wurden in der Grafik pro Datensatz kumuliert.</p>
+<h3 id="fussnoten">Fussnoten</h3>
 <script src="presentation/presentation.js"></script>
 <div class="footnotes">
 <hr />

@@ -31,7 +31,7 @@ Damit diese Infrastruktur Wirklichkeit wird, definiert der Bundesrat in seinem M
 
 <p><iframe id="landscape" src="cantons/dist/index.html" height="500px"></iframe></p> 
 
-*Karte mit Kantonen und Bundesämtern. Zeigt welche Kantone ein Öffentlichkeitsgesetz haben und wie ihr Status bezüglich Open Data ist. Die Grösse der Kantone und Städte ist im Verhältnis zur Einwohnerzahl dargestellt*
+*Karte mit Kantonen und Bundesämtern. Zeigt welche Kantone ein Öffentlichkeitsgesetz haben und wie ihr Status bezüglich Open Data ist. Die Grösse der Kantone und Städte ist im Verhältnis zur Einwohnerzahl dargestellt. Stand 12.9.2017*
 
 Nach Möglichkeit geschieht dies automatisch mittels sogenannter "Harvester". Die Stadt Zürich hat zum Beispiel bereits 2012 damit begonnen, eine eigene OGD-Plattform aufzubauen. Diese ist so nun auch mit der nationalen Plattform verknüpft und liefert täglich neue und aktualisierte Datensätze aus.
 
@@ -52,6 +52,8 @@ So findet sich hier ein grosse Menge Antworten ohne die passenden Fragen. Keine 
 Der Download (fast) aller Datensätze wiegt rund 136 GB. Die Visualisierung zeigt aber, dass durchaus nicht alle Datensätze gleich geartet sind. Es gibt GB-schwere Bildarchive aber auch statistische Datensätze die es kaum auf ein MB bringen.
 
 <p><iframe id="plattform" src="sunburst/index.html" height="800px"></iframe></p> 
+
+*Übersicht über die Datensätze auf opendata.swiss. Stand 12.9.2017.*  [Details zur Methodik](#methodik)
 
 "Aber sind denn solchen Daten dadurch weniger wert?" Während jedes Bildarchiv vielleicht hundert Bilder enthält, haben manche Tabellen oder APIs Millionen von Einträgen. Versucht man die Einträge in jedem Datensatz zu zählen, ergibt sich ein komplett neues Bild. Die grössten Datensätze bringen es auf 50 Millionen Datenpunkte, die kleinsten gerade Mal auf drei. "Sind denn die Datensätze mit den meisten Einträgen auch die beliebtesten?", fragt man sich. "Nicht wirklich" antworten die Besucherzahlen der einzelnen Datensätze. Die Echtzeit-Messdaten von SwissMetNet sind äusserst beliebt, obwohl der Datensatz nicht riesig ist.
 
@@ -74,8 +76,24 @@ Doch während viele Leute in Bahnhof, Migros oder Coop fast täglich ein und aus
 Lovato wünscht sich deshalb auch dort mehr Offenheit. Die Verwaltungen kennen ihre Fragestellungen und oftmals gleichen sie sich untereinander. Offene Daten können ein Anlass sein, darüber zu diskutieren, ob man die Herausforderungen nicht gemeinsam angehen will, anstatt jeder für sich in seiner Ecke[^Huijboom] [^Janssen]. Bis sich eine solche Kultur des "Open Government" etabliert hat, wird es [wohl noch einige Jahre dauern](https://www.egovernment.ch/index.php/download_file/force/1135/3337/). Aber, so Lovato: "die Zeit ist auf unserer Seite. Irgendwann wird der Zugang zu Daten so selbstverständlich sein wie der zu Wasser oder zu Strom."
 
 
+### Methodik
 
-[^openscience]: Neben der Verwaltung gibt es auch in anderen Bereichen Bestrebungen, Daten zu öffnen. Allen voran in der Wissenschaft. Das Thema *Open Science Data* steht in der Schweiz noch [ziemlich am Anfang]((https://www.swissuniversities.ch/de/themen/hochschulpolitik/open-access/)) und wird in diesem Artikel nicht weiter behandelt.  
+Informationen zu den einzelnen Datensätzen wurden über die [opendata.swiss-API](https://opendata.swiss/api/3/action/package_list) abgefragt. 
+
+Um die Dateigrösse und die Anzahl der Einträge zu ermitteln wurden alle Daten heruntergeladen. Davon ausgenommen sind Datensätze die als API zur Verfügung stehen oder nicht direkt verlinkt sind. Zur Ermittlung der Dateigrösse wurden die Grössen aller Downloads addiert. 
+
+Die Anzahl Einträge wurde aus Zeitgründen nicht für alle Datensätze ermittelt. Sie funktioniert für die verschiedenen Datentypen folgerndermassen: 
+
+* Tabellarische Daten (TSV, CSV, PC-AXIS, XLS): Anzahl Felder in der Tabelle. 
+* Geodaten (Shapefiles): Anzahl Einträge (Punkte, Flächen) × Anzahl Attribute pro Eintrag. 
+
+Die Besucherzahlen wurden freundlicherweise vom Bundesarchiv zur Verfügung gestellt. Besuche auf der Seite des Datensatzes und auf allen Unterseiten wurden in der Grafik pro Datensatz kumuliert.
+
+### Fussnoten
+
+[^openscience]: Neben der Verwaltung gibt es auch in anderen Bereichen Bestrebungen, Daten zu öffnen. Allen voran in der Wissenschaft. Das Thema *Open Science Data* steht in der Schweiz noch [ziemlich am Anfang]((https://www.swissuniversities.ch/de/themen/hochschulpolitik/open-access/)) und wird in diesem Artikel nicht weiter behandelt. 
+
+
 [^Huijboom]: Huijboom, N., & Van den Broek, T. (2011). Open data: an international comparison of strategies. European Journal of ePractice, 7-8.
 [^Janssen]: Janssen, M., Charalabidis, Y., & Zuiderwijk, A. (2012). Benefits, Adoption Barriers and Myths of Open Data and Open Government. Information Systems Management, 29(4), 258–268.  http://doi.org/10.1080/10580530.2012.716740
 
