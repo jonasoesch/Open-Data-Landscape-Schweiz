@@ -8,13 +8,13 @@ Die Öffnung der Behördendaten hat in der Schweiz schon eine längere Geschicht
 
 Das Öffentlichkeitsgesetz wurde eingeführt um den Staatsapparat für die Öffentlichkeit transparenter zu machen. Viele, bisher  nur interne, Informationen wurden nun [von ihrem dicken Amtsmantel befreit](https://www.oeffentlichkeitsgesetz.ch/deutsch/befreite-dokumente/). Zur Freude vieler Journalisten, deren Arbeit dadurch ungemein erleichtert wurde. 
 
-### Open Government Data
+### Offene Behördendaten
 
 Wie durch Zufall veröffentlichte im [gleichen Jahr](https://blog.okfn.org/2006/09/06/version-10-of-the-open-knowledge-definition-released/) die [Open Knowledge Foundation](https://okfn.org/) ihre [Open Definition](http://opendefinition.org/). Nach deren Grundsätzen soll der Staat die Daten, die er erhebt, auch seinen Bürgern zugänglich machen. Dafür hat sich der Begriff [Open Government Data](https://opengovernmentdata.org/)  kurz *OGD* durchgesetzt. [^openscience] Eine der Hauptbegründungen für OGD war damals wie heute: mehr Transparenz und Demokratie.
 
-Obwohl Open Government Data und das Öffentlichkeitsgesetz dadurch Schwestern im Geiste sind, geht OGD doch viel weiter. Das Öffentlichkeitsgesetz verlangt lediglich die *Herausgabe* von Daten auf Anfrage, OGD hingegen deren komplette *Freigabe*. Als der Bundesrat 2014 eine [Open Government Data-Strategie](https://www.admin.ch/opc/de/federal-gazette/2014/3493.pdf) erliess, bezeichnete er dies als "Selbstbedienungssystem".
+Obwohl Open Government Data und das Öffentlichkeitsgesetz dadurch Schwestern im Geiste sind, geht OGD doch viel weiter. Das Öffentlichkeitsgesetz verlangt lediglich die Herausgabe von Daten auf Anfrage, OGD hingegen die aktive *Freigabe*. Als der Bundesrat 2014 eine [Open Government Data-Strategie](https://www.admin.ch/opc/de/federal-gazette/2014/3493.pdf) erliess, bezeichnete er dies als "Selbstbedienungssystem".
 
-Solche Daten dürfen beliebig vervielfältigt, weitergegeben und kopiert werden. "Es ist oftmals kaum mehr nachvollziehbar, wer welche Datensätze nutzt.", sagt Juan Pablo Lovato, Projektleiter Open Government Data Schweiz. "Aber das liegt ja auch in der Natur *freier Daten*".
+Freigegebene Daten dürfen beliebig vervielfältigt, weitergegeben und kopiert werden. "Es ist oftmals kaum mehr nachvollziehbar, wer welche Datensätze nutzt.", sagt Juan Pablo Lovato, Projektleiter Open Government Data Schweiz. "Aber das liegt ja auch in der Natur *freier Daten*".
 
 ### Der Verein opendata.ch
 
@@ -25,7 +25,7 @@ Obwohl offiziell immer wieder auch der potenzielle wirtschaftliche Nutzen von of
 Dieser Eindruck bestätigt sich, als ich Oleg Lavrovsky, den "Crowdsourcing Champion" des Vereins, im [Kaffee Effinger](https://www.effinger.ch/) in Bern treffe. Aus dem geplanten Interview wird bald eine Grundsatzdiskussion. Lavrovsky sieht offene Daten in Zukunft als unverzichtbaren Teil unserer Infrastruktur. Wie Wasser oder Strom.
 
 
-## Open Data als Nebenprodukt: von der Sekundärnutzung
+## Open Data als Nebenprodukt: die Sekundärnutzung
 
 Damit diese Infrastruktur Wirklichkeit wird, definiert der Bundesrat in seinem Massnahmenpaket die Erstellung einer zentralen Plattform: [opendata.swiss](http://opendata.swiss/). Sie sammelt seit 2015 offene Daten aus Bundesämtern, Kantonen, Gemeinden und bundesnahen Betrieben.
 
@@ -41,27 +41,27 @@ Dass das nicht immer so einfach ist, wissen Sieber und Wick selbst am besten. Se
 
 Jemand, der sich eindeutig für das Thema interessiert, ist Daniel Schweizer von den Parlamentsdiensten. Die Parlamentsdienste publizieren seit Jahren Informationen über Parlamentarier, Vorlagen und Abstimmungsresultate auf [parlament.ch](https://www.parlament.ch/de). Schon vor einiger Zeit wurde entschieden, die Webseite mit Hilfe einer Daten-API zu befüttern. Diese API zu öffnen war da nur noch ein kleiner Schritt. Mit der Publikation der Schnittstelle produzierten die Parlamentsdienste über Nacht, ohne Mehraufwand, offene Daten. Auch diese sind natürlich bei opendata.swiss eingetragen.
 
-So landen die unterschiedlichsten Datensätze auf der Plattform. Die grosse Vielfalt erschliesst sich dem Besucher aber erst auf den zweiten Blick. Aus ihrem Ursprungskontext herausgehoben, sehen die Daten als erstes alle gleich und vergleichbar aus.
+Und so landen die unterschiedlichsten Datensätze auf der Plattform. Die grosse Vielfalt erschliesst sich dem Besucher aber erst auf den zweiten Blick. Aus ihrem Ursprungskontext herausgehoben, sehen die Daten als erstes alle recht ähnlich aus.
 
 ## 2420 Antworten ohne die passenden Fragen
 
-Diesen Eindruck hat man auch beim Besuch auf opendata.swiss. Dort präsentiert sich dem Besucher als erstes, was sonst, eine Zahl: "2420 Datensätze" steht da gross und weiss auf neutral-grünblauem Hintergrund. Und irgendwie kommt einem die [skurrile Geschichte von Douglas Adams](http://www.progressiveruin.com/2011/03/13/42/) in den Sinn. Gefragt nach der Antwort auf die Frage "nach dem Leben, dem Universum und dem ganzen Rest“, spuckt der Supercomputer nach 7.5 Millionen Jahren Rechenzeit endlich die Antwort aus: "42". Die passende Frage dazu kennt aber auch er nicht.
+Auf der Startseite von opendata.swiss präsentiert sich allem voran, was sonst, eine Zahl: "2420 Datensätze" steht da gross und weiss auf neutral-grünblauem Hintergrund. Und irgendwie kommt einem die [skurrile Geschichte von Douglas Adams](http://www.progressiveruin.com/2011/03/13/42/) in den Sinn. Gefragt nach der Antwort auf die Frage "nach dem Leben, dem Universum und dem ganzen Rest“, spuckt der Supercomputer nach 7.5 Millionen Jahren Rechenzeit endlich die Antwort aus: "42". Die passende Frage dazu kennt aber auch er nicht.
 
 So findet sich hier ein grosse Menge Antworten ohne die passenden Fragen. Keine Geschichten, keine Interpretationen oder Meinungen. Einfach nur die nackten Zahlen. Es liegt nun am Leser selbst, Fragen an die Daten zu formulieren. Und ein guter Anfang wäre sicher die Frage: "Wie viel Daten sind denn überhaupt 2420 Datensätze?"
 
-Der Download (fast) aller Datensätze wiegt rund 136 GB. Die Visualisierung zeigt aber, dass durchaus nicht alle Datensätze gleich geartet sind. Es gibt GB-schwere Bildarchive aber auch statistische Datensätze die es kaum auf ein MB bringen.
+Der Download [(fast)](#methodik) aller Datensätze wiegt rund 136 GB. Die Visualisierung zeigt aber, dass durchaus nicht alle Datensätze gleich geartet sind. Es gibt GB-schwere Bildarchive aber auch statistische Datensätze die es kaum auf ein MB bringen.
 
-<p><iframe id="plattform" src="sunburst/index.html" height="800px"></iframe></p> 
+<p><iframe id="plattform" src="sunburst/index.html" height="700px"></iframe></p> 
 
 *Übersicht über die Datensätze auf opendata.swiss. Stand 12.9.2017.*  [Details zur Methodik](#methodik)
 
-"Aber sind denn solchen Daten dadurch weniger wert?" Während jedes Bildarchiv vielleicht hundert Bilder enthält, haben manche Tabellen oder APIs Millionen von Einträgen. Versucht man die Einträge in jedem Datensatz zu zählen, ergibt sich ein komplett neues Bild. Die grössten Datensätze bringen es auf 50 Millionen Datenpunkte, die kleinsten gerade Mal auf drei. "Sind denn die Datensätze mit den meisten Einträgen auch die beliebtesten?", fragt man sich. "Nicht wirklich" antworten die Besucherzahlen der einzelnen Datensätze. Die Echtzeit-Messdaten von SwissMetNet sind äusserst beliebt, obwohl der Datensatz nicht riesig ist.
+"Aber sind denn solchen Daten dadurch weniger wert?" Während jedes Bildarchiv vielleicht hundert Bilder enthält, haben manche Tabellen oder APIs Millionen von Einträgen. Versucht man die Einträge in jedem Datensatz zu zählen, ergibt sich ein komplett neues Bild. Die grössten Datensätze bringen es auf 50 Millionen Datenpunkte, die kleinsten gerade Mal auf drei. "Sind denn die Datensätze mit den meisten Einträgen auch die beliebtesten?", fragt man sich. "Nicht unbedingt" antworten die Besucherzahlen. Der beliebteste Datensatz, die [Krankenversicherungsprämien](https://opendata.swiss/de/dataset/health-insurance-premiums) des Bundesamtes für Gesundheit, liegt mit rund 8 Millionen Einträgen im Mittelfeld.
 
 ## Data Literacy
 
-Einen solchen Dialog mit Daten zu führen bezeichnet man in der Szene als "Data Literacy". Und möglichst jeder soll in Zukunft "data literate" werden. Lavrovsky hat dazu eigens eine *School of Data* gegründet. Dort bringt er Interessierten bei, mit Daten umzugehen, sie darzustellen und zu interpretieren.
+Einen solchen Dialog mit Daten zu führen bezeichnet man in der Szene als "Data Literacy". Und möglichst jeder soll in Zukunft "data literate" werden. Lavrovsky hat dazu einen [Schweizer Ableger](https://schoolofdata-ch.github.io/) der sogenannten [*School of Data*](https://schoolofdata.org/) gestartet. Dort bringt er Interessierten bei, mit Daten umzugehen, sie darzustellen und zu interpretieren.
 
-Regelmässig veranstaltet die Community auch sogenannte [Hackathons](https://make.opendata.ch/) zu verschiedenen Themen wie Finanzen, Energie oder Tourismus. Dort kommen Hacker, Journalisten, Unternehmer und Staatsangestellte zusammen, tauschen Fragestellungen aus und schlagen kreative Lösungen vor.
+Regelmässig veranstaltet die Community auch sogenannte [Hackathons](https://opendata.ch/events/) zu verschiedenen Themen wie Finanzen, Energie oder Tourismus. Dort kommen Hacker, Journalisten, Unternehmer und Staatsangestellte zusammen, tauschen Fragestellungen aus und schlagen kreative Lösungen vor.
 
 Manchmal stellt die Community auch fest, dass Daten fehlen oder fehlerhaft sind, so geschehen mit den Nährwertdaten aus dem Schweizer Detailhandel. Weil sich die Detailhändler sträubten, die Daten öffentlich zu machen, begann ein [Team an der ETH](https://www.openfood.ch/) Lausanne kurzerhand selbst, Produkte zu fotografieren und die Daten zusammenzutragen. Seither hat die Community schon über 18000 Produkte in den Katalog aufgenommen. Lavrovsky ist von solchen Initiativen begeistert. "Wenn die Organisationen ihre Daten nicht selbst offenlegen, dann macht die Community das eben selbst".
 
@@ -69,7 +69,7 @@ Manchmal stellt die Community auch fest, dass Daten fehlen oder fehlerhaft sind,
 
 Wichtig, so scheint es, ist nicht nur der Zugang zu den Daten, sondern vor allem auch zu deren Kontext. Die Daten selbst enthalten nicht die Fragen, die sie beantworten. Interessante Fragestellungen kommen immer aus dem Alltag der Menschen. In der Öffentlichkeit stossen so auch diejenigen Datensätze auf das grösste Echo, die direkt mit dem Alltag vieler Leute zu tun haben.
 
-Die Öffnung der Transportdaten der SBB hat zum Beispiel viele Pendler dazu inspiriert, ihren Fahrplan [kreativ neu zu interpretieren](https://opentransportdata.swiss/de/fallblatt). Aber auch Unternehmen machen dem [SBB-Fahrplan Konkurrenz](http://www.viadi-app.ch). Das innovative Interface von Viadi fand schliesslich sogar Einzug in die neue SBB-App.
+Die Öffnung der Transportdaten der SBB hat zum Beispiel viele Pendler dazu inspiriert, ihren Fahrplan [kreativ neu zu interpretieren](https://opentransportdata.swiss/de/fallblatt). Aber auch Unternehmen machen dem [SBB-Fahrplan Konkurrenz](http://www.viadi-app.ch). Das innovative Interface von [Viadi](https://www.viadi-app.ch/) fand schliesslich sogar Einzug in die neue SBB-App.
 
 Doch während viele Leute in Bahnhof, Migros oder Coop fast täglich ein und ausgehen, trifft das bei der Verwaltung nicht zu.
 
@@ -82,16 +82,17 @@ Informationen zu den einzelnen Datensätzen wurden über die [opendata.swiss-API
 
 Um die Dateigrösse und die Anzahl der Einträge zu ermitteln wurden alle Daten heruntergeladen. Davon ausgenommen sind Datensätze die als API zur Verfügung stehen oder nicht direkt verlinkt sind. Zur Ermittlung der Dateigrösse wurden die Grössen aller Downloads addiert. 
 
-Die Anzahl Einträge wurde aus Zeitgründen nicht für alle Datensätze ermittelt. Sie funktioniert für die verschiedenen Datentypen folgerndermassen: 
+Die Anzahl Einträge wurde aus Zeitgründen nur für etwa drei Viertel der Datensätze ermittelt. Sie funktioniert für die verschiedenen Datentypen folgerndermassen: 
 
 * Tabellarische Daten (TSV, CSV, PC-AXIS, XLS): Anzahl Felder in der Tabelle. 
 * Geodaten (Shapefiles): Anzahl Einträge (Punkte, Flächen) × Anzahl Attribute pro Eintrag. 
+* Bildaten: Anzahl der Bilder
 
-Die Besucherzahlen wurden freundlicherweise vom Bundesarchiv zur Verfügung gestellt. Besuche auf der Seite des Datensatzes und auf allen Unterseiten wurden in der Grafik pro Datensatz kumuliert.
+Die Besucherzahlen wurden freundlicherweise vom [Bundesarchiv](https://www.bar.admin.ch/bar/de/home/recherche/suchen/suchmaschinen-portale/open-government-data.html) zur Verfügung gestellt. Die Besucherzahlen für einen Datensatz wurden ermittelt, indem die Anzahl Besucher auf der Seite des Datensatzes und auf allen Unterseiten kumuliert wurde.
 
 ### Fussnoten
 
-[^openscience]: Neben der Verwaltung gibt es auch in anderen Bereichen Bestrebungen, Daten zu öffnen. Allen voran in der Wissenschaft. Das Thema *Open Science Data* steht in der Schweiz noch [ziemlich am Anfang]((https://www.swissuniversities.ch/de/themen/hochschulpolitik/open-access/)) und wird in diesem Artikel nicht weiter behandelt. 
+[^openscience]: Neben der Verwaltung gibt es auch in anderen Bereichen Bestrebungen, Daten zu öffnen. Speziell auch in der Wissenschaft. Das Thema *Open Science Data* steht in der Schweiz noch [ziemlich am Anfang]((https://www.swissuniversities.ch/de/themen/hochschulpolitik/open-access/)) und wird in diesem Artikel nicht weiter behandelt. 
 
 
 [^Huijboom]: Huijboom, N., & Van den Broek, T. (2011). Open data: an international comparison of strategies. European Journal of ePractice, 7-8.

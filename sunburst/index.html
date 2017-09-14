@@ -115,7 +115,7 @@
     #legend-outer {
         right: auto;
         left: 3%;
-        bottom: -120px;
+        bottom: -50px;
         padding: 0;
     }
 
@@ -129,6 +129,55 @@
         position: relative;
         top: 7px;
         margin-right: 3px;
+    }
+
+    .popup {
+        background-color: #fff;
+        position:absolute;
+        display: inline-block;
+        background-color: rgba(255, 1255, 255, 1);
+        padding: 10px;
+        border-radius: 3px;
+        font-size: 0.8em;
+        top: -25px;
+        left: 0px;
+        border: 1px solid #7F7F7F;
+    }
+
+    .popup a {
+        text-decoration: none;
+        color: #236B8E;
+        font-family: sans-serif;
+        border-bottom: 1px solid;
+        line-height: 1.4em;
+    }
+
+    .popup:before {
+        content: '';
+        position: absolute;
+        border-style: solid;
+        border-width: 0  10px 12px;
+        border-color: #7F7F7F transparent;
+        display: block;
+        width: 0;
+        z-index: 0;
+        margin-left: -12px;
+        top: -12px;
+        left: 30px;
+    }
+
+    .popup:after {
+        content: '';
+        position: absolute;
+        border-style: solid;
+        border-width: 0  10px 12px;
+        border-color: rgba(255, 255, 255, 1) transparent;
+        display: block;
+        width: 0;
+        z-index: 1;
+        margin-left: -12px;
+        top: -11px;
+        left: 30px;
     }
 
 
@@ -145,22 +194,18 @@
         <li>
             <svg width="21px" height="21px" viewBox="0 0 21 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                    <g id="Group-5" fill="#0A3073">
-                        <rect id="Rectangle-6-Copy-11" x="0" y="0" width="21" height="21"></rect>
-                    </g>
+                    <rect id="Rectangle-6-Copy-17" fill="#27100B" x="0" y="0" width="21" height="21"></rect>
                 </g>
             </svg>
             Bund </li>
         <li>
 
             <svg width="21px" height="21px" viewBox="0 0 21 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+                <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
                 <desc>Created with Sketch.</desc>
                 <defs></defs>
                 <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                    <g id="Group-5" transform="translate(0.000000, -27.000000)" fill="#3D315C">
-                        <rect id="Rectangle-6-Copy-8" x="0" y="27" width="21" height="21"></rect>
-                    </g>
+                    <rect id="Rectangle-6-Copy-11" fill="#AA391E" x="0" y="0" width="21" height="21"></rect>
                 </g>
             </svg>
             Kanton
@@ -168,150 +213,95 @@
         <li>
 
             <svg width="21px" height="21px" viewBox="0 0 21 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+                <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
                 <desc>Created with Sketch.</desc>
                 <defs></defs>
                 <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                    <g id="Group-5" transform="translate(0.000000, -54.000000)" fill="#673342">
-                        <rect id="Rectangle-6-Copy-9" x="0" y="54" width="21" height="21"></rect>
-                    </g>
+                    <rect id="Rectangle-6-Copy-11" fill="#FF947A" x="0" y="0" width="21" height="21"></rect>
                 </g>
             </svg>
             Gemeinde
         </li>
         <li>
-
             <svg width="21px" height="21px" viewBox="0 0 21 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
-                <desc>Created with Sketch.</desc>
+                <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
                 <defs></defs>
                 <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                    <g id="Group-5" transform="translate(0.000000, -82.000000)" fill="#5C5C66">
-                        <rect id="Rectangle-6-Copy-10" x="0" y="82" width="21" height="21"></rect>
-                    </g>
+                    <rect id="Rectangle-6-Copy-9" fill="#FFFFFF" x="0" y="0" width="21" height="21"></rect>
                 </g>
             </svg>
             Organisation
         </li>
     </ul>
     <ul class="legend" id="legend-outer">
-        <li><strong>Aussen: <br /> Datenformat</strong></li>
+        <li><strong>Aussen: Datentyp</strong></li>
         <li>
+
             <svg width="21px" height="21px" viewBox="0 0 21 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+                <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
                 <desc>Created with Sketch.</desc>
                 <defs></defs>
                 <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                    <g id="Group-4">
-                        <g id="Group-6">
-                            <rect id="Rectangle-6-Copy-3" fill="#A93955" x="0" y="0" width="21" height="21"></rect>
-                            <rect id="Rectangle-6-Copy-3" fill="#931A38" x="0" y="0" width="10.5" height="21"></rect>
+                    <g id="Group-4" transform="translate(-167.000000, -194.000000)">
+                        <g id="Group-10" transform="translate(167.000000, 194.000000)">
+                            <rect id="Rectangle-6-Copy-4" fill="#44A0C9" x="0" y="0" width="21" height="21"></rect>
+                            <rect id="Rectangle-6-Copy-14" fill="#3C7A95" x="0" y="0" width="10.5" height="21"></rect>
                         </g>
                     </g>
                 </g>
             </svg>
-            TSV
+            Tabellarische Daten
         </li>
         <li>
 
             <svg width="21px" height="21px" viewBox="0 0 21 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+                <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
                 <desc>Created with Sketch.</desc>
                 <defs></defs>
                 <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                    <g id="Group-4" transform="translate(0.000000, -28.000000)">
-                        <g id="Group-7" transform="translate(0.000000, 28.000000)">
-                            <rect id="Rectangle-6" fill="#FF9B81" x="0" y="0" width="21" height="21"></rect>
-                            <rect id="Rectangle-6-Copy-7" fill="#F17562" x="0" y="0" width="10.5" height="21"></rect>
-                        </g>
-                    </g>
-                </g>
-            </svg>
-            Multiformat
-        </li>
-        <li>
-
-            <svg width="21px" height="21px" viewBox="0 0 21 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
-                <desc>Created with Sketch.</desc>
-                <defs></defs>
-                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                    <g id="Group-4" transform="translate(0.000000, -56.000000)">
-                        <g id="Group-8" transform="translate(0.000000, 56.000000)">
-                            <rect id="Rectangle-6-Copy" fill="#FFAF43" x="0" y="0" width="21" height="21"></rect>
-                            <rect id="Rectangle-6-Copy-12" fill="#EF9733" x="0" y="0" width="10.5" height="21"></rect>
-                        </g>
-                    </g>
-                </g>
-            </svg>
-            ZIP
-        </li>
-        <li>
-
-            <svg width="21px" height="21px" viewBox="0 0 21 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
-                <desc>Created with Sketch.</desc>
-                <defs></defs>
-                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                    <g id="Group-4" transform="translate(0.000000, -85.000000)">
-                        <g id="Group-9" transform="translate(0.000000, 85.000000)">
+                    <g id="Group-4" transform="translate(-166.000000, -221.000000)">
+                        <g id="Group-9" transform="translate(166.000000, 221.000000)">
                             <rect id="Rectangle-6-Copy-2" fill="#EFCF47" x="0" y="0" width="21" height="21"></rect>
                             <rect id="Rectangle-6-Copy-13" fill="#EFC047" x="0" y="0" width="10.5" height="21"></rect>
                         </g>
                     </g>
                 </g>
             </svg>
-            PC-AXIS
+            Geodaten
         </li>
         <li>
 
             <svg width="21px" height="21px" viewBox="0 0 21 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+                <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
                 <desc>Created with Sketch.</desc>
                 <defs></defs>
                 <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                    <g id="Group-4" transform="translate(0.000000, -113.000000)">
-                        <g id="Group-10" transform="translate(0.000000, 113.000000)">
-                            <rect id="Rectangle-6-Copy-4" fill="#4B8AA6" x="0" y="0" width="21" height="21"></rect>
-                            <rect id="Rectangle-6-Copy-14" fill="#3C7A96" x="0" y="0" width="10.5" height="21"></rect>
-                        </g>
-                    </g>
-                </g>
-            </svg>
-            CSV
-        </li>
-        <li>
-
-            <svg width="21px" height="21px" viewBox="0 0 21 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
-                <desc>Created with Sketch.</desc>
-                <defs></defs>
-                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                    <g id="Group-4" transform="translate(0.000000, -141.000000)">
-                        <g id="Group-11" transform="translate(0.000000, 141.000000)">
+                    <g id="Group-4" transform="translate(-167.000000, -167.000000)">
+                        <g id="Group-11" transform="translate(167.000000, 167.000000)">
                             <rect id="Rectangle-6-Copy-5" fill="#5FA7A1" x="0" y="0" width="21" height="21"></rect>
                             <rect id="Rectangle-6-Copy-15" fill="#4C9992" x="0" y="0" width="10.5" height="21"></rect>
                         </g>
                     </g>
                 </g>
             </svg>
-            XLS
+            Bilddaten
         </li>
         <li>
+
             <svg width="21px" height="21px" viewBox="0 0 21 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+                <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
                 <desc>Created with Sketch.</desc>
                 <defs></defs>
                 <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                    <g id="Group-4" transform="translate(0.000000, -169.000000)">
-                        <g id="Group-12" transform="translate(0.000000, 169.000000)">
+                    <g id="Group-4" transform="translate(-166.000000, -249.000000)">
+                        <g id="Group-12" transform="translate(166.000000, 249.000000)">
                             <rect id="Rectangle-6-Copy-6" fill="#CCC2AA" x="0" y="0" width="21" height="21"></rect>
                             <rect id="Rectangle-6-Copy-16" fill="#B7AA8A" x="0" y="0" width="10.5" height="21"></rect>
                         </g>
                     </g>
                 </g>
             </svg>
-            Andere
+            Nicht identifizierte
         </li>
     </ul>
 </div>
@@ -331,6 +321,7 @@
 
     
 
+
     // Dimensions of sunburst.
     var width = document.body.clientWidth * 0.9;
     var height = width;
@@ -341,10 +332,10 @@
     function color(dataset) {
 
         var ebene = {
-            "confederation": "#0A3073",//"#0F2D40",
-            "canton": "#3D315C",//"#194759",
-            "commune": "#673342",//"#296B73",
-            "other": "#5C5C66"//"#CCC0A1"
+            "confederation": "#27100B",//"#0F2D40",
+            "canton": "#AA391E",
+            "commune": "#FF947A",
+            "other": "#FFFFFF"//"#CCC0A1"
         };
 
         if (dataset.depth === 0) return "transparent";
@@ -353,17 +344,23 @@
 
         // Deciding on the file format based on the largest download. Best likelihood to be correct for larger datasets.
         var downloads = dataset.data.downloads.sort(function(a, b) {return a.file_size < b.file_size});
-        var formats = downloads.length > 0 ? downloads[0].format : "None";
+        var formats = (downloads.length > 0 && downloads[0].real_format) ? downloads[0].real_format : "None";
 
+        downloads.forEach(function(dl) {
+            if(dl.url.indexOf("/wms") > -1) {
+                formats = "WMS"
 
+            }
+        });
 
         // Modification of the Vitamin-C colorscheme
-        if ((formats.indexOf('ZIP') != -1)) return "#FFAF43"// "#BEDB39"; // Shapefile
-        if (formats.indexOf('CSV') != -1) return "#4B8AA6"; //"#28708F";
-        if (formats.indexOf('PC-AXIS') != -1) return  "#EFCF47"//"#1F8A70";
-        if (formats.indexOf('XLS') != -1) return "#5FA7A1" //"#FD7400";
-        if (formats.indexOf('MULTIFORMAT') != -1) return "#FF9B81" //"#66B9D9";
-        if (formats.indexOf('tab-separated-values') != -1) return "#A93955" // "#D98086";
+        if ((formats.indexOf('SHP') != -1)) return "#FFAF43"// "#BEDB39"; // Shapefile
+        if ((formats.indexOf('WMS') != -1)) return "#FFAF43"// "#BEDB39"; // Shapefile
+        if (formats.indexOf('CSV') != -1) return "#44A0C9"//"#4B8AA6"; //"#28708F";
+        if (formats.indexOf('PC-AXIS') != -1) return  "#44A0C9"//"#EFCF47"//"#1F8A70";
+        if (formats.indexOf('XLS') != -1) return "#44A0C9" //"#FD7400";
+        if (formats.indexOf('tab-separated-values') != -1) "#44A0C9" //return "#FF9B81" //"#66B9D9";
+        if (formats.indexOf('Image') != -1) return "#5FA7A1" // "#D98086";
 
         return "#CCC2AA"//"#268bd2";
 
@@ -380,6 +377,7 @@
     var vis = d3.select("#chart").append("svg")
         .attr("width", width)
         .attr("height", height)
+        //.style('shape-rendering', 'optimizeSpeed')
         .append("g")
         .attr("id", "container")
         .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")"); // center the container
@@ -416,6 +414,9 @@
                 .style("fill", function(d, i){ return i%2 === 0 ? color(d) : d3.rgb(color(d)).darker(0.5)})
                 .on('mouseover', mouseover)
                 .on('click', onclick);
+
+
+
         } else {
             partition(root)
                 .sum(function(d){return getValueFrom(d, perspective)})
@@ -433,9 +434,19 @@
 
         }
         path
-            //.filter(function(d) {l(d.x1 -d.x0); return (d.x1 - d.x0) > 0.0004})
+            //.filter(function(d) {l(d.x1 -d.x0); return (d.x1 - d.x0) > 0.004})
             .transition().duration(1000).attrTween("d", arcTweenData)
-            .style("fill", function(d, i){ return i%2 === 0 ? color(d) : d3.rgb(color(d)).darker(0.5)})
+            //.style("fill", function(d, i){ return color(d)})
+            .style("fill", function(d, i){
+                if (d.depth == 2) {
+                    return i%2 === 0 ? color(d) : d3.rgb(color(d)).darker(0.3)
+                } else {
+                    return color(d);
+                }});
+
+        path
+            .filter(function(d) { return d.depth === 1})
+            .attr('stroke', '#ccc');
 
         info(node)
     }
@@ -473,27 +484,22 @@
 
             });
 
-
-
-
     });
 
 
     d3.select("#container").on("mouseleave", mouseleave);
 
 
-
-
-
     function getValueFrom(d, perspective) {
         if(perspective === "visits") { return getValueFromVisits(d)};
         if(perspective === "size") { return getValueFromSize(d)};
-        if(perspective === "fields") { return getValueFromDownloads(d) };
+        if(perspective === "fields") { return getValueFromFields(d) };
         return getValueFromCount(d);
     }
 
 
     function arcTweenData(a, i) {
+
         var oi = d3.interpolate({ x0: (a._x0 ? a._x0 : 0), x1: (a._x1 ? a._x1 : 0) }, a);
         function tween(t) {
             var b = oi(t);
@@ -528,11 +534,16 @@
     }
 
 
-    function onclick(d) {
+    function onclick(d, evt) {
+
+        d3.select('.popup').remove();
 
 
        if (d.depth === 2) {
-            window.open("https://opendata.swiss/de/dataset/" + d.data.id);
+           var content = "<a href=https://opendata.swiss/de/dataset/" + d.data.id + ">" + d.data.name + "</a>";
+
+           //dialog(d3.event, content);
+            //window.open("https://opendata.swiss/de/dataset/" + d.data.id);
            return 0;
         }
 
@@ -542,11 +553,21 @@
 
     }
 
+
+    function dialog(evt, content) {
+
+        d3.select('body').append('div')
+            .attr('class', 'popup')
+            .style('left', (evt.clientX - 30 )+'px')
+            .style('top', ( evt.clientY + 20 )+'px')
+            .html(content)
+    }
+
     // Fade all but the current sequence, and show it in the breadcrumb trail.
     function mouseover(d) {
             // Fade all the segments.
             d3.selectAll("path")
-                .style("opacity", 0.5);
+                .style("opacity", 0.65);
 
 
             var sequenceArray = d.ancestors().reverse();
@@ -582,9 +603,12 @@
 
     // Getting the highest total value of the downloads in a dataset
     // ATTENTION: Mind the risk of cases, where different data is combined as multiple downloads in one dataset
-    function getValueFromDownloads(dataset) {
+    function getValueFromFields(dataset) {
         if('downloads' in dataset) {
-            total = d3.max(dataset.downloads, function(dl) { return dl.total});
+            var total = 0;
+            dataset.downloads.forEach(function(dl){ total = dl.total>0 ? total + dl.total : total});
+
+
             if(total>0) {
                 return total
             } else {
