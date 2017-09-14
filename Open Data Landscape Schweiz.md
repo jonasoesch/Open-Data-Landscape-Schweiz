@@ -75,6 +75,7 @@ Doch während viele Leute in Bahnhof, Migros oder Coop fast täglich ein und aus
 
 Lovato wünscht sich deshalb auch dort mehr Offenheit. Die Verwaltungen kennen ihre Fragestellungen und oftmals gleichen sie sich untereinander. Offene Daten können ein Anlass sein, darüber zu diskutieren, ob man die Herausforderungen nicht gemeinsam angehen will, anstatt jeder für sich in seiner Ecke[^Huijboom] [^Janssen]. Bis sich eine solche Kultur des "Open Government" etabliert hat, wird es [wohl noch einige Jahre dauern](https://www.egovernment.ch/index.php/download_file/force/1135/3337/). Aber, so Lovato: "die Zeit ist auf unserer Seite. Irgendwann wird der Zugang zu Daten so selbstverständlich sein wie der zu Wasser oder zu Strom."
 
+<div markdown="1" style="background-color: #D9D9D6; padding: 5px 30px; box-sizing: border-box">
 
 ### Methodik
 
@@ -89,6 +90,8 @@ Die Anzahl Einträge wurde aus Zeitgründen nur für etwa drei Viertel der Daten
 * Bildaten: Anzahl der Bilder
 
 Die Besucherzahlen wurden freundlicherweise vom [Bundesarchiv](https://www.bar.admin.ch/bar/de/home/recherche/suchen/suchmaschinen-portale/open-government-data.html) zur Verfügung gestellt. Die Besucherzahlen für einen Datensatz wurden ermittelt, indem die Anzahl Besucher auf der Seite des Datensatzes und auf allen Unterseiten kumuliert wurde.
+
+</div>
 
 ### Fussnoten
 
