@@ -1,5 +1,7 @@
 # The hitchhiker’s guide to Swiss Open Government Data
 
+Jonas Oesch
+
 *Die Öffnung der Behördendaten wird oft als deren "Befreiung" bezeichnet. Man könnte sie aber auch als "Entkleidung" sehen. Ohne den ursprünglichen Kontext präsentieren sich die nackten Zahlen als ein Haufen Antworten ohne die passenden Fragen. Wie man alte Daten neu einkleidet, darauf sucht die Open Data-Community gerade die Antwort*
 
 ## Die Forderung nach mehr Transparenz und Demokratie
@@ -73,57 +75,17 @@ Beide Beispiele zeigen, dass in der Öffentlichkeit bereits heute ein Interesse 
 
 ## Wohin der Weg führen soll
 
-An dieser Stelle, stellt sich des Community eine grundsätzliche Frage: Was soll in Zukunft ihr Ziel sein? Geht es der Bewegung weiterhin nur darum, dass möglichst viele Datensätze offen verfügbar sind. Ganz unabhängig von der Nachfrage. Oder will sie die Qualität und Nutzung der Datensätze fördern, die potentiell auf das grösste Interesse stossen?
+Hier stellt sich den Open Data-Aktivisten eine grundsätzliche Frage: Was soll in Zukunft ihr Ziel sein? Geht es der Bewegung weiterhin schlicht darum, dass möglichst viele Datensätze offen verfügbar sind. Ganz unabhängig von der Nachfrage. Oder wollen sie die Qualität und Nutzung der Datensätze fördern, an denen des grösste Interesse besteht?
 
-In ersterem Fall bleibt die Bewegung der ursprünglichen Forderung treu. Der Fortschritt bleibt einfach messbar und in ein paar Jahren kann man vielleicht sagen: "Mission accomplished".
+In ersterem Fall bleibt die Bewegung ihrer ursprünglichen Forderung treu. Der Fortschritt bleibt einfach messbar und in ein paar Jahren kann man möglicherweise sagen: "Mission accomplished".
 
-Im zweiten Fall verschiebt sich der Fokus von der Menge der Daten auf deren Qualität. Das macht vermutlich vieles komplizierter. Wer entscheidet welche Datensätze wichtig sind? Und wer definiert die Qualitätskriterien?
+Im zweiten Fall verschiebt sich der Fokus von der Menge der Daten auf deren Qualität. Das macht vermutlich vieles komplizierter. Wer entscheidet zum Beispiel welche Datensätze wichtig sind? Und wer definiert die Qualitätskriterien?
 
-Der zweite Weg führt direkt ins Marketing. Die Qualität der Daten
+Der zweite Weg führt auch direkt ins Marketing. Hier gilt es die Nutzer immer besser kennen zu lernen und das Angebot an ihre Bedürfnisse anzupassen. Auch die Kommunikation des Angebots nimmt einen höheren Stellenwert ein. [^Kotler]
 
+Erschwerend kommt hinzu, dass die "Kunden" auf zwei Seiten sitzen. Um das Angebot für die Nutzer zu verbessern, müssen nämlich auch die Datenanbieter einen Anreiz haben, ihre Datensätze zu verbessern.
 
-
-
-
---------
-
-Im Endeffekt sind "offene Daten" als Konzept sowohl für Anbieter wie auch für Nutzer nicht von grossem Wert. Einen Mehrwert zu vermitteln vermutlich die grösste Herausforderung der Open Data-Bewegung. Sie steht in diesem Fall vor einer typischen Marketingaufgabe:
-
-![](presentation/value.png) [^Kotler]
-
-Wie der Mehrwert von offenen Daten am besten vermarketet werden kann, hängt in diesem Fall primär vom Zielpublikum ab. Hier lassen sich bereits sehr schnell zwei bis drei unterschiedliche Gruppen ausmachen:
-
-* Interne Nutzung: Die ersten Nutzer von offenen Behördendaten sind die Behörden selbst. Die zentralisierte Veröffentlichung hat das Potential interne Abläufe zu vereinfachen. Immerhin kann jeder die Datensätze ganz einfach googeln.
-
-* Journalisten: Journalisten gehören wie auch schon beim Öffentlichkeitsgesetz zu den ersten Abnehmern von offenen Daten.  
-
-Schliesslich stellt sich der Open Data-Bewegung die Frage welches Ziel sie primär verfolgen möchte:
-
-* Die Veröffentlichung möglichst vieler Datensätze unter einer offenen Lizenz.
-
-* Die Förderung der Nutzung von offenen Datensätzen in Verwaltung und Öffentlichkeit.
-
-
-
-* Analogie zur Open Source-Bewegung
-* Daten sind abstrakter und es ist schwerer einzuschätzen ob sie "nützlich" sind
-* Es gibt keinen Unterschied zwischen Fachleuten inner- und ausserhalb der Verwaltung
-* Daten sind biased zur ursprünglichen Fragestellung hin
-
-
-
-Es fehlt PageRank für Daten-Repositories
-Man sieht der OD.swiss Seite ihre 140 GB nicht an
-Die Fehler des Internets vermeiden: Wie stellen wir sicher, dass Datensätze auch in Zukunft zugänglich bleiben
-Schnell etwas ausprobieren -> jupyter
-
-Qualität oder Quantität
-
-Was ist das Ziel:
-- Einfach die Datensätze zu öffnen
-- Die Datensätze zu verwenden → warum?
-
-
+Trotz dieser Hürden bietet sich der zweite Weg als der "spannendere" an. Er ist realitätsnäher und verspricht auch eher    das Wertschöpfungspotential[^Open Data Studie] von OGD zu realisieren. Und mit Hackathons, Datenschulen und selbstgesammelten Daten ist 
 
 <div markdown="1" style="background-color: #D9D9D6; padding: 5px 30px; box-sizing: border-box">
 
