@@ -65,15 +65,65 @@ Regelmässig veranstaltet die Community auch sogenannte [Hackathons](https://ope
 
 Manchmal stellt die Community auch fest, dass Daten fehlen oder fehlerhaft sind, so geschehen mit den Nährwertdaten aus dem Schweizer Detailhandel. Weil sich die Detailhändler sträubten, die Daten öffentlich zu machen, begann ein [Team an der ETH](https://www.openfood.ch/) Lausanne kurzerhand selbst, Produkte zu fotografieren und die Daten zusammenzutragen. Seither hat die Community schon über 18000 Produkte in den Katalog aufgenommen. Lavrovsky ist von solchen Initiativen begeistert. "Wenn die Organisationen ihre Daten nicht selbst offenlegen, dann macht die Community das eben selbst".
 
-## Daten im neuen Gewand
-
 Wichtig, so scheint es, ist nicht nur der Zugang zu den Daten, sondern vor allem auch zu deren Kontext. Die Daten selbst enthalten nicht die Fragen, die sie beantworten. Interessante Fragestellungen kommen immer aus dem Alltag der Menschen. In der Öffentlichkeit stossen so auch diejenigen Datensätze auf das grösste Echo, die direkt mit dem Alltag vieler Leute zu tun haben.
 
-Die Öffnung der Transportdaten der SBB hat zum Beispiel viele Pendler dazu inspiriert, ihren Fahrplan [kreativ neu zu interpretieren](https://opentransportdata.swiss/de/fallblatt). Aber auch Unternehmen machen dem [SBB-Fahrplan Konkurrenz](http://www.viadi-app.ch). Das innovative Interface von [Viadi](https://www.viadi-app.ch/) fand schliesslich sogar Einzug in die neue SBB-App.
+Die Öffnung der Transportdaten der SBB hat zum Beispiel viele Pendler dazu inspiriert, ihren Fahrplan [kreativ neu zu interpretieren](https://opentransportdata.swiss/de/fallblatt). Aber auch Unternehmen machen dem [SBB-Fahrplan Konkurrenz](http://www.viadi-app.ch). Das innovative Interface von [Viadi](https://www.viadi-app.ch/) fand schliesslich sogar Einzug in die neue SBB-App. Auch die Öffnung der SBB-Daten war ursprünglich ein [Community-Projekt](https://opendata.ch/2017/06/search-ch-rettet-transport-opendata-ch/).
 
-Doch während viele Leute in Bahnhof, Migros oder Coop fast täglich ein und ausgehen, trifft das bei der Verwaltung nicht zu.
+Beide Beispiele zeigen, dass in der Öffentlichkeit bereits heute ein Interesse an offenen Daten besteht. Oder besser gesagt an bestimmten Datensätzen. 
 
-Lovato wünscht sich deshalb auch dort mehr Offenheit. Die Verwaltungen kennen ihre Fragestellungen und oftmals gleichen sie sich untereinander. Offene Daten können ein Anlass sein, darüber zu diskutieren, ob man die Herausforderungen nicht gemeinsam angehen will, anstatt jeder für sich in seiner Ecke[^Huijboom] [^Janssen]. Bis sich eine solche Kultur des "Open Government" etabliert hat, wird es [wohl noch einige Jahre dauern](https://www.egovernment.ch/index.php/download_file/force/1135/3337/). Aber, so Lovato: "die Zeit ist auf unserer Seite. Irgendwann wird der Zugang zu Daten so selbstverständlich sein wie der zu Wasser oder zu Strom."
+## Wohin der Weg führen soll
+
+An dieser Stelle, stellt sich des Community eine grundsätzliche Frage: Was soll in Zukunft ihr Ziel sein? Geht es der Bewegung weiterhin nur darum, dass möglichst viele Datensätze offen verfügbar sind. Ganz unabhängig von der Nachfrage. Oder will sie die Qualität und Nutzung der Datensätze fördern, die potentiell auf das grösste Interesse stossen?
+
+In ersterem Fall bleibt die Bewegung der ursprünglichen Forderung treu. Der Fortschritt bleibt einfach messbar und in ein paar Jahren kann man vielleicht sagen: "Mission accomplished".
+
+Im zweiten Fall verschiebt sich der Fokus von der Menge der Daten auf deren Qualität. Das macht vermutlich vieles komplizierter. Wer entscheidet welche Datensätze wichtig sind? Und wer definiert die Qualitätskriterien?
+
+Der zweite Weg führt direkt ins Marketing. Die Qualität der Daten
+
+
+
+
+
+--------
+
+Im Endeffekt sind "offene Daten" als Konzept sowohl für Anbieter wie auch für Nutzer nicht von grossem Wert. Einen Mehrwert zu vermitteln vermutlich die grösste Herausforderung der Open Data-Bewegung. Sie steht in diesem Fall vor einer typischen Marketingaufgabe:
+
+![](presentation/value.png) [^Kotler]
+
+Wie der Mehrwert von offenen Daten am besten vermarketet werden kann, hängt in diesem Fall primär vom Zielpublikum ab. Hier lassen sich bereits sehr schnell zwei bis drei unterschiedliche Gruppen ausmachen:
+
+* Interne Nutzung: Die ersten Nutzer von offenen Behördendaten sind die Behörden selbst. Die zentralisierte Veröffentlichung hat das Potential interne Abläufe zu vereinfachen. Immerhin kann jeder die Datensätze ganz einfach googeln.
+
+* Journalisten: Journalisten gehören wie auch schon beim Öffentlichkeitsgesetz zu den ersten Abnehmern von offenen Daten.  
+
+Schliesslich stellt sich der Open Data-Bewegung die Frage welches Ziel sie primär verfolgen möchte:
+
+* Die Veröffentlichung möglichst vieler Datensätze unter einer offenen Lizenz.
+
+* Die Förderung der Nutzung von offenen Datensätzen in Verwaltung und Öffentlichkeit.
+
+
+
+* Analogie zur Open Source-Bewegung
+* Daten sind abstrakter und es ist schwerer einzuschätzen ob sie "nützlich" sind
+* Es gibt keinen Unterschied zwischen Fachleuten inner- und ausserhalb der Verwaltung
+* Daten sind biased zur ursprünglichen Fragestellung hin
+
+
+
+Es fehlt PageRank für Daten-Repositories
+Man sieht der OD.swiss Seite ihre 140 GB nicht an
+Die Fehler des Internets vermeiden: Wie stellen wir sicher, dass Datensätze auch in Zukunft zugänglich bleiben
+Schnell etwas ausprobieren -> jupyter
+
+Qualität oder Quantität
+
+Was ist das Ziel:
+- Einfach die Datensätze zu öffnen
+- Die Datensätze zu verwenden → warum?
+
+
 
 <div markdown="1" style="background-color: #D9D9D6; padding: 5px 30px; box-sizing: border-box">
 
@@ -99,7 +149,12 @@ Die Besucherzahlen wurden freundlicherweise vom [Bundesarchiv](https://www.bar.a
 
 
 [^Huijboom]: Huijboom, N., & Van den Broek, T. (2011). Open data: an international comparison of strategies. European Journal of ePractice, 7-8.
+
 [^Janssen]: Janssen, M., Charalabidis, Y., & Zuiderwijk, A. (2012). Benefits, Adoption Barriers and Myths of Open Data and Open Government. Information Systems Management, 29(4), 258–268.  http://doi.org/10.1080/10580530.2012.716740
+
+[^Wiedmann]: Wiedman, P., Langner, S. (2006). Open-Source-Marketing – Ein schlafender Riese erwacht. Open Source Jahrbuch 2006, 139-150.
+
+[^Kotler]: Kotler, P. (2001). Pearson. Marketing Management, 6. 
 
 
 <script src="presentation/presentation.js"></script>
