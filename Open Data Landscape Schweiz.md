@@ -71,21 +71,24 @@ Wichtig, so scheint es, ist nicht nur der Zugang zu den Daten, sondern vor allem
 
 Die Öffnung der Transportdaten der SBB hat zum Beispiel viele Pendler dazu inspiriert, ihren Fahrplan [kreativ neu zu interpretieren](https://opentransportdata.swiss/de/fallblatt). Aber auch Unternehmen machen dem [SBB-Fahrplan Konkurrenz](http://www.viadi-app.ch). Das innovative Interface von [Viadi](https://www.viadi-app.ch/) fand schliesslich sogar Einzug in die neue SBB-App. Auch die Öffnung der SBB-Daten war ursprünglich ein [Community-Projekt](https://opendata.ch/2017/06/search-ch-rettet-transport-opendata-ch/).
 
-Beide Beispiele zeigen, dass in der Öffentlichkeit bereits heute ein Interesse an offenen Daten besteht. Oder besser gesagt an bestimmten Datensätzen. 
+Beide Beispiele zeigen, dass in der Öffentlichkeit bereits heute ein Interesse an offenen Daten besteht. Sie zeigen aber auch, dass sich die Open Data-Bewegung auf einen möglichen Wendepunkt hin bewegt.
 
-## Wohin der Weg führen soll
+## Wohin der Weg führt
 
-Hier stellt sich den Open Data-Aktivisten eine grundsätzliche Frage: Was soll in Zukunft ihr Ziel sein? Geht es der Bewegung weiterhin schlicht darum, dass möglichst viele Datensätze offen verfügbar sind. Ganz unabhängig von der Nachfrage. Oder wollen sie die Qualität und Nutzung der Datensätze fördern, an denen des grösste Interesse besteht?
+Es hat zeigt sich nämlich auch, dass nicht alle Datensätze auf gleiches Interesse stossen. Bei weitem nicht.
 
-In ersterem Fall bleibt die Bewegung ihrer ursprünglichen Forderung treu. Der Fortschritt bleibt einfach messbar und in ein paar Jahren kann man möglicherweise sagen: "Mission accomplished".
+Den Aktivisten und Datenanbietern stellt sich darum mehr und mehr die Frage, ob sie ihre Kräfte mehr auf die "spannenden" Datensätze konzentrieren sollen oder ob sie eine solche Wertung ablehnen.
 
-Im zweiten Fall verschiebt sich der Fokus von der Menge der Daten auf deren Qualität. Das macht vermutlich vieles komplizierter. Wer entscheidet zum Beispiel welche Datensätze wichtig sind? Und wer definiert die Qualitätskriterien?
+Überlassen sie es der Öffentlichkeit allein, sich die "spannenden" Datensätze herauszusuchen, riskieren sie, dass diese in einem Haufen "uninteressanter" Daten untergehen und schliesslich auch nicht ihre Nutzer finden.
 
-Der zweite Weg führt auch direkt ins Marketing. Hier gilt es die Nutzer immer besser kennen zu lernen und das Angebot an ihre Bedürfnisse anzupassen. Auch die Kommunikation des Angebots nimmt einen höheren Stellenwert ein. [^Kotler]
+Wollen sie dieses Risiko vermeiden, führt der Weg direkt in eine Art "Marketing für Datensätze". Es stellen sich Fragen zu Zielgruppen, Qualitätskriterien und Kommunikation von Datensätzen. Das macht vieles komplizierter. Es würde aber vermutlich auch den Nutzen der Datensätze deutlich erhöhen.
 
-Erschwerend kommt hinzu, dass die "Kunden" auf zwei Seiten sitzen. Um das Angebot für die Nutzer zu verbessern, müssen nämlich auch die Datenanbieter einen Anreiz haben, ihre Datensätze zu verbessern.
+Statt als Nebenprodukt würde das Datenangebot als Dienstleistung betrachtet werden. Ein Beispiel dafür ist die Firma *Uber* die ihre Daten über [eine Plattform](https://movement.uber.com) offen legt und das Angebot in Zusammenarbeit mit den Nutzern stetig verbessert.
 
-Trotz dieser Hürden bietet sich der zweite Weg als der "spannendere" an. Er ist realitätsnäher und verspricht auch eher    das Wertschöpfungspotential[^Open Data Studie] von OGD zu realisieren. Und mit Hackathons, Datenschulen und selbstgesammelten Daten ist 
+Ob das funktioniert, ist einerseits von der Bereitschaft der Datenanbieter und andererseits vom Glauben der Politik an offene Daten als Rohmaterial der Zukunft zusammen.
+
+Ohne diese beiden Faktoren, ist vermutlich der erste Weg, trotz der Risiken, der sicherere.
+
 
 <div markdown="1" style="background-color: #D9D9D6; padding: 5px 30px; box-sizing: border-box">
 
