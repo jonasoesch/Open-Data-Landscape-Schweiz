@@ -36,7 +36,7 @@ Damit diese Infrastruktur Wirklichkeit wird, definiert der Bundesrat in seinem M
 
 <p><iframe id="landscape" src="cantons/dist/index.html" height="500px"></iframe></p> 
 
-*Karte mit Kantonen und Bundesämtern. Zeigt welche Kantone ein Öffentlichkeitsgesetz haben und wie ihr Status bezüglich Open Data ist. Die Grösse der Kantone und Städte ist im Verhältnis zur Einwohnerzahl dargestellt. Stand 12.9.2017*
+*Karte mit Kantonen und Bundesämtern. Zeigt welche Kantone ein Öffentlichkeitsgesetz haben und wie ihr Status bezüglich Open Data ist. Die Grösse der Kantone und Städte ist im Verhältnis zur Einwohnerzahl dargestellt. Das hexagonale Kartogramm ist von [Ralph Straumann](http://www.ralphstraumann.ch/blog/2013/05/conceptualisation-of-a-d3-linked-view-with-hexagonal-cartogram/). Stand 12.9.2017* 
 
 Nach Möglichkeit geschieht dies automatisch mittels sogenannter "Harvester". Die Stadt Zürich hat zum Beispiel bereits 2012 damit begonnen, eine eigene OGD-Plattform aufzubauen. Diese ist so nun auch mit der nationalen Plattform verknüpft und liefert täglich neue und aktualisierte Datensätze aus.
 
