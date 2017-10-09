@@ -1,6 +1,9 @@
 # The hitchhiker’s guide to Swiss Open Government Data
 
-Jonas Oesch
+* Jonas Oesch (jonas.oesch@fhnw.ch)
+* Betreuer: Prof. Dr. Simon Schubiger
+
+[i4Ds](https://www.fhnw.ch/de/die-fhnw/hochschulen/ht/institute/institut-fuer-4d-technologien), [FHNW](https://www.fhnw.ch/de)
 
 *Die Öffnung der Behördendaten wird oft als deren "Befreiung" bezeichnet. Man könnte sie aber auch als "Entkleidung" sehen. Ohne den ursprünglichen Kontext präsentieren sich die nackten Zahlen als ein Haufen Antworten ohne die passenden Fragen. Wie man alte Daten neu einkleidet, darauf sucht die Open Data-Community gerade die Antwort*
 
