@@ -5,7 +5,7 @@ import * as topojson from 'topojson';
 
 var svg = d3.select('#map svg');
 //var colorscheme = ['#FFFF9D', '#BEEB9F', '#79BD8F', '#00A388'];
-let colorscheme = ['#D9CF99', '#9FBF8F', '#81A68A', '#579E9C'];
+let colorscheme = ['#D9CF99', '#9FBF8F', '#579E9C', '#779BC2'];
 
 //var colors = {"Nein": '#FDFDFF', "Teilweise": '#C6C5B9', "Ja": "#62929E"};
 //var colors2 = [ "#f3ffbd", "#b2dbbf", "#70c1b3", "#247ba0"];
