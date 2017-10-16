@@ -43,7 +43,7 @@
     "ZG": {
       "name": "Zug",
       "öffentlichkeitsgesetz": 3,
-      "opendata": 1
+      "opendata": 3
     },
     "FR": {
       "name": "Freiburg",
@@ -88,12 +88,12 @@
     "GR": {
       "name": "Graubünden",
       "öffentlichkeitsgesetz": 2,
-      "opendata": 2
+      "opendata": 3
     },
     "AG": {
       "name": "Aargau",
       "öffentlichkeitsgesetz": 3,
-      "opendata": 0
+      "opendata": 2
     },
     "TG": {
       "name": "Thurgau",
