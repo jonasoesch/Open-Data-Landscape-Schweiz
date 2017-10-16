@@ -19,7 +19,7 @@ Wie durch Zufall veröffentlichte im [gleichen Jahr](https://blog.okfn.org/2006/
 
 Obwohl Open Government Data und das Öffentlichkeitsgesetz dadurch Schwestern im Geiste sind, geht OGD doch viel weiter. Das Öffentlichkeitsgesetz verlangt lediglich die Herausgabe von Daten auf Anfrage, OGD hingegen die aktive *Freigabe*. Als der Bundesrat 2014 eine [Open Government Data-Strategie](https://www.admin.ch/opc/de/federal-gazette/2014/3493.pdf) erliess, bezeichnete er dies als "Selbstbedienungssystem".
 
-Freigegebene Daten dürfen beliebig vervielfältigt, weitergegeben und kopiert werden. "Es ist oftmals kaum mehr nachvollziehbar, wer welche Datensätze nutzt.", sagt Juan Pablo Lovato, Projektleiter Open Government Data Schweiz. "Aber das liegt ja auch in der Natur *freier Daten*".
+Freigegebene Daten dürfen beliebig vervielfältigt, weitergegeben und kopiert werden. "Es ist oftmals kaum mehr nachvollziehbar, wer welche Datensätze nutzt.", sagt Juan Pablo Lovato, Projektleiter Open Government Data Schweiz beim Bundesarchiv. "Aber das liegt ja auch in der Natur *freier Daten*".
 
 ### Der Verein opendata.ch
 
@@ -32,11 +32,11 @@ Dieser Eindruck bestätigt sich, als ich Oleg Lavrovsky, den "Crowdsourcing Cham
 
 ## Open Data als Nebenprodukt: die Sekundärnutzung
 
-Damit diese Infrastruktur Wirklichkeit wird, definiert der Bundesrat in seinem Massnahmenpaket die Erstellung einer zentralen Plattform: [opendata.swiss](http://opendata.swiss/). Sie sammelt seit 2015 offene Daten aus Bundesämtern, Kantonen, Gemeinden und bundesnahen Betrieben.
+Damit diese Infrastruktur Wirklichkeit wird, definiert der Bundesrat in seinem Massnahmenpaket die Erstellung einer zentralen Plattform: [opendata.swiss](http://opendata.swiss/). Sie sammelt seit 2015 offene Daten aus Bundesämtern, Kantonen, Gemeinden und bundesnahen Betrieben und wird vom Schweizerischen Bundesarchiv betrieben..
 
 <p><iframe id="landscape" src="cantons/dist/index.html" height="500px"></iframe></p> 
 
-*Karte mit Kantonen und Bundesämtern. Zeigt welche Kantone ein Öffentlichkeitsgesetz haben und wie ihr Status bezüglich Open Data ist. Die Grösse der Kantone und Städte ist im Verhältnis zur Einwohnerzahl dargestellt. Das hexagonale Kartogramm ist von [Ralph Straumann](http://www.ralphstraumann.ch/blog/2013/05/conceptualisation-of-a-d3-linked-view-with-hexagonal-cartogram/). Stand 12.9.2017* 
+*Die Karte zeigt, welche Kantone ein Öffentlichkeitsgesetz haben und wie ihr Status bezüglich Open Data ist. Der Open Data-Status wird auch für ausgewählte Städte angezeigt. Die Grösse der Kantone und Städte ist im Verhältnis zur Einwohnerzahl dargestellt. Das hexagonale Kartogramm stammt von [Ralph Straumann](http://www.ralphstraumann.ch/blog/2013/05/conceptualisation-of-a-d3-linked-view-with-hexagonal-cartogram/). Stand 12.9.2017* 
 
 Nach Möglichkeit geschieht dies automatisch mittels sogenannter "Harvester". Die Stadt Zürich hat zum Beispiel bereits 2012 damit begonnen, eine eigene OGD-Plattform aufzubauen. Diese ist so nun auch mit der nationalen Plattform verknüpft und liefert täglich neue und aktualisierte Datensätze aus.
 
