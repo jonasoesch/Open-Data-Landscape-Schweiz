@@ -42,7 +42,7 @@ Nach Möglichkeit geschieht dies automatisch mittels sogenannter "Harvester". Di
 
 "Das ist genau der Charme von Open Data", bestätigen mir Marco Sieber und Reto Wick, die OGD-Beauftragten der Stadt Zürich, "dass wir die Daten schon haben. Wir brauchen sie nur noch in geeigneter Form zu publizieren. Das kann man auch automatisieren". Auch der Bundesrat erwähnt diese Sekundärnutzung als eine der Stärken von Open Government Data. Diese sollen ganz ohne Mehraufwand entstehen, einfach als Nebenprodukt der Amtstätigkeit.
 
-Dass das nicht immer so einfach ist, wissen Sieber und Wick selbst am besten. Seit Jahren werben sie an den verschiedenen Stellen dafür, dass sie ihre Daten "per default" offenlegen. Oft steht oder fällt es damit, ob sich die richtige Person an der entsprechenden Stelle [für das Thema interessiert](https://www.stadt-zuerich.ch/content/dam/stzh/portal/Deutsch/OGD/Dokumente/Hinderungsgr%c3%bcnde%20f%c3%bcr%20Open%20Government%20Data.pdf) und bereit ist, die internen Prozesse anzupassen. 
+Dass das nicht immer so einfach ist, wissen Sieber und Wick selbst am besten. Seit Jahren werben sie an den verschiedenen Stellen dafür, dass sie ihre Daten "per default" offenlegen. Oft steht oder fällt es damit, ob sich die richtige Person an der entsprechenden Stelle für das Thema interessiert[^gruebler] und bereit ist, die internen Prozesse anzupassen. 
 
 Jemand, der sich eindeutig für das Thema interessiert, ist Daniel Schweizer von den Parlamentsdiensten. Die Parlamentsdienste publizieren seit Jahren Informationen über Parlamentarier, Vorlagen und Abstimmungsresultate auf [parlament.ch](https://www.parlament.ch/de). Schon vor einiger Zeit wurde entschieden, die Webseite mit Hilfe einer Daten-API zu befüttern. Diese API zu öffnen war da nur noch ein kleiner Schritt. Mit der Publikation der Schnittstelle produzierten die Parlamentsdienste über Nacht, ohne Mehraufwand, offene Daten. Auch diese sind natürlich bei opendata.swiss eingetragen.
 
@@ -113,8 +113,9 @@ Die Besucherzahlen wurden freundlicherweise vom [Bundesarchiv](https://www.bar.a
 
 ### Fussnoten
 
-[^openscience]: Neben der Verwaltung gibt es auch in anderen Bereichen Bestrebungen, Daten zu öffnen. Speziell auch in der Wissenschaft. Das Thema *Open Science Data* steht in der Schweiz noch [ziemlich am Anfang]((https://www.swissuniversities.ch/de/themen/hochschulpolitik/open-access/)) und wird in diesem Artikel nicht weiter behandelt. 
+[^openscience]: Neben der Verwaltung gibt es auch in anderen Bereichen Bestrebungen, Daten zu öffnen. Speziell auch in der Wissenschaft. Das Thema *Open Science Data* steht in der Schweiz noch [ziemlich am Anfang]((https://www.swissuniversities.ch/de/themen/hochschulpolitik/open-access/)) und wird in diesem Artikel nicht weiter behandelt.  
 
+[^gruebler]: Grüebler M. (2017). "Hinderungsgründe für Open Government Data". Stadt Zürich. [Link](https://www.google.ch/url?sa=t&rct=j&q=&esrc=s&source=web&cd=2&ved=0ahUKEwiRrdua2PTWAhXJORoKHXIkDrgQFggqMAE&url=https%3A%2F%2Fwww.stadt-zuerich.ch%2Fcontent%2Fdam%2Fstzh%2Fportal%2FDeutsch%2FOGD%2FDokumente%2FHinderungsgr%25C3%25BCnde%2520f%25C3%25BCr%2520Open%2520Government%2520Data.pdf&usg=AOvVaw1nEN8cDV9kjWRgcB4WCJks)
 
 [^Huijboom]: Huijboom, N., & Van den Broek, T. (2011). Open data: an international comparison of strategies. European Journal of ePractice, 7-8.
 
@@ -122,7 +123,6 @@ Die Besucherzahlen wurden freundlicherweise vom [Bundesarchiv](https://www.bar.a
 
 [^Wiedmann]: Wiedman, P., Langner, S. (2006). Open-Source-Marketing – Ein schlafender Riese erwacht. Open Source Jahrbuch 2006, 139-150.
 
-[^Kotler]: Kotler, P. (2001). Pearson. Marketing Management, 6. 
 
 
 <script src="presentation/presentation.js"></script>
